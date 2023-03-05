@@ -1,0 +1,17 @@
+.container {
+  max-width: var(--container-width);
+  margin: auto;
+  padding: var(--space-14) 0;
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  row-gap: var(--space-5);
+  margin-bottom: var(--space-12);
+}
+
+.row {
+  display: flex;
+  column-gap: var(--space-8);
+}

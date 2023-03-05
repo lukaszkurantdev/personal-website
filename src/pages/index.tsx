@@ -1,11 +1,27 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import { Inter } from '@next/font/google'
-import styles from '@/styles/Home.module.css'
+import Head from "next/head";
+import Image from "next/image";
+import { Lato } from "@next/font/google";
+import styles from "@/styles/Home.module.css";
+import { Button } from "@/components/Button/Button";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import { useTranslation } from "next-i18next";
+import { Navbar } from "@/modules/layout/Navbar/NavBar";
+import classNames from "classnames";
+import localFont from "@next/font/local";
+import { HeroSection } from "@/modules/home/HeroSection/HeroSection";
+import { AboutSection } from "@/modules/home/AboutSection/AboutSection";
+import { ValuesSection } from "@/modules/home/ValuesSection/ValuesSection";
+import { SpecialtiesSection } from "@/modules/home/SpecialtiesSection/SpecialtiesSection";
+import { ExperienceSection } from "@/modules/home/ExperienceSection/ExperienceSection";
+import { EducationSection } from "@/modules/home/EducationSection/EducationSection";
+import { ConstCashSection } from "@/modules/home/ConstCashSection/ConstCashSection";
+import { ContactSection } from "@/modules/home/ContactSection/ContactSection";
 
-const inter = Inter({ subsets: ['latin'] })
+const latoFont = Lato({ subsets: ["latin"], weight: ["400", "700"] });
 
 export default function Home() {
+  const { t } = useTranslation("common");
+
   return (
     <>
       <Head>
@@ -14,110 +30,27 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={styles.main}>
-        <div className={styles.description}>
-          <p>
-            Get started by editing&nbsp;
-            <code className={styles.code}>src/pages/index.tsx</code>
-          </p>
-          <div>
-            <a
-              href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              By{' '}
-              <Image
-                src="/vercel.svg"
-                alt="Vercel Logo"
-                className={styles.vercelLogo}
-                width={100}
-                height={24}
-                priority
-              />
-            </a>
-          </div>
-        </div>
-
-        <div className={styles.center}>
-          <Image
-            className={styles.logo}
-            src="/next.svg"
-            alt="Next.js Logo"
-            width={180}
-            height={37}
-            priority
-          />
-          <div className={styles.thirteen}>
-            <Image
-              src="/thirteen.svg"
-              alt="13"
-              width={40}
-              height={31}
-              priority
-            />
-          </div>
-        </div>
-
-        <div className={styles.grid}>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Docs <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Find in-depth information about Next.js features and&nbsp;API.
-            </p>
-          </a>
-
-          <a
-            href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Learn <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Learn about Next.js in an interactive course with&nbsp;quizzes!
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Templates <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Discover and deploy boilerplate example Next.js&nbsp;projects.
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Deploy <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Instantly deploy your Next.js site to a shareable URL
-              with&nbsp;Vercel.
-            </p>
-          </a>
-        </div>
+     
+      <main className={classNames(styles.main, latoFont.className)}>
+        <Navbar />
+        <HeroSection />
+        <AboutSection />
+        <ValuesSection />
+        <SpecialtiesSection />
+        <ExperienceSection />
+        <EducationSection />
+        <ConstCashSection />
+        <ContactSection />
       </main>
     </>
-  )
+  );
+}
+
+export async function getStaticProps({ locale }: any) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ["common", "home"])),
+      // Will be passed to the page component as props
+    },
+  };
 }

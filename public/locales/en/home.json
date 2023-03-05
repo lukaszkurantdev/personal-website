@@ -1,0 +1,80 @@
+{
+  "hero": {
+    "title": "Quality through",
+    "titleWord": {
+      "professionalism": "professionalism",
+      "knowledge": "knowledge",
+      "attractiveDesign": "attractive design",
+      "bestTools": "best tools",
+      "experience": "experience",
+      "commitment": "commitment"
+    },
+    "header": "Hello, I'm Lukasz Kurant",
+    "description1": "I'm a ",
+    "description2": "freelance full-stack programmer",
+    "description3": " with passion, experience and education. In my work I create simple and advanced mobile applications and websites. I help in project analysis, UI/UX creation, programming, testing, up to maintenance. I am happy to share my knowledge and learn from others.",
+    "button": "Hire me"
+  },
+  "about": {
+    "title": "About me",
+    "description1": "Education is very important to me. Learning about theory and new ways to solve problems has real benefits in practice. Advanced solutions increase productivity, solution efficiency and are often the answer to customer needs.",
+    "description2": "Education is very important to me. Learning about theory and new ways to solve problems has real benefits in practice. Advanced solutions increase productivity, solution efficiency and are often the answer to customer needs.",
+    "description3": "Education is very important to me. Learning about theory and new ways to solve problems has real benefits in practice. Advanced solutions increase productivity, solution efficiency and are often the answer to customer needs."
+  },
+  "values": {
+    "title": "My values",
+    "description": "Values are fundamental to me in my work and in my interactions with clients. I believe they are essential to building business relationships.",
+    "button": "Contact with me",
+    "valuesWords": {
+      "responsibility": "Responsibility",
+      "quality": "Quality",
+      "trust": "Trust",
+      "professionalism": "Professionalism",
+      "fairness": "Fairness",
+      "helpfulness": "Helpfulness"
+    }
+  },
+  "specialties": {
+    "title": "Specialties",
+    "description": "I am a flexible developer providing customer support in many fields. Experience at every stage of project development means you don’t have to look for additional people."
+  },
+  "experience": {
+    "title": "Experience",
+    "description": "Without working on products used by users we cannot talk about gaining experience. My experience is based on working with real problems, communicating with other people and providing solutions that will meet users’ expectations.",
+    "current": "Current",
+    "past": "Past"
+  },
+  "education": {
+    "title": "Education",
+    "description": "Education is very important to me. Learning about theory and new ways to solve problems has real benefits in practice. Advanced solutions increase productivity, solution efficiency and are often the answer to customer needs.",
+    "certificates": {
+      "title": "Certificates",
+      "description": "The knowledge I gain is also to be confirmed in the form of certificates of completion of courses."
+    },
+    "otherActivities": {
+      "title": "Other activities",
+      "description": "The knowledge I gain is also to be confirmed in the form of certificates of completion of courses."
+    }
+  },
+  "constcash": {
+    "title": "ConstCash",
+    "description1": "ConstCash is a personal finance management application. It allows you to have an advanced overview of reports and statistics, create budgets or add your own financial goals.",
+    "description2": "Learn more about the application by reading",
+    "caseStudy": "the case study.",
+    "button": "Show webpage"
+  },
+  "blog": {
+    "title": "What's new on my blog",
+    "description": "Education is very important to me. Learning about theory and new ways to solve problems has real benefits in practice. Advanced solutions increase productivity, solution efficiency and are often the answer to customer needs.",
+    "more": {
+      "title": "Want more?",
+      "description": "I care about knowledge sharing, so I am happy to share what I know. See more topics on my blog.",
+      "button": "Read more"
+    }
+  },
+  "contact": {
+    "title": "Do you want me to work for you?",
+    "description": "Im a mobile and web developer with various interests, I can help you with creating mobile applications or websites. I can create layout, develop app and share it to people.",
+    "button": "Contact"
+  }
+}

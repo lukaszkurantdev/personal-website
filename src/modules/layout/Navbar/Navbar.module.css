@@ -1,0 +1,26 @@
+.mainContainer {
+  background-color: var(--color-gray-100);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-9) 0;
+  max-width: var(--container-width);
+  margin: auto;
+}
+
+.menu {
+  display: flex;
+  column-gap: var(--space-10);
+}
+
+.primaryText {
+  color: var(--color-primary);
+}
+
+.mainHeader {
+  font-size: var(--typography-h3);
+  font-family: var(--typography-font-tiempos);
+}

@@ -1,0 +1,47 @@
+.h1 {
+  font-size: var(--typography-h1);
+  font-family: var(--typography-font-tiempos);
+  font-weight: 300;
+}
+
+.h2 {
+  font-size: var(--typography-h2);
+  font-family: var(--typography-font-tiempos);
+  font-weight: 300;
+}
+
+.h3 {
+  font-size: var(--typography-h3);
+}
+
+.paragraph {
+  font-size: var(--typography-paragraph);
+}
+
+.small-paragraph {
+  font-size: var(--typography-small-paragraph);
+}
+
+.x-small-paragraph {
+  font-size: var(--typography-x-small-paragraph);
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.medium {
+  font-weight: 600;
+}
+
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+}
+
+.center {
+  text-align: center;
+}

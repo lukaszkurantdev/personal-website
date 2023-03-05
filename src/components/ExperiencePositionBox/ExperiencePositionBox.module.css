@@ -1,0 +1,15 @@
+.container {
+  border-radius: var(--border-radius-small);
+  background-color: var(--color-gray-100);
+  padding: var(--space-7);
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  column-gap: var(--space-6);
+}
+
+.companyContainer {
+  display: flex;
+  align-items: center;
+  column-gap: var(--space-6);
+}

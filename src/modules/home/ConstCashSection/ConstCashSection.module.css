@@ -1,0 +1,25 @@
+.container {
+  background-color: var(--color-gray-300);
+}
+
+.insideContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-14) 0;
+  max-width: var(--container-width);
+  margin: auto;
+}
+
+.textContainer {
+  max-width: var(--container-medium-width);
+}
+
+.header {
+  margin-top: var(--space-9);
+  margin-bottom: var(--space-4);
+}
+
+.button {
+  margin-top: var(--space-8);
+}

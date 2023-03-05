@@ -1,0 +1,24 @@
+.container {
+  max-width: var(--container-width);
+  margin: auto;
+  padding: var(--space-14) 0;
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  row-gap: var(--space-5);
+  max-width: var(--container-medium-width);
+  margin-bottom: var(--space-12);
+}
+
+.listContainer {
+  display: flex;
+  flex-direction: column;
+  row-gap: var(--space-5);
+}
+
+.header {
+  margin-top: var(--space-8);
+  margin-bottom: var(--space-5);
+}
