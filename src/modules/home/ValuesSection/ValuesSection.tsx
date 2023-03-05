@@ -12,7 +12,6 @@ export const ValuesSection = () => {
       <div className={classNames(styles.column, styles.textContainer)}>
         <Typography variant="h1">{t("title")}</Typography>
         <Typography>{t("description")}</Typography>
-        <Button className={styles.button} title={t("button")} />
       </div>
 
       <div className={classNames(styles.column, styles.valuesContainer)}>

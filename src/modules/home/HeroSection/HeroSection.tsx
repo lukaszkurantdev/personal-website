@@ -8,7 +8,7 @@ import {
   TRANSITION_SPRING_CONFIG,
 } from "./HeroSection.constants";
 import styles from "./HeroSection.module.css";
-import Me from "@/assets/icons/Me.svg";
+import Image from "next/image";
 
 export const HeroSection = () => {
   const { t } = useTranslation("home", { keyPrefix: "hero" });
@@ -48,7 +48,13 @@ export const HeroSection = () => {
           <Button className={styles.button} title={t("button")} />
         </div>
         <div className={styles.column}>
-          <img src="./images/avatar.png" className={styles.image} />
+          <Image
+            alt="avatar"
+            src="/images/avatar.png"
+            className={styles.image}
+            width={550}
+            height={506}
+          />
         </div>
       </div>
     </div>

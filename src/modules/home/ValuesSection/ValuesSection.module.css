@@ -1,11 +1,12 @@
 .container {
   max-width: var(--container-width);
-  background-color: var(--color-gray-100);
   border-radius: var(--border-radius-regular);
   padding: var(--space-12);
-  margin: auto;
+  margin: var(--space-12) auto;
   display: flex;
   column-gap: var(--space-5);
+  background-image: url(../../../assets/backgrounds/blur.svg);
+  background-size: cover;
 }
 
 .column {

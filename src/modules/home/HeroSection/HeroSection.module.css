@@ -6,7 +6,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: var(--space-16) 0;
+  padding: var(--space-15) 0;
   max-width: var(--container-width);
   margin: auto;
   position: relative;

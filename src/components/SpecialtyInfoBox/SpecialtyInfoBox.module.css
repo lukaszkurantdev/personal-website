@@ -1,20 +1,14 @@
 .container {
   border-radius: var(--border-radius-small);
   background-color: var(--color-gray-100);
-  padding: var(--space-9);
+  padding: var(--space-8);
   display: flex;
   flex-direction: column;
   row-gap: var(--space-6);
   flex: 1;
 }
 
-.headerContainer {
-  display: flex;
-  column-gap: var(--space-6);
-}
-
-.itemsContainer {
-  display: flex;
-  flex-direction: column;
-  row-gap: var(--space-4);
+.technologiesHeader {
+  color: var(--color-primary);
+  margin-bottom: calc(-1 * var(--space-5));
 }

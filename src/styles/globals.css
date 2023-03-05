@@ -17,6 +17,11 @@ h1, h2, h3, p {
   margin-block: 0;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 @font-face {
   font-family: "Tiempos";
   src: url('../assets/fonts/TiemposHeadline-Light.otf');

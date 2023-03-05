@@ -1,3 +1,4 @@
+import { Button } from "@/components/Button/Button";
 import { Typography } from "@/components/Typography/Typography";
 import classNames from "classnames";
 import { useTranslation } from "next-i18next";
@@ -8,16 +9,30 @@ export const AboutSection = () => {
 
   return (
     <div className={styles.container}>
-      <div className={styles.column}></div>
+      <div className={classNames(styles.column, styles.headerSection)}>
+        <Typography className={styles.yearsOfExperience}>5</Typography>
+        <Typography>years of{"\n"}commercial experience</Typography>
+      </div>
 
       <div className={classNames(styles.column, styles.textContainer)}>
-        <Typography variant="h1">
-          {t("title")}
+        <Typography variant="h1">{t("title")}</Typography>
+        <div className={styles.underline} />
+
+        <Typography weight="bold">{t("description1")}</Typography>
+
+        <Typography>{t("description2")}</Typography>
+
+        <Typography className={styles.infoDetailsContainer}>
+          <span className={styles.bold}>{t("infoTitle1")}</span>:{" "}
+          {t("infoDescription1")}
         </Typography>
 
-        <Typography>{t("description1")}</Typography>
-        <Typography weight="bold">{t("description2")}</Typography>
-        <Typography variant="small-paragraph">{t("description3")}</Typography>
+        <Typography className={styles.infoDetailsContainer}>
+          <span className={styles.bold}>{t("infoTitle1")}</span>:{" "}
+          {t("infoDescription1")}
+        </Typography>
+
+        <Button className={styles.button} title={t("button")} />
       </div>
     </div>
   );

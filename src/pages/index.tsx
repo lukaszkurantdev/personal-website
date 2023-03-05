@@ -35,8 +35,9 @@ export default function Home() {
         <Navbar />
         <HeroSection />
         <AboutSection />
-        <ValuesSection />
         <SpecialtiesSection />
+        <ValuesSection />
+       
         <ExperienceSection />
         <EducationSection />
         <ConstCashSection />

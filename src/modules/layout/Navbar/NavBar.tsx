@@ -1,6 +1,7 @@
 import { Button } from "@/components/Button/Button";
 import { Typography } from "@/components/Typography/Typography";
 import { useTranslation } from "next-i18next";
+import Link from "next/link";
 
 import styles from "./Navbar.module.css";
 
@@ -10,9 +11,12 @@ export const Navbar = () => {
   return (
     <div className={styles.mainContainer}>
       <nav className={styles.container}>
-        <Typography className={styles.mainHeader}>
-          <span className={styles.primaryText}>lukaszkurant</span>.com
-        </Typography>
+        <Link href="/">
+          <Typography className={styles.mainHeader}>
+            <span className={styles.primaryText}>lukaszkurant</span>.com
+          </Typography>
+        </Link>
+       
 
         <div className={styles.menu}>
           <Button title={t("about")} variant="secondary" />
