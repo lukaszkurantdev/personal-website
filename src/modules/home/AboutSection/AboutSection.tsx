@@ -10,17 +10,17 @@ export const AboutSection = () => {
   return (
     <div className={styles.container}>
       <div className={classNames(styles.column, styles.headerSection)}>
-        <Typography className={styles.yearsOfExperience}>5</Typography>
-        <Typography>years of{"\n"}commercial experience</Typography>
+        <Typography className={styles.yearsOfExperience}>
+          {t("experienceYearsTitle")}
+        </Typography>
+        <Typography>{t("experienceYearsDescription")}</Typography>
       </div>
 
       <div className={classNames(styles.column, styles.textContainer)}>
         <Typography variant="h1">{t("title")}</Typography>
         <div className={styles.underline} />
 
-        <Typography weight="bold">{t("description1")}</Typography>
-
-        <Typography>{t("description2")}</Typography>
+        <Typography>{t("description1")}</Typography>
 
         <Typography className={styles.infoDetailsContainer}>
           <span className={styles.bold}>{t("infoTitle1")}</span>:{" "}
@@ -28,8 +28,8 @@ export const AboutSection = () => {
         </Typography>
 
         <Typography className={styles.infoDetailsContainer}>
-          <span className={styles.bold}>{t("infoTitle1")}</span>:{" "}
-          {t("infoDescription1")}
+          <span className={styles.bold}>{t("infoTitle2")}</span>:{" "}
+          {t("infoDescription2")}
         </Typography>
 
         <Button className={styles.button} title={t("button")} />

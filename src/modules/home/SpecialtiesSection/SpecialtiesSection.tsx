@@ -3,6 +3,9 @@ import { Typography } from "@/components/Typography/Typography";
 import { useTranslation } from "next-i18next";
 import styles from "./SpecialtiesSection.module.css";
 import MobileIcon from "@/assets/icons/MobileIcon.svg";
+import WebIcon from "@/assets/icons/WebIcon.svg";
+import DesignIcon from "@/assets/icons/DesignIcon.svg";
+import KnowHowIcon from "@/assets/icons/KnowHowIcon.svg";
 
 export const SpecialtiesSection = () => {
   const { t } = useTranslation("home", { keyPrefix: "specialties" });
@@ -17,34 +20,34 @@ export const SpecialtiesSection = () => {
       <div className={styles.row}>
         <SpecialtyInfoBox
           icon={<MobileIcon />}
-          header="Mobile development"
-          description="I make advanced mobile applications for Android and iOS using cross-platform technologies."
-          technologiesHeader="Technologies"
-          technologies="JavaScript, TypeScript, React Native, MobX, Redux, Redux Saga, React Native Testing Library, Detox, Java, Obj-C"
+          header={t("specialty1.title")}
+          description={t("specialty1.description")}
+          technologiesHeader={t("specialty1.technologiesHeader")}
+          technologies={t("specialty1.technologies")}
         />
 
         <SpecialtyInfoBox
-          icon={<MobileIcon />}
-          header="Web development"
-          description="I create modern, visually attractive and effective web systems that meet high standards."
-          technologiesHeader="Technologies"
-          technologies="JavaScript, TypeScript, ReactJS, NodeJS, Strapi, NestJS, NextJS, Gatsby, MobX, Redux, Redux Saga, Tailwind, React Testing Library, WDIO"
+          icon={<WebIcon />}
+          header={t("specialty2.title")}
+          description={t("specialty2.description")}
+          technologiesHeader={t("specialty2.technologiesHeader")}
+          technologies={t("specialty2.technologies")}
         />
 
         <SpecialtyInfoBox
-          icon={<MobileIcon />}
-          header="UI/UX Design"
-          description="I create eye-catching designs for mobile and web applications based on the needs of end users."
-          technologiesHeader="Tools & Utils"
-          technologies="Adobe XD, Figma, Material UI, Tailwind UI"
+          icon={<DesignIcon />}
+          header={t("specialty3.title")}
+          description={t("specialty3.description")}
+          technologiesHeader={t("specialty3.technologiesHeader")}
+          technologies={t("specialty3.technologies")}
         />
 
         <SpecialtyInfoBox
-          icon={<MobileIcon />}
-          header="Know-how"
-          description="I help deliver new technology solutions, select the tools that fit your needs, and enjoy sharing knowledge."
-          technologiesHeader="Solutions"
-          technologies="Publication in Google Play, App Store and Microsoft Store, ML algorithms, BLE devices, code audits, image processing and much more"
+          icon={<KnowHowIcon />}
+          header={t("specialty4.title")}
+          description={t("specialty4.description")}
+          technologiesHeader={t("specialty4.technologiesHeader")}
+          technologies={t("specialty4.technologies")}
         />
       </div>
 

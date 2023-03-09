@@ -17,12 +17,14 @@
   },
   "about": {
     "title": "About me",
-    "description1": "Education is very important to me. Learning about theory and new ways to solve problems has real benefits in practice. Advanced solutions increase productivity, solution efficiency and are often the answer to customer needs.",
-    "description2": "Education is very important to me. Learning about theory and new ways to solve problems has real benefits in practice. Advanced solutions increase productivity, solution efficiency and are often the answer to customer needs.",
-    "description3": "Education is very important to me. Learning about theory and new ways to solve problems has real benefits in practice. Advanced solutions increase productivity, solution efficiency and are often the answer to customer needs.",
-    "infoTitle1": "Location",
-    "infoDescription1": "Lublin, Poland",
-    "button": "Check portfolio"
+    "description1": "I am an experienced developer who specializes in mobile applications, websites and providing other IT solutions. I have five years of commercial experience in the industry, and I always strive to understand my clients' needs and provide quality solutions that exceed their expectations.",
+    "infoTitle1": "Profile",
+    "infoDescription1": "Full-stack Developer",
+    "infoTitle2": "Location",
+    "infoDescription2": "Lublin, Poland",
+    "button": "Check portfolio",
+    "experienceYearsTitle": "5",
+    "experienceYearsDescription": "years of commercial experience"
   },
   "values": {
     "title": "My values",
@@ -39,13 +41,62 @@
   },
   "specialties": {
     "title": "Specialties",
-    "description": "I am a flexible developer providing customer support in many fields. Experience at every stage of project development means you don’t have to look for additional people."
+    "description": "I am a flexible developer providing customer support in many fields. Experience at every stage of project development means you don’t have to look for additional people.",
+    "specialty1": {
+      "title": "Mobile development",
+      "description": "I make advanced mobile applications for Android and iOS using cross-platform technologies.",
+      "technologiesHeader": "Technologies",
+      "technologies": "JavaScript, TypeScript, React Native, MobX, Redux, Redux Saga, React Native Testing Library, Detox, Java, Objective-C"
+    },
+    "specialty2": {
+      "title": "Web development",
+      "description": "I create modern, visually attractive and effective web systems that meet high standards.",
+      "technologiesHeader": "Technologies",
+      "technologies": "JavaScript, TypeScript, ReactJS, NodeJS, Strapi, NestJS, NextJS, Gatsby, MobX, Redux, Redux Saga, Tailwind, React Testing Library, WDIO"
+    },
+    "specialty3": {
+      "title": "UI/UX Design",
+      "description": "I create eye-catching designs for mobile and web applications based on the needs of end users.",
+      "technologiesHeader": "Tools & Utils",
+      "technologies": "Adobe XD, Figma, Material UI, Tailwind UI"
+    },
+    "specialty4": {
+      "title": "Know-how",
+      "description": "I help deliver new technology solutions, select the tools that fit your needs, and enjoy sharing knowledge.",
+      "technologiesHeader": "Solutions",
+      "technologies": "Publication in Google Play, App Store and Microsoft Store, ML algorithms, BLE devices, code audits, image processing and much more"
+    }
   },
   "experience": {
     "title": "Experience",
     "description": "Without working on products used by users we cannot talk about gaining experience. My experience is based on working with real problems, communicating with other people and providing solutions that will meet users’ expectations.",
     "current": "Current",
-    "past": "Past"
+    "past": "Past",
+    "experiencePosition1": {
+      "date": "August 2022 - now",
+      "position": "Fullstack freelancer",
+      "company": "Mobideca Łukasz Kurant, Remote"
+    },
+    "experiencePosition2": {
+      "date": "February 2023 – now",
+      "position": "Research and teaching assistant",
+      "company": "Maria Curie-Sklodowska University, Lublin, Poland"
+    },
+    "experiencePosition3": {
+      "date": "March 2022 – November 2022",
+      "position": "Fullstack Developer",
+      "company": "Dogtronic, Lublin"
+    },
+    "experiencePosition4": {
+      "date": "February 2021 – March 2022",
+      "position": "React Native / React.js Developer",
+      "company": "Polcode, Remote"
+    },
+    "experiencePosition5": {
+      "date": "August 2018 – January 2021",
+      "position": "Mobile Developer",
+      "company": "Akanza, Lublin"
+    }
   },
   "education": {
     "title": "Education",
