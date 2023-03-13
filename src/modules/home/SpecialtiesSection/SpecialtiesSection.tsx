@@ -17,7 +17,8 @@ export const SpecialtiesSection = () => {
         <Typography align="center">{t("description")}</Typography>
       </div>
 
-      <div className={styles.row}>
+
+      <div >
         <SpecialtyInfoBox
           icon={<MobileIcon />}
           header={t("specialty1.title")}
@@ -32,15 +33,16 @@ export const SpecialtiesSection = () => {
           description={t("specialty2.description")}
           technologiesHeader={t("specialty2.technologiesHeader")}
           technologies={t("specialty2.technologies")}
+          reversed
         />
 
-        <SpecialtyInfoBox
+        {/* <SpecialtyInfoBox
           icon={<DesignIcon />}
           header={t("specialty3.title")}
           description={t("specialty3.description")}
           technologiesHeader={t("specialty3.technologiesHeader")}
           technologies={t("specialty3.technologies")}
-        />
+        /> */}
 
         <SpecialtyInfoBox
           icon={<KnowHowIcon />}

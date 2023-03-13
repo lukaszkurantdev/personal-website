@@ -9,25 +9,27 @@ export const ValuesSection = () => {
 
   return (
     <div className={styles.container}>
-      <div className={classNames(styles.column, styles.textContainer)}>
-        <Typography variant="h1">{t("title")}</Typography>
-        <Typography>{t("description")}</Typography>
-      </div>
-
-      <div className={classNames(styles.column, styles.valuesContainer)}>
-        <div className={styles.valuesColumn}>
-          <span className={styles.value}>
-            {t("valuesWords.responsibility")}
-          </span>
-          <span className={styles.value}>{t("valuesWords.quality")}</span>
-          <span className={styles.value}>{t("valuesWords.trust")}</span>
+      <div className={styles.insideContainer}>
+        <div className={classNames(styles.column, styles.textContainer)}>
+          <Typography variant="h1">{t("title")}</Typography>
+          <Typography>{t("description")}</Typography>
         </div>
-        <div className={styles.valuesColumn}>
-          <span className={styles.value}>
-            {t("valuesWords.professionalism")}
-          </span>
-          <span className={styles.value}>{t("valuesWords.fairness")}</span>
-          <span className={styles.value}>{t("valuesWords.helpfulness")}</span>
+
+        <div className={classNames(styles.column, styles.valuesContainer)}>
+          <div className={styles.valuesColumn}>
+            <span className={styles.value}>
+              {t("valuesWords.responsibility")}
+            </span>
+            <span className={styles.value}>{t("valuesWords.quality")}</span>
+            <span className={styles.value}>{t("valuesWords.trust")}</span>
+          </div>
+          <div className={styles.valuesColumn}>
+            <span className={styles.value}>
+              {t("valuesWords.professionalism")}
+            </span>
+            <span className={styles.value}>{t("valuesWords.fairness")}</span>
+            <span className={styles.value}>{t("valuesWords.helpfulness")}</span>
+          </div>
         </div>
       </div>
     </div>

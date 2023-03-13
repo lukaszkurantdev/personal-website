@@ -34,7 +34,7 @@ export default function Home() {
       <main className={classNames(styles.main, latoFont.className)}>
         <Navbar />
         <HeroSection />
-        <AboutSection />
+        {/* <AboutSection /> */}
         <SpecialtiesSection />
         <ValuesSection />
        

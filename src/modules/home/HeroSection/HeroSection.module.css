@@ -1,5 +1,7 @@
 .container {
-  background-color: var(--color-gray-100);
+  background-color: var(--color-gray-300);
+  overflow: hidden;
+  position: relative;
 }
 
 .insideContainer {
@@ -40,4 +42,57 @@
   position: absolute;
   bottom: 0;
   right: 0;
+}
+
+.particle1 {
+  height: 200px;
+  width: 200px;
+  background-color: var(--color-primary-light);
+  border-radius: 100%;
+  position: absolute;
+  bottom: -140px;
+  left: calc(50% - 300px);
+}
+
+.particle2 {
+  height: 70px;
+  width: 70px;
+  background-color: var(--color-primary-light);
+  border-radius: 100%;
+  position: absolute;
+  top: 140px;
+  left: calc(50%);
+}
+
+.particle3 {
+  height: 30px;
+  width: 30px;
+  background-color: var(--color-primary-light);
+  border-radius: 100%;
+  position: absolute;
+  top: 220px;
+  right: calc(10%);
+}
+
+.particle4 {
+  height: 50px;
+  width: 50px;
+  background-color: var(--color-primary-light);
+  border-radius: 100%;
+  position: absolute;
+  bottom: 140px;
+  left: calc(5%);
+}
+
+.availableContainer {
+  background-color: var(--color-danger);
+  padding: var(--space-5) 0;
+  color: var(--color-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.availableContainer svg {
+  color: var(--color-white);
+  margin-right: var(--space-5);
 }

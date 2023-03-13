@@ -2,13 +2,14 @@
   /* colors */
   --color-white: #ffffff;
   --color-black: #000000;
-  --color-gray-50: '#FBFBFB';
+  --color-gray-50: "#FBFBFB";
   --color-gray-100: #fafafa;
-  --color-gray-300: #EAECED;
-  --color-gray-800: #3C4249;
-  --color-gray-900: #2F2F2F;
-  --color-primary: #355CE8;
-  --color-primary-light: #92B7F3;
+  --color-gray-300: #eaeced;
+  --color-gray-800: #3c4249;
+  --color-gray-900: #2f2f2f;
+  --color-primary: #355ce8;
+  --color-primary-light: #92b7f3;
+  --color-danger: #de831a;
 
   /* typography */
   --typography-h0: 72px;
@@ -19,7 +20,7 @@
   --typography-small-paragraph: 14px;
   --typography-x-small-paragraph: 12px;
 
-  --typography-font-tiempos: 'Tiempos';
+  --typography-font-tiempos: "Tiempos";
 
   /* space */
   --space-1: 2px;
@@ -40,7 +41,6 @@
   --space-16: 120px;
   --space-17: 140px;
   --space-18: 160px;
-
 
   --container-width: 1200px;
   --container-medium-width: 600px;

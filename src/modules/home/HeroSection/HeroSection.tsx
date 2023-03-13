@@ -9,6 +9,7 @@ import {
 } from "./HeroSection.constants";
 import styles from "./HeroSection.module.css";
 import Image from "next/image";
+import InfoIcon from "@/assets/icons/InfoIcon.svg";
 
 export const HeroSection = () => {
   const { t } = useTranslation("home", { keyPrefix: "hero" });
@@ -24,6 +25,10 @@ export const HeroSection = () => {
 
   return (
     <div className={styles.container}>
+      <div className={styles.availableContainer}>
+        <InfoIcon /> {t("availableToWork")}
+      </div>
+
       <div className={styles.insideContainer}>
         <div className={styles.textContainer}>
           <Typography variant="h1" fontSize={50}>
@@ -57,6 +62,11 @@ export const HeroSection = () => {
           />
         </div>
       </div>
+
+      <div className={styles.particle1} />
+      <div className={styles.particle2} />
+      <div className={styles.particle3} />
+      <div className={styles.particle4} />
     </div>
   );
 };

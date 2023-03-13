@@ -13,7 +13,8 @@
     "description1": "I'm a ",
     "description2": "freelance full-stack programmer",
     "description3": " with passion, experience and education. In my work I create simple and advanced mobile applications and websites. I help in project analysis, UI/UX creation, programming, testing, up to maintenance. I am happy to share my knowledge and learn from others.",
-    "button": "Hire me"
+    "button": "Hire me",
+    "availableToWork": "Available for work. Contact me for more information."
   },
   "about": {
     "title": "About me",
@@ -41,10 +42,10 @@
   },
   "specialties": {
     "title": "Specialties",
-    "description": "I am a flexible developer providing customer support in many fields. Experience at every stage of project development means you don’t have to look for additional people.",
+    "description": "I am an experienced developer who specializes in mobile applications, websites and providing other IT solutions. I have five years of commercial experience in the industry, and I always strive to understand my clients' needs and provide quality solutions that exceed their expectations.",
     "specialty1": {
       "title": "Mobile development",
-      "description": "I make advanced mobile applications for Android and iOS using cross-platform technologies.",
+      "description": "I specialize in creating apps that are not only visually appealing but also intuitive and easy to use. With an eye for detail and a passion for delivering quality work, I strive to create apps that are optimized for performance, security, and user satisfaction.",
       "technologiesHeader": "Technologies",
       "technologies": "JavaScript, TypeScript, React Native, MobX, Redux, Redux Saga, React Native Testing Library, Detox, Java, Objective-C"
     },

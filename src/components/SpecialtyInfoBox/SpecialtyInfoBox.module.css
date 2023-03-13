@@ -1,14 +1,37 @@
+.mainContainer {
+  display: flex;
+}
+
 .container {
   border-radius: var(--border-radius-small);
-  background-color: var(--color-gray-100);
-  padding: var(--space-8);
+  padding: var(--space-12) 0;
   display: flex;
   flex-direction: column;
   row-gap: var(--space-6);
   flex: 1;
 }
 
+.reversedContainer {
+  flex-direction: row-reverse;
+}
+
 .technologiesHeader {
   color: var(--color-primary);
-  margin-bottom: calc(-1 * var(--space-5));
+}
+
+.photoContainer {
+  flex: 1;
+}
+
+.technologiesContainer {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: var(--space-5);
+  column-gap: var(--space-3);
+}
+
+.technologyItem {
+  background-color: var(--color-gray-300);
+  padding: var(--space-2) var(--space-5);
+  border-radius: 20px;
 }
