@@ -2,6 +2,8 @@
   max-width: var(--container-width);
   margin: auto;
   padding-top: var(--space-15);
+  padding-bottom: var(--space-15);
+  position: relative;
 }
 
 .textContainer {
@@ -18,4 +20,58 @@
   display: flex;
   column-gap: var(--space-4);
   margin-bottom: var(--space-8);
+}
+
+.particle1 {
+  height: 100px;
+  width: 100px;
+  background-color: var(--color-primary-light);
+  opacity: 0.3;
+  border-radius: 100%;
+  position: absolute;
+  top: 500px;
+  left: calc(50% + 100px);
+}
+
+.particle2 {
+  height: 70px;
+  width: 70px;
+  background-color: var(--color-primary-light);
+  border-radius: 100%;
+  position: absolute;
+  top: 840px;
+  left: calc(50% - 160px);
+}
+
+.particle3 {
+  height: 30px;
+  width: 30px;
+  background-color: rgb(255, 194, 81);
+  border-radius: 100%;
+  position: absolute;
+  top: 220px;
+  right: calc(10%);
+  z-index: 1;
+}
+
+.particle4 {
+  height: 80px;
+  width: 80px;
+  background-color: var(--color-primary-light);
+  opacity: 0.5;
+  border-radius: 100%;
+  position: absolute;
+  top: 220px;
+  right: calc(10%);
+}
+
+.particle5 {
+  height: 260px;
+  width: 260px;
+  background-color: var(--color-primary-light);
+  opacity: 0.1;
+  border-radius: 100%;
+  position: absolute;
+  top: 1020px;
+  left: calc(-20%);
 }

@@ -2,6 +2,7 @@ import { Typography } from "@/components/Typography/Typography";
 import classNames from "classnames";
 import type { FC, ReactNode } from "react";
 import styles from "./SpecialtyInfoBox.module.css";
+import Image from "next/image";
 
 type SpecialtyInfoBoxProps = {
   icon: ReactNode;
@@ -29,7 +30,6 @@ export const SpecialtyInfoBox: FC<SpecialtyInfoBoxProps> = ({
       })}
     >
       <div className={styles.container}>
-        {icon}
         <Typography variant="h2">{header}</Typography>
         <Typography opacity>{description}</Typography>
         <Typography
@@ -47,7 +47,9 @@ export const SpecialtyInfoBox: FC<SpecialtyInfoBoxProps> = ({
           ))}
         </div>
       </div>
-      <div className={styles.photoContainer} />
+      <div className={styles.photoContainer}>
+      {icon}
+        </div>
     </div>
   );
 };

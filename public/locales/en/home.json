@@ -51,21 +51,15 @@
     },
     "specialty2": {
       "title": "Web development",
-      "description": "I create modern, visually attractive and effective web systems that meet high standards.",
+      "description": "As a programmer, I also specialize in developing web applications. I have experience on both the front-end and back-end side, which allows me to create complex solutions for my clients. Contact me today to discuss your requirements and have me develop your web application.",
       "technologiesHeader": "Technologies",
       "technologies": "JavaScript, TypeScript, ReactJS, NodeJS, Strapi, NestJS, NextJS, Gatsby, MobX, Redux, Redux Saga, Tailwind, React Testing Library, WDIO"
     },
     "specialty3": {
-      "title": "UI/UX Design",
-      "description": "I create eye-catching designs for mobile and web applications based on the needs of end users.",
-      "technologiesHeader": "Tools & Utils",
-      "technologies": "Adobe XD, Figma, Material UI, Tailwind UI"
-    },
-    "specialty4": {
       "title": "Know-how",
-      "description": "I help deliver new technology solutions, select the tools that fit your needs, and enjoy sharing knowledge.",
+      "description": "I have a broad spectrum of knowledge and skills in the IT field. I can offer many different solutions to help you achieve your business goals. In addition, I enjoy sharing my know-how with others, which allows me to develop my skills and gain new experiences. I will be happy to help you with your IT project and achieve success in the industry.",
       "technologiesHeader": "Solutions",
-      "technologies": "Publication in Google Play, App Store and Microsoft Store, ML algorithms, BLE devices, code audits, image processing and much more"
+      "technologies": "Google Play, App Store, Microsoft Store, ML algorithms, BLE devices, Code audits, Image processing, OpenCV, Motion solutions, Architecture planning, Mentoring, Consulting"
     }
   },
   "experience": {

@@ -38,8 +38,11 @@ export default function Home() {
         <SpecialtiesSection />
         <ValuesSection />
        
-        <ExperienceSection />
+       <div style={{display: "flex", columnGap: 100, maxWidth: 1200, margin:'0 auto', marginTop: 50}}>
+       <ExperienceSection />
         <EducationSection />
+       </div>
+       
         <ConstCashSection />
         <ContactSection />
       </main>

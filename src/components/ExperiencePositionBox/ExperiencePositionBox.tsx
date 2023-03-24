@@ -25,12 +25,12 @@ export const ExperiencePositionBox: FC<ExperiencePositionBoxProps> = ({
   return (
     <div className={styles.container}>
       <div className={styles.companyContainer}>
-        <Typography className={styles.date}>{date}</Typography>
-        <Typography variant="h3">{position}</Typography>
+        <Typography variant="small-paragraph" className={styles.date}>{date}</Typography>
+        <Typography className={styles.position}>{position}</Typography>
+        <Typography>{company}</Typography>
       </div>
 
       <div className={styles.companyContainer}>
-        <Typography>{company}</Typography>
         <Image
           src={logoSrc}
           alt={logoAlt}

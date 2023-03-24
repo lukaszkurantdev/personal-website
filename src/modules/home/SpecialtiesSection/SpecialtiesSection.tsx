@@ -12,13 +12,18 @@ export const SpecialtiesSection = () => {
 
   return (
     <div className={styles.container}>
+      <div className={styles.particle1} />
+      <div className={styles.particle2} />
+      <div className={styles.particle3} />
+      <div className={styles.particle4} />
+      <div className={styles.particle5} />
+
       <div className={styles.textContainer}>
         <Typography variant="h1">{t("title")}</Typography>
         <Typography align="center">{t("description")}</Typography>
       </div>
 
-
-      <div >
+      <div>
         <SpecialtyInfoBox
           icon={<MobileIcon />}
           header={t("specialty1.title")}
@@ -36,24 +41,14 @@ export const SpecialtiesSection = () => {
           reversed
         />
 
-        {/* <SpecialtyInfoBox
-          icon={<DesignIcon />}
+        <SpecialtyInfoBox
+          icon={<KnowHowIcon />}
           header={t("specialty3.title")}
           description={t("specialty3.description")}
           technologiesHeader={t("specialty3.technologiesHeader")}
           technologies={t("specialty3.technologies")}
-        /> */}
-
-        <SpecialtyInfoBox
-          icon={<KnowHowIcon />}
-          header={t("specialty4.title")}
-          description={t("specialty4.description")}
-          technologiesHeader={t("specialty4.technologiesHeader")}
-          technologies={t("specialty4.technologies")}
         />
       </div>
-
-      <div className={styles.row}></div>
     </div>
   );
 };

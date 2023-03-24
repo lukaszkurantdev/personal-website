@@ -1,4 +1,3 @@
-import { Button } from "@/components/Button/Button";
 import { Typography } from "@/components/Typography/Typography";
 import classNames from "classnames";
 import { useTranslation } from "next-i18next";
@@ -10,9 +9,13 @@ export const ValuesSection = () => {
   return (
     <div className={styles.container}>
       <div className={styles.insideContainer}>
+        <div className={styles.particle1} />
+        <div className={styles.particle2} />
+        <div className={styles.particle3} />
+
         <div className={classNames(styles.column, styles.textContainer)}>
           <Typography variant="h1">{t("title")}</Typography>
-          <Typography>{t("description")}</Typography>
+          <Typography opacity>{t("description")}</Typography>
         </div>
 
         <div className={classNames(styles.column, styles.valuesContainer)}>
