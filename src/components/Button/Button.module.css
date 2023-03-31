@@ -19,10 +19,31 @@
   transition: color 50ms ease-out 50ms;
   padding: var(--space-4) var(--space-6);
   border-radius: 30px;
-  transition: background-color 150ms ease-out 150ms,
-    color 150ms ease-out 150ms;
+  transition: background-color 150ms ease-out 150ms, color 150ms ease-out 150ms;
 }
 .secondary:hover {
   color: var(--color-primary);
   background-color: var(--color-gray-300);
+}
+
+.danger {
+  background-color: var(--color-black);
+  color: var(--color-white);
+  padding: var(--space-6) var(--space-10);
+  border-radius: 30px;
+  transition: background-color 100ms ease-out 100ms;
+}
+.danger:hover {
+  background-color: var(--color-danger);
+}
+
+.ternary {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  padding: var(--space-6) var(--space-10);
+  border-radius: 30px;
+  transition: background-color 100ms ease-out 100ms;
+}
+.ternary:hover {
+  background-color: var(--color-black);
 }

@@ -1,7 +1,9 @@
 .container {
   max-width: var(--container-width);
   padding: var(--space-14) 0;
-  flex: 1;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .textContainer {
@@ -9,7 +11,8 @@
   flex-direction: column;
   row-gap: var(--space-5);
   max-width: var(--container-medium-width);
-  margin-bottom: var(--space-12);
+  margin-top: var(--space-12);
+  align-self: center;
 }
 
 .listContainer {
@@ -19,6 +22,7 @@
 }
 
 .header {
-  margin-top: var(--space-8);
+  margin-top: var(--space-12);
   margin-bottom: var(--space-5);
+  align-self: center;
 }

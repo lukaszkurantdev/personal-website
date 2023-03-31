@@ -63,46 +63,98 @@
     }
   },
   "experience": {
-    "title": "Experience",
-    "description": "Without working on products used by users we cannot talk about gaining experience. My experience is based on working with real problems, communicating with other people and providing solutions that will meet users’ expectations.",
+    "title": "My journey",
+    "description": "Without working on products used by users we cannot talk about gaining experience. My experience is based on working with real problems, communicating with other people and providing solutions that will meet users’ expectations. Education is also very important to me. Learning about theory and new ways to solve problems has real benefits in practice. Advanced solutions increase productivity, solution efficiency and are often the answer to customer needs.",
     "current": "Current",
     "past": "Past",
     "experiencePosition1": {
-      "date": "August 2022 - now",
+      "date": "2022 – now",
       "position": "Fullstack freelancer",
-      "company": "Mobideca Łukasz Kurant, Remote"
+      "company": "Mobideca Łukasz Kurant, Remote",
+      "description": "As a freelance developer, I specialize in developing mobile applications and web-based web applications - both on the front-end and back-end. I have extensive knowledge and skills in the IT field, so I can offer a variety of solutions to help you achieve your business goals. I provide consultation and training."
     },
     "experiencePosition2": {
-      "date": "February 2023 – now",
+      "date": "2023 – now",
       "position": "Research and teaching assistant",
-      "company": "Maria Curie-Sklodowska University, Lublin, Poland"
+      "company": "Maria Curie-Sklodowska University, Lublin, Poland",
+      "description": "I teach students in the field of Computer Science and actively work on my scientific development."
     },
     "experiencePosition3": {
-      "date": "March 2022 – November 2022",
+      "date": "2022",
       "position": "Fullstack Developer",
-      "company": "Dogtronic, Lublin"
+      "company": "Dogtronic, Lublin",
+      "description": "Development of mobile applications in React Native, web applications using ReactJS and NestJS, mentoring, interviewing, communication with clients."
     },
     "experiencePosition4": {
-      "date": "February 2021 – March 2022",
-      "position": "React Native / React.js Developer",
-      "company": "Polcode, Remote"
+      "date": "2020 – 2022",
+      "position": "Master studies in the field of Computer Science",
+      "company": "Maria Curie-Sklodowska University, Lublin, Poland",
+      "description": "Thesis: The mechanism of argumentation mining in legal cases texts using recurrent neural networks."
     },
     "experiencePosition5": {
-      "date": "August 2018 – January 2021",
+      "date": "2021 – 2022",
+      "position": "React Native / React.js Developer",
+      "company": "Polcode, Remote",
+      "description": "Creating applications using React Native and ReactJS, conducting technical recruiting interviews."
+    },
+    "experiencePosition6": {
+      "date": "2018 – 2021",
       "position": "Mobile Developer",
-      "company": "Akanza, Lublin"
+      "company": "Akanza, Lublin",
+      "description": "Mobile application development in React Native and Ionic, integration with native components, external device integration, research projects."
+    },
+    "experiencePosition7": {
+      "date": "2017 – 2020",
+      "position": "Bachelor studies in the field of Computer Science",
+      "company": "Maria Curie-Sklodowska University, Lublin, Poland",
+      "description": "Thesis: Segmentation of legal texts using machine learning algorithms."
+    },
+    "experiencePosition8": {
+      "date": "2015 – 2017",
+      "position": "WP freelancer",
+      "company": "Own commercial projects",
+      "description": "Design, publish and maintain own mobile and desktop applications for Windows Phone and Windows 10."
+    }
+  },
+  "journey": {
+    "certificates": {
+      "title": "Certificates",
+      "description": "The knowledge I gain is also to be confirmed in the form of certificates of completion of courses.",
+      "viewCertificate": "View certificate",
+      "certificate1": {
+        "title": "Mathematics for Machine Learning",
+        "date": "2022-2023",
+        "publisher": "Coursera | by Imperial College London",
+        "description": "The course included the following parts:Linear Algebra, Multivariate Calculus and Principal Component Analysis (PCA)"
+      },
+      "certificate2": {
+        "title": "Deep Learning Specialization",
+        "date": "2022-2023",
+        "publisher": "Coursera | by DeepLearning.AI",
+        "description": "The course included the following parts: Improving Deep Neural Networks: Hyperparameter Tuning, Regularization and Optimization; Sequence Models; Neural Networks and Deep Learning; Structuring Machine Learning Projects; Convolutional Neural Networks"
+      },
+      "certificate3": {
+        "title": "Machine Learning Specialization",
+        "date": "2022",
+        "publisher": "Coursera | by DeepLearning.AI",
+        "description": "The course included the following parts: Supervised MachineLearning: Regression and Classification, Advanced Learning Algorithms, Unsupervised Learning, Recommenders, Reinforcement Learning"
+      }
     }
   },
   "education": {
-    "title": "Education",
-    "description": "Education is very important to me. Learning about theory and new ways to solve problems has real benefits in practice. Advanced solutions increase productivity, solution efficiency and are often the answer to customer needs.",
-    "certificates": {
-      "title": "Certificates",
-      "description": "The knowledge I gain is also to be confirmed in the form of certificates of completion of courses."
-    },
+    "title": "Certificates",
+    "description": "The knowledge I gain is also to be confirmed in the form of certificates of completion of courses.",
     "otherActivities": {
       "title": "Other activities",
       "description": "The knowledge I gain is also to be confirmed in the form of certificates of completion of courses."
+    }
+  },
+  "blog": {
+    "title": "What's new on blog",
+    "more": {
+      "title": "Want more?",
+      "description": "I care about knowledge sharing, so I am happy to share what I know. See more topics on my blog.",
+      "button": "Read more"
     }
   },
   "constcash": {
@@ -111,15 +163,6 @@
     "description2": "Learn more about the application by reading",
     "caseStudy": "the case study.",
     "button": "Show webpage"
-  },
-  "blog": {
-    "title": "What's new on my blog",
-    "description": "Education is very important to me. Learning about theory and new ways to solve problems has real benefits in practice. Advanced solutions increase productivity, solution efficiency and are often the answer to customer needs.",
-    "more": {
-      "title": "Want more?",
-      "description": "I care about knowledge sharing, so I am happy to share what I know. See more topics on my blog.",
-      "button": "Read more"
-    }
   },
   "contact": {
     "title": "Do you want me to work for you?",

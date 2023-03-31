@@ -4,5 +4,11 @@
     "blog": "Blog",
     "portfolio": "Portfolio",
     "contact": "Contact"
+  },
+  "footer": {
+    "rights": " Fully made by Lukasz Kurant, All rights reserved 2023",
+    "constcash": "ConstCash",
+    "cookies": "Cookies",
+    "contact": "Contact"
   }
 }

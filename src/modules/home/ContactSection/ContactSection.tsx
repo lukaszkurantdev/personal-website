@@ -8,11 +8,21 @@ export const ContactSection = () => {
 
   return (
     <div className={styles.container}>
-      <Typography variant="h1">{t("title")}</Typography>
-      <Typography className={styles.description} align="center">
-        {t("description")}
-      </Typography>
-      <Button className={styles.button} title={t("button")} />
+      <div className={styles.insideContainer}>
+        <div className={styles.particle1} />
+        <div className={styles.particle2} />
+        <div className={styles.particle3} />
+
+        <Typography variant="h1">{t("title")}</Typography>
+        <Typography className={styles.description} align="center">
+          {t("description")}
+        </Typography>
+        <Button
+          className={styles.button}
+          variant="ternary"
+          title={t("button")}
+        />
+      </div>
     </div>
   );
 };

@@ -16,6 +16,8 @@ import { ExperienceSection } from "@/modules/home/ExperienceSection/ExperienceSe
 import { EducationSection } from "@/modules/home/EducationSection/EducationSection";
 import { ConstCashSection } from "@/modules/home/ConstCashSection/ConstCashSection";
 import { ContactSection } from "@/modules/home/ContactSection/ContactSection";
+import { BlogSection } from "@/modules/home/BlogSection/BlogSection";
+import { Footer } from "@/modules/layout/Footer/Footer";
 
 const latoFont = Lato({ subsets: ["latin"], weight: ["400", "700"] });
 
@@ -38,13 +40,17 @@ export default function Home() {
         <SpecialtiesSection />
         <ValuesSection />
        
-       <div style={{display: "flex", columnGap: 100, maxWidth: 1200, margin:'0 auto', marginTop: 50}}>
+       {/* <div style={{display: "flex", columnGap: 100, maxWidth: 1200, margin:'0 auto', marginTop: 50}}> */}
        <ExperienceSection />
         <EducationSection />
-       </div>
+       {/* </div> */}
        
         <ConstCashSection />
+
+        <BlogSection />
         <ContactSection />
+
+        <Footer />
       </main>
     </>
   );

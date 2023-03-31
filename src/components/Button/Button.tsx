@@ -4,7 +4,7 @@ import styles from "./Button.module.css";
 
 type ButtonProps = {
   onClick?: () => void;
-  variant?: "primary" | "secondary";
+  variant?: "primary" | "secondary" | 'danger' | 'ternary';
   disabled?: boolean;
   className?: string;
   title: string;

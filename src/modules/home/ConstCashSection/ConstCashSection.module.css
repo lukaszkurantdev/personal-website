@@ -1,25 +1,50 @@
 .container {
-  background-color: var(--color-gray-300);
+  background-color: var(--color-gray-900);
+  position: relative;
 }
 
 .insideContainer {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: var(--space-14) 0;
+  padding: var(--space-18) 0;
   max-width: var(--container-width);
   margin: auto;
 }
 
 .textContainer {
   max-width: var(--container-medium-width);
+  color: var(--color-white);
 }
 
-.header {
-  margin-top: var(--space-9);
-  margin-bottom: var(--space-4);
+.description {
+  margin-top: var(--space-8);
+  margin-bottom: var(--space-6);
 }
 
 .button {
   margin-top: var(--space-8);
+}
+
+.image {
+  position: absolute;
+  left: calc(100vw / 2 + 80px);
+  top: 0;
+}
+
+.shape1 {
+  position: absolute;
+  left: calc(100vw / 2 + 80px);
+  top: 150px;
+}
+
+.shape2 {
+  position: absolute;
+  left: calc(100vw / 2 + 440px);
+  bottom: 150px;
+}
+
+.link {
+  color: var(--color-danger);
+  text-decoration: underline;
 }
