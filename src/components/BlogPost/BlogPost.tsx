@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Typography } from "../Typography/Typography";
 
 import styles from "./BlogPost.module.css";
+import { useTranslation } from "next-i18next";
 
 type BlogPostProps = {
   date: string;
@@ -21,23 +22,23 @@ export const BlogPost = ({
   polishVersionLink,
   image,
 }: BlogPostProps) => {
+  const { t } = useTranslation("blog");
+
   return (
     <div className={styles.container}>
       <Link href={link} target="_blank" rel="noreferrer">
         <div className={styles.insideContainer}>
-          <Image
-            src={image}
-            alt={title}
-            className={styles.image}
-            height={192}
-            width={384}
-          />
+          <div className={styles.imageContainer}>
+            <Image src={image} alt={title} className={styles.image} fill />
+          </div>
 
           <Typography variant="small-paragraph" className={styles.date}>
             {date}
           </Typography>
 
-          <Typography className={styles.title} variant="h3">{title}</Typography>
+          <Typography className={styles.title} variant="h3">
+            {title}
+          </Typography>
 
           <Typography>{description}</Typography>
         </div>
@@ -50,7 +51,7 @@ export const BlogPost = ({
           target="_blank"
           rel="noreferrer"
         >
-          🇵🇱 Polish version
+          {t("polishVersion")}
         </Link>
       )}
     </div>

@@ -24,6 +24,12 @@
 }
 
 .image {
-  border-radius: var(--border-radius-small);
   object-fit: cover;
+}
+
+.imageContainer {
+  height: 192px;
+  overflow: hidden;
+  border-radius: var(--border-radius-small);
+  position: relative;
 }
