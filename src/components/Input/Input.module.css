@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  row-gap: var(--space-5);
+}
+
+.label {
+  font-size: var(--typography-paragraph);
+}
+
+.input {
+  width: 100%;
+  font-size: var(--typography-small-paragraph);
+  border: 1px solid var(--color-gray-300);
+  border-radius: var(--border-radius-x-small);
+  padding: var(--space-4);
+}
+
+.input:focus,
+.input:hover {
+  border-color: var(--color-primary);
+}

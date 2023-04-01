@@ -40,7 +40,7 @@ export const BlogPost = ({
             {title}
           </Typography>
 
-          <Typography>{description}</Typography>
+          <Typography opacity>{description}</Typography>
         </div>
       </Link>
 

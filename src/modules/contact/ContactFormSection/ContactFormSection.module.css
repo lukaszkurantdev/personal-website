@@ -1,0 +1,14 @@
+.container {
+  flex: 1;
+}
+
+.form {
+  margin-top: var(--space-12);
+  display: flex;
+  flex-direction: column;
+  row-gap: var(--space-7);
+}
+
+.button {
+  align-self: flex-start;
+}

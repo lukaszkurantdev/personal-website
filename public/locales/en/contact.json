@@ -1,0 +1,23 @@
+{
+  "submitted": {
+    "description": "Thank you for submitting this form. Someone should get back to you within 24-48 hours.",
+    "button": "Submit another response"
+  },
+  "form": {
+    "title": "Get in touch",
+    "description": "Write to me and let's talk about your problems and expectations.",
+    "subject": "You've got new message",
+    "name": "Name",
+    "email": "E-mail address",
+    "message": "Message",
+    "button": "Submit"
+  },
+  "info": {
+    "company1": "Mobideca Łukasz Kurant",
+    "company2": "ul. Kazimierza Wielkiego 8, lok. 202",
+    "company3": "20-611 Lublin, Poland",
+    "company4": "NIP: 6020144610",
+    "company5": "REGON: 522681728",
+    "email": "Email: "
+  }
+}

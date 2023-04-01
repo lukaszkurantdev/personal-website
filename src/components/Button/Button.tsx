@@ -8,12 +8,14 @@ type ButtonProps = {
   disabled?: boolean;
   className?: string;
   title: string;
+  type?: "button" | "submit" | "reset";
 };
 
 export const Button = ({
   className,
   title,
   disabled,
+  type,
   variant = "primary",
   onClick,
 }: ButtonProps) => {
@@ -22,6 +24,7 @@ export const Button = ({
       className={classNames(styles.button, styles[variant], className)}
       onClick={onClick}
       disabled={disabled}
+      type={type}
     >
       {title}
     </button>

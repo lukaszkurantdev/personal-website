@@ -22,6 +22,7 @@
   --typography-x-small-paragraph: 12px;
 
   --typography-font-tiempos: "Tiempos";
+  --typography-font-lato: "Lato";
 
   /* space */
   --space-1: 2px;
@@ -49,4 +50,5 @@
 
   --border-radius-regular: 20px;
   --border-radius-small: 10px;
+  --border-radius-x-small: 4px;
 }
