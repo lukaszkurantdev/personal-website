@@ -1,0 +1,17 @@
+.mainContainer {
+  background-color: var(--color-gray-100);
+  min-height: calc(100vh - 115px - 115px);
+}
+
+.container {
+  max-width: var(--container-width);
+  padding: var(--space-10) var(--space-10);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  row-gap: var(--space-10);
+}
+
+.description {
+  max-width: var(--container-medium-width);
+}

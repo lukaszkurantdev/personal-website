@@ -85,7 +85,7 @@
 }
 
 .availableContainer {
-  background-color: var(--color-danger);
+  background-color: var(--color-gray-900);
   padding: var(--space-5) 0;
   color: var(--color-white);
   display: flex;

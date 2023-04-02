@@ -1,0 +1,10 @@
+{
+  "title": "Cookies",
+  "description": "A cookie is a small text file stored in your computer by the websites you visit. When you visit again a website, the cookie let the provider of your website recognize your navigator. Cookies can store user preferences and other information.<br /><br />The website uses and allows the use of cookies by third parties (Google AdWords, GoogleAnalytics) for statistical and advertising purposes.<br /><br />You decide whether you want cookies to be stored on your computer. You can deactivate or completely disable cookies in your browser options. You can also delete the cookies you have saved so far.",
+  "alert": {
+    "description1": "The website uses ",
+    "description2": "cookies",
+    "description3": " .",
+    "button": "Understand"
+  }
+}
