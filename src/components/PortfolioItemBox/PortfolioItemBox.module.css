@@ -1,0 +1,37 @@
+.container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-white);
+  padding: var(--space-8) var(--space-7) var(--space-7);
+  border-radius: var(--border-radius-regular);
+}
+
+.dateContainer {
+  padding: var(--space-2) var(--space-5);
+  border-radius: var(--border-radius-regular);
+  margin-top: var(--space-7);
+}
+
+.date {
+  color: var(--color-white);
+}
+
+.insideContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: var(--space-5);
+}
+
+.moreButton {
+  text-decoration: underline;
+}
+
+.moreButton:hover {
+  text-decoration: none;
+}
+
+.description {
+  padding: 0 var(--space-8);
+}
