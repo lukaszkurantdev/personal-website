@@ -10,27 +10,53 @@
   "list": {
     "item0": {
       "title": "Matma++",
-      "description": "The app was created by a student for students and includes calculators, tables, and math formulas."
+      "description": "The app was created by a student for students and includes calculators, tables, and math formulas.",
+      "about": "My first big app that I created after classes at school. Matma++ was intended to create tools for students to do quick calculations, but also included math tables and formulas.<br /><br />Despite starting my programming adventure early, it was after the release of this app that I started programming more with focus on end users.",
+      "usedTechnologies": "C#, UWP, WP Platform, XAML"
     },
     "item1": {
       "title": "Logicos 1, 2, 3, Forever",
-      "description": "A series of puzzle games appreciated by users. Interesting puzzles, unusual solutions is what distinguishes these games."
+      "description": "A series of puzzle games appreciated by users. Interesting puzzles, unusual solutions is what distinguishes these games.",
+      "about": "Logicos is a series of puzzle games released for the Windows universal platform and Windows Phone. The idea for the games was born in my head during my studies in technical school.<br /><br />Applications appreciated by tens of thousands of users.<br /><br />Working on the application taught me a lot, not only about programming, but also about communication with users or promotion.<br /><br /><b>Logicos is a really creative production.</b><br /><i>AntyApps</i><br /><br /><b>Logicos is a fun game and has plenty of puzzles to give your brain a workout.</b><br /><i>Windows Central</i>",
+      "usedTechnologies": "C#, UWP, WP Platform, XAML"
     },
     "item2": {
       "title": "What's inside",
-      "description": "A box opening puzzle game for the Universal Windows Platform."
+      "description": "A box opening puzzle game for the Universal Windows Platform.",
+      "about": "A simple logical mobile game, where you open a box and solve different level puzzles. Made for Windows 10.",
+      "usedTechnologies": "C#, UWP, XAML"
     },
     "item3": {
       "title": "QoP-ML Web Tool",
-      "description": "UI wrapper for making simulations in QoP-ML language."
+      "description": "UI wrapper for making simulations in QoP-ML language.",
+      "about": "Web application for making simulations in QoP-ML language that allows you to perform multi-faceted security analysis of complex information systems. Allows you to generate scripts based on a graphical interface using drag and drop feature.",
+      "usedTechnologies": "Typescript, React, Node JS, MobX, AQoPA engine, MySQL"
     },
     "item4": {
       "title": "Simple Weather App",
-      "description": "A simple weather checker application based on an open source API."
+      "description": "A simple weather checker application based on an open source API.",
+      "about": "An app that displays the weather made in React Native. The application uses open source weather API.",
+      "usedTechnologies": "Typescript, React Native"
     },
     "item5": {
       "title": "Dzieło Biblijne",
-      "description": "Application with bible texts, readings, theological aids and a map of the holy land. The system includes a CMS panel for managing data in the application."
+      "description": "Application with bible texts, readings, theological aids and a map of the holy land. The system includes a CMS panel for managing data in the application.",
+      "about": "The application in Polish contains Bible texts, comments, curiosities, Bible dictionary and Bible map using Open street maps.<br /><br />My job was to create both a powerful mobile application and a CMS to manage the data displayed in the application.",
+      "usedTechnologies": "Typescript, React Native, Redux, Redux Saga, Open street maps, Strapi, ReactJS, MongoDB",
+      "cases": {
+        "case0": {
+          "title": "Rich text editor",
+          "description": "One of the goals of the project was to be able to link biblical dictionary items directly in commentary texts. In order to do that I created a custom plugin Strapi, in which the client could easily add the necessary links."
+        },
+        "case1": {
+          "title": "Displaying data",
+          "description": "Data in the CMS is entered using a rich text editor in HTML form. To increase the efficiency and readability of texts in the application, a library was used to translate HTML tags into native components."
+        },
+        "case2": {
+          "title": "Tablet support",
+          "description": "The application was also targeting tablets, hence a scalable interface had to be made."
+        }
+      }
     },
     "item6": {
       "title": "ConstCash",
@@ -47,6 +73,15 @@
     "item9": {
       "title": "Portfolio page",
       "description": ""
+    }
+  },
+  "item": {
+    "about": "About",
+    "usedTechnologies": "Used technologies",
+    "gallery": "Gallery",
+    "interestingCases": {
+      "title": "Interesting cases",
+      "description": "While working on the application, I had to face many interesting problems, which I managed to solve. Here are some of them."
     }
   }
 }

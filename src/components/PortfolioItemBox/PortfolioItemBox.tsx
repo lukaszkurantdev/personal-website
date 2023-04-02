@@ -10,22 +10,20 @@ type PortfolioItemBoxProps = {
   date: string;
   title: string;
   description: string;
-  link: string;
+  slug: string;
   color: string;
   image: string;
-  imageHeight: number;
-  imageWidth: number;
+  imageSize: {height: number, width: number};
 };
 
 export const PortfolioItemBox = ({
   date,
   title,
   description,
-  link,
+  slug,
   color,
   image,
-  imageHeight,
-  imageWidth,
+  imageSize,
 }: PortfolioItemBoxProps) => {
   const { t } = useTranslation("portfolio");
 
@@ -36,29 +34,41 @@ export const PortfolioItemBox = ({
           src={image}
           alt={title}
           className={styles.image}
-          height={imageHeight}
-          width={imageWidth}
+          height={imageSize.height}
+          width={imageSize.width}
         />
 
-<div className={styles.dateContainer} style={{backgroundColor: color}}>
-<Typography variant="small-paragraph" className={styles.date}>
-          {date}
-        </Typography>
-</div>
-      
+        <div
+          className={styles.dateContainer}
+          style={{ backgroundColor: color }}
+        >
+          <Typography variant="small-paragraph" className={styles.date}>
+            {date}
+          </Typography>
+        </div>
 
         <Typography className={styles.title} variant="h3">
           {title}
         </Typography>
 
-        <Typography opacity align="center" variant="small-paragraph" className={styles.description}>{description}</Typography>
+        <Typography
+          opacity
+          align="center"
+          variant="small-paragraph"
+          className={styles.description}
+        >
+          {description}
+        </Typography>
 
-        <Link href={link} target="_blank" rel="noreferrer">
-        <Button variant="secondary" title={t("readMore")} className={styles.moreButton} style={{color}}/>
-      </Link>
+        <Link href={`/portfolio/${slug}`} target="_blank" rel="noreferrer">
+          <Button
+            variant="secondary"
+            title={t("readMore")}
+            className={styles.moreButton}
+            style={{ color }}
+          />
+        </Link>
       </div>
-
-    
     </div>
   );
 };

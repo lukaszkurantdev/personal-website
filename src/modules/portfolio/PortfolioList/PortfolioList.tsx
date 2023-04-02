@@ -13,7 +13,7 @@ export const PortfolioList = () => {
       key={`blog-post-${item.index}`}
       title={t(`list.item${item.index}.title`)}
       description={t(`list.item${item.index}.description`)}
-      image={`/images/portfolio/item${item.index}.webp`}
+      image={`/images/portfolio/item${item.index}/main.webp`}
       {...item}
     />
   ));
