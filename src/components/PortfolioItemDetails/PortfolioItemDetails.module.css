@@ -144,4 +144,11 @@
 
 .caseItem {
   flex: 1;
+  display: flex;
+  flex-direction: column;
+  row-gap: var(--space-6);
+}
+
+.websiteButton {
+  margin-top: var(--space-8);
 }

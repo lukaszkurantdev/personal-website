@@ -60,7 +60,7 @@ export const PortfolioItemBox = ({
           {description}
         </Typography>
 
-        <Link href={`/portfolio/${slug}`} target="_blank" rel="noreferrer">
+        <Link href={`/portfolio/${slug}`}>
           <Button
             variant="secondary"
             title={t("readMore")}

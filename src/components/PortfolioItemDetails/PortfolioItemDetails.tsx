@@ -10,6 +10,7 @@ import Github from "@/assets/icons/Github.svg";
 import GooglePlay from "@/assets/icons/GooglePlay.svg";
 import Apple from "@/assets/icons/Apple.svg";
 import ReactHtmlParser from "react-html-parser";
+import { Button } from "../Button/Button";
 
 type PortfolioItemDetailsProps = typeof PORTFOLIO_ITEMS[number];
 
@@ -23,6 +24,7 @@ export const PortfolioItemDetails = ({
   githubLink,
   googlePlayLink,
   appStoreLink,
+  websiteLink,
   screenshotsCount,
   screenshotSize,
   casesCount,
@@ -70,6 +72,17 @@ export const PortfolioItemDetails = ({
           <Typography opacity>
             {ReactHtmlParser(t(`list.item${itemIndex}.about`))}
           </Typography>
+
+          {websiteLink ? (
+            <Link
+              href={websiteLink}
+              className={styles.websiteButton}
+              target="_blank"
+              rel="noreferrer"
+            >
+              <Button title={t("item.goToWebsite")} variant="danger" />
+            </Link>
+          ) : null}
         </div>
         <div className={styles.column}>
           <Typography variant="h2">{t(`item.usedTechnologies`)}</Typography>
@@ -107,8 +120,12 @@ export const PortfolioItemDetails = ({
 
       {casesCount > 0 && (
         <div>
-          <Typography variant="h2">{t(`item.interestingCases.title`)}</Typography>
-          <Typography opacity>{t(`item.interestingCases.description`)}</Typography>
+          <Typography variant="h2">
+            {t(`item.interestingCases.title`)}
+          </Typography>
+          <Typography opacity>
+            {t(`item.interestingCases.description`)}
+          </Typography>
           <div className={styles.casesContainer}>
             {Array(casesCount)
               .fill(0)
@@ -126,21 +143,25 @@ export const PortfolioItemDetails = ({
         </div>
       )}
 
-      <Typography variant="h2">{t(`item.gallery`)}</Typography>
+      {screenshotsCount > 0 && (
+        <div>
+          <Typography variant="h2">{t(`item.gallery`)}</Typography>
 
-      <div className={styles.gallery}>
-        {Array(screenshotsCount)
-          .fill(0)
-          .map((_, index) => (
-            <Image
-              key={`${slug}-screenshot-${index}`}
-              src={`/images/portfolio/item${itemIndex}/screenshot${index}.png`}
-              alt={`${slug} screenshot ${index}`}
-              height={screenshotSize.height}
-              width={screenshotSize.width}
-            />
-          ))}
-      </div>
+          <div className={styles.gallery}>
+            {Array(screenshotsCount)
+              .fill(0)
+              .map((_, index) => (
+                <Image
+                  key={`${slug}-screenshot-${index}`}
+                  src={`/images/portfolio/item${itemIndex}/screenshot${index}.png`}
+                  alt={`${slug} screenshot ${index}`}
+                  height={screenshotSize.height}
+                  width={screenshotSize.width}
+                />
+              ))}
+          </div>
+        </div>
+      )}
     </div>
   );
 };

@@ -63,8 +63,10 @@ export const PORTFOLIO_ITEMS = [
     screenshotsCount: 3,
     screenshotSize: { height: 693, width: 320 },
     casesCount: 3,
-    googlePlayLink: "https://play.google.com/store/apps/details?id=com.dzielobiblijne&hl=pl&gl=US",
-    appStoreLink: "https://apps.apple.com/pl/app/dzie%C5%82o-biblijne/id1595265008?l=pl"
+    googlePlayLink:
+      "https://play.google.com/store/apps/details?id=com.dzielobiblijne&hl=pl&gl=US",
+    appStoreLink:
+      "https://apps.apple.com/pl/app/dzie%C5%82o-biblijne/id1595265008?l=pl",
   },
   {
     index: 6,
@@ -72,9 +74,11 @@ export const PORTFOLIO_ITEMS = [
     date: "2021-2023",
     color: "#e39922",
     imageSize: { height: 200, width: 100 },
-    screenshotsCount: 0,
-    screenshotSize: { height: 580, width: 320 },
-    casesCount: 0,
+    screenshotsCount: 3,
+    screenshotSize: { height: 693, width: 320 },
+    casesCount: 4,
+    appStoreLink:
+      "https://apps.apple.com/app/apple-store/id1586637609?pt=123524905&ct=lkwebpage&mt=8",
   },
   {
     index: 7,
@@ -85,25 +89,28 @@ export const PORTFOLIO_ITEMS = [
     screenshotsCount: 0,
     screenshotSize: { height: 580, width: 320 },
     casesCount: 0,
+    websiteLink: "https://constcash.com/",
   },
   {
     index: 8,
     slug: "plant-you-grow",
-    date: "2021",
+    date: "2022-2023",
     color: "#7ba25e",
-    imageSize: { height: 200, width: 100 },
+    imageSize: { height: 200, width: 330 },
     screenshotsCount: 0,
     screenshotSize: { height: 580, width: 320 },
     casesCount: 0,
+    websiteLink: "https://dogtronic.io/case-studies/plant-you-grow/",
   },
   {
     index: 9,
     slug: "portfolio-page",
     date: "2023",
     color: "#2463eb",
-    imageSize: { height: 200, width: 100 },
+    imageSize: { height: 200, width: 330 },
     screenshotsCount: 0,
     screenshotSize: { height: 580, width: 320 },
     casesCount: 0,
+    githubLink: "TODO",
   },
 ].reverse();

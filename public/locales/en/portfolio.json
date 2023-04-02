@@ -60,19 +60,45 @@
     },
     "item6": {
       "title": "ConstCash",
-      "description": "A proprietary security-focused personal finance management application. Manage budgets, view statistics and create your own financial goals."
+      "description": "A proprietary security-focused personal finance management application. Manage budgets, view statistics and create your own financial goals.",
+      "about": "ConstCash (previously Casha) is a personal finance management app currently prepared for iOS.<br /><br />Among the main tasks of the application is cash flow management, posting income and expenses, but also reviewing statistics and advanced reports, budgets, financial goals or recurring payments.<br /><br />The idea for the app was born a year and a half ago, and during that time I've been effectively developing the project with new features after my main job hours. In September 2021 the first version of the application was published in the App Store. Since then, the application is constantly developed.",
+      "usedTechnologies": "Typescript, React Native, VisionKit, MobX, Detox, React Native Testing Library, Onesignal, AppCenter",
+      "cases": {
+        "case0": {
+          "title": "State management",
+          "description": "During the development phase, the library for managing application state was changed from Redux to MobX. The large amount of user data held locally in the device memory requires fast and efficient solutions, and by using MobX, the calculations were successfully accelerated."
+        },
+        "case1": {
+          "title": "VisionKit",
+          "description": "A module for scanning receipts has been created in the application. By using the native VisionKit library we were able to create an interface for scanning a receipt and performing OCR on it. Everything locally on the user's device, without internet connection."
+        },
+        "case2": {
+          "title": "Testing",
+          "description": "Working on an application that is used by users requires a high degree of confidence in the functionality. By covering the code with unit tests using React Native Testing library and end-to-end tests using Detox library, the confidence of application's performance when adding new updates was increased."
+        },
+        "case3": {
+          "title": "Fast local storage",
+          "description": "By using the react-native-mmkv-storage library, data operations run synchronously and up to 30 times faster than using Async storage."
+        }
+      }
     },
     "item7": {
       "title": "ConstCash Web",
-      "description": "A website showcasing the ConstCash mobile application."
+      "description": "A website showcasing the ConstCash mobile application.",
+      "about": "After the ConstCash app was published in the App Store, it was necessary to create a recognizable website with a product presentation.<br /><br />Interesting Fact: After hovering the mouse over the phone mockup, an interesting animation using the AtroposJS framework was applied.",
+      "usedTechnologies": "NextJS, Tailwind, AtroposJS"
     },
     "item8": {
-      "title": "PlantYouGrow",
-      "description": ""
+      "title": "Plant You Grow",
+      "description": "A system for monitoring and making advanced measurements of plants and climatic conditions.",
+      "about": "My role was to create a method to take plant measurements using a mobile device, develop a mobile application, a web application (including a backend) and documentation.<br /><br />You can learn more in the case study.",
+      "usedTechnologies": "Typescript, ReactJS, React Native, NextJS, NextJS, MongoDB, Offline support, Native components (Java, Objective-C), OpenCV, OneSignal, Docker"
     },
     "item9": {
       "title": "Portfolio page",
-      "description": ""
+      "description": "Public code of my current personal website along with my portfolio.",
+      "about": "My website is designed to present information about my professional life, along with a portfolio presentation and an index of articles.",
+      "usedTechnologies": "Typescript, NextJS"
     }
   },
   "item": {
@@ -82,6 +108,7 @@
     "interestingCases": {
       "title": "Interesting cases",
       "description": "While working on the application, I had to face many interesting problems, which I managed to solve. Here are some of them."
-    }
+    },
+    "goToWebsite": "Go to website"
   }
 }
