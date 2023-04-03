@@ -27,7 +27,7 @@ export const CookiesAlert = () => {
   return (
     <>
       <div className={styles.placeholder} />
-      
+
       <div className={styles.container}>
         <Typography>
           {t("description1")}
