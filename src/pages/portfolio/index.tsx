@@ -15,7 +15,7 @@ export default function Portfolio() {
 export async function getStaticProps({ locale }: any) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, ["common", "portfolio"])),
+      ...(await serverSideTranslations(locale, ["common", "cookies", "portfolio"])),
     },
   };
 }

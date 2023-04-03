@@ -3,6 +3,8 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
 import { Typography } from "@/components/Typography/Typography";
 import ReactHtmlParser from "react-html-parser";
+import CookiesIllustration from "@/assets/illustrations/cookies.svg";
+import classNames from "classnames";
 
 export default function Cookies() {
   const { t } = useTranslation("cookies");
@@ -10,10 +12,13 @@ export default function Cookies() {
   return (
     <div className={styles.mainContainer}>
       <div className={styles.container}>
-        <Typography variant="h1">{t("title")}</Typography>
-        <Typography opacity className={styles.description}>
-          {ReactHtmlParser(t("description"))}
-        </Typography>
+        <div className={styles.column}>
+          <Typography variant="h1">{t("title")}</Typography>
+          <Typography opacity>{ReactHtmlParser(t("description"))}</Typography>
+        </div>
+        <div className={classNames(styles.column, styles.centered)}>
+          <CookiesIllustration />
+        </div>
       </div>
     </div>
   );

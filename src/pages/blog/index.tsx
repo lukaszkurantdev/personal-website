@@ -13,7 +13,7 @@ export default function Blog() {
 export async function getStaticProps({ locale }: any) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, ["common", "blog"])),
+      ...(await serverSideTranslations(locale, ["common","cookies", "blog"])),
     },
   };
 }
