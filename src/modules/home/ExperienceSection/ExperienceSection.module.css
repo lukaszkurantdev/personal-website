@@ -1,6 +1,6 @@
 .container {
   max-width: var(--container-width);
-  padding: var(--space-14) 0;
+  padding: var(--space-14) var(--space-8);
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -25,4 +25,10 @@
   margin-top: var(--space-12);
   margin-bottom: var(--space-5);
   align-self: center;
+}
+
+@media (max-width: 1000px) {
+  .container {
+    padding: var(--space-10) var(--space-8);
+  }
 }

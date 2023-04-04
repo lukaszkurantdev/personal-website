@@ -1,6 +1,6 @@
 .container {
   max-width: var(--container-width);
-  padding: var(--space-5) 0 var(--space-18);
+  padding: var(--space-5) var(--space-8) var(--space-18);
   margin: 0 auto;
 }
 
@@ -15,4 +15,11 @@
 .row {
   display: flex;
   column-gap: var(--space-8);
+}
+
+@media (max-width: 720px) {
+  .row {
+    flex-direction: column;
+    row-gap: var(--space-8);
+  }
 }

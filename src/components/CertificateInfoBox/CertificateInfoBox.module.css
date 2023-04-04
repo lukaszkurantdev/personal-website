@@ -26,3 +26,9 @@
 .link:hover {
   color: var(--color-primary-light);
 }
+
+@media (max-width: 720px) {
+  .container {
+    padding: 0;
+  }
+}

@@ -11,7 +11,7 @@ import styles from "./HeroSection.module.css";
 import Image from "next/image";
 import InfoIcon from "@/assets/icons/InfoIcon.svg";
 
-export const HeroSection = () => {
+const HeroTitle = () => {
   const { t } = useTranslation("home", { keyPrefix: "hero" });
 
   const [index, setIndex] = useState(0);
@@ -24,22 +24,33 @@ export const HeroSection = () => {
   const titleWords = TITLE_WORDS_KEYS.map((word) => t(`titleWord.${word}`));
 
   return (
+    <TextTransition
+      springConfig={TRANSITION_SPRING_CONFIG}
+      direction="down"
+      className="text-center xl:text-left"
+    >
+      {titleWords[index % titleWords.length]}
+    </TextTransition>
+  );
+};
+
+export const HeroSection = () => {
+  const { t } = useTranslation("home", { keyPrefix: "hero" });
+
+  return (
     <div className={styles.container}>
       <div className={styles.availableContainer}>
-        <InfoIcon /> {t("availableToWork")}
+        <div className={styles.availableIconContainer}>
+          <InfoIcon />
+        </div>
+        <Typography>{t("availableToWork")}</Typography>
       </div>
 
       <div className={styles.insideContainer}>
         <div className={styles.textContainer}>
           <Typography variant="h1" fontSize={50}>
             {t("title")}
-            <TextTransition
-              springConfig={TRANSITION_SPRING_CONFIG}
-              direction="down"
-              className="text-center xl:text-left"
-            >
-              {titleWords[index % titleWords.length]}
-            </TextTransition>
+            <HeroTitle />
           </Typography>
 
           <Typography variant="h2" className={styles.header}>

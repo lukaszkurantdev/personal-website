@@ -1,8 +1,7 @@
 .container {
   max-width: var(--container-width);
   margin: auto;
-  padding-top: var(--space-15);
-  padding-bottom: var(--space-15);
+  padding: var(--space-15) var(--space-8);
   position: relative;
 }
 
@@ -74,4 +73,19 @@
   position: absolute;
   top: 1020px;
   left: calc(-20%);
+}
+
+@media (max-width: 1000px) {
+  .container {
+    padding: var(--space-12) var(--space-8);
+  }
+}
+
+@media (max-width: 730px) {
+  .particle1,
+  .particle2,
+  .particle3,
+  .particle4 {
+    display: none;
+  }
 }

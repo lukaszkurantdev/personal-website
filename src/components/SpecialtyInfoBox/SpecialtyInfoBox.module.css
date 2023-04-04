@@ -11,6 +11,12 @@
   flex: 1;
 }
 
+.photoContainer svg {
+  height: 230px;
+  width: 230px;
+  z-index: 1;
+}
+
 .reversedContainer {
   flex-direction: row-reverse;
 }
@@ -37,4 +43,23 @@
   background-color: rgba(220, 220, 220, 0.3);
   padding: var(--space-2) var(--space-5);
   border-radius: 20px;
+}
+
+@media (max-width: 720px) {
+  .mainContainer {
+    flex-direction: column-reverse;
+  }
+
+  .reversedContainer {
+    flex-direction: column-reverse;
+  }
+
+  .container {
+    padding: var(--space-8) 0;
+  }
+
+  .photoContainer svg {
+    height: 150px;
+    width: 150px;
+  }
 }

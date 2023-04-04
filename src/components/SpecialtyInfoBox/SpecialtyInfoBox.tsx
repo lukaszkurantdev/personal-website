@@ -47,9 +47,7 @@ export const SpecialtyInfoBox: FC<SpecialtyInfoBoxProps> = ({
           ))}
         </div>
       </div>
-      <div className={styles.photoContainer}>
-      {icon}
-        </div>
+      <div className={styles.photoContainer}>{icon}</div>
     </div>
   );
 };

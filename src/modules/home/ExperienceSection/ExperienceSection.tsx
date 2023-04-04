@@ -1,8 +1,6 @@
-import { SpecialtyInfoBox } from "@/components/SpecialtyInfoBox/SpecialtyInfoBox";
 import { Typography } from "@/components/Typography/Typography";
 import { useTranslation } from "next-i18next";
 import styles from "./ExperienceSection.module.css";
-import MobileIcon from "@/assets/icons/MobileIcon.svg";
 import { ExperiencePositionBox } from "@/components/ExperiencePositionBox/ExperiencePositionBox";
 
 export const ExperienceSection = () => {
@@ -27,10 +25,6 @@ export const ExperienceSection = () => {
           position={t("experiencePosition1.position")}
           company={t("experiencePosition1.company")}
           description={t("experiencePosition1.description")}
-          logoSrc="/images/logos/mobideca.png"
-          logoAlt="Mobideca"
-          logoWidth={76}
-          logoHeight={10}
         />
 
         <ExperiencePositionBox
@@ -38,10 +32,6 @@ export const ExperienceSection = () => {
           position={t("experiencePosition2.position")}
           company={t("experiencePosition2.company")}
           description={t("experiencePosition2.description")}
-          logoSrc="/images/logos/mobideca.png"
-          logoAlt="Mobideca"
-          logoWidth={76}
-          logoHeight={10}
         />
       </div>
 
@@ -55,60 +45,36 @@ export const ExperienceSection = () => {
           position={t("experiencePosition3.position")}
           company={t("experiencePosition3.company")}
           description={t("experiencePosition3.description")}
-          logoSrc="/images/logos/mobideca.png"
-          logoAlt="Mobideca"
-          logoWidth={76}
-          logoHeight={10}
         />
         <ExperiencePositionBox
           date={t("experiencePosition4.date")}
           position={t("experiencePosition4.position")}
           company={t("experiencePosition4.company")}
           description={t("experiencePosition4.description")}
-          logoSrc="/images/logos/mobideca.png"
-          logoAlt="Mobideca"
-          logoWidth={76}
-          logoHeight={10}
         />
         <ExperiencePositionBox
           date={t("experiencePosition5.date")}
           position={t("experiencePosition5.position")}
           company={t("experiencePosition5.company")}
           description={t("experiencePosition5.description")}
-          logoSrc="/images/logos/mobideca.png"
-          logoAlt="Mobideca"
-          logoWidth={76}
-          logoHeight={10}
         />
         <ExperiencePositionBox
           date={t("experiencePosition6.date")}
           position={t("experiencePosition6.position")}
           company={t("experiencePosition6.company")}
           description={t("experiencePosition6.description")}
-          logoSrc="/images/logos/mobideca.png"
-          logoAlt="Mobideca"
-          logoWidth={76}
-          logoHeight={10}
         />
         <ExperiencePositionBox
           date={t("experiencePosition7.date")}
           position={t("experiencePosition7.position")}
           company={t("experiencePosition7.company")}
           description={t("experiencePosition7.description")}
-          logoSrc="/images/logos/mobideca.png"
-          logoAlt="Mobideca"
-          logoWidth={76}
-          logoHeight={10}
         />
         <ExperiencePositionBox
           date={t("experiencePosition8.date")}
           position={t("experiencePosition8.position")}
           company={t("experiencePosition8.company")}
           description={t("experiencePosition8.description")}
-          logoSrc="/images/logos/mobideca.png"
-          logoAlt="Mobideca"
-          logoWidth={76}
-          logoHeight={10}
         />
       </div>
     </div>

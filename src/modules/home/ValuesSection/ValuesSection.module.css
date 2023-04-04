@@ -25,14 +25,13 @@
   flex-direction: column;
   align-items: flex-start;
   row-gap: var(--space-6);
-  /* color: var(--color-white); */
 }
 
 .valuesContainer {
   display: flex;
   align-items: center;
   padding: 0 var(--space-10);
-  /* color: var(--color-white); */
+  column-gap: var(--space-5);
 }
 
 .valuesColumn {
@@ -47,7 +46,6 @@
   font-size: var(--typography-h2);
   font-family: var(--typography-font-tiempos);
   font-weight: 300;
-  /* color: var(--color-white); */
 }
 
 .particle1 {
@@ -81,4 +79,37 @@
   position: absolute;
   top: 200px;
   left: 250px;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    margin: 0 var(--space-8);
+  }
+
+  .insideContainer {
+    padding: var(--space-10);
+    column-gap: var(--space-2);
+  }
+}
+
+@media (max-width: 800px) {
+  .insideContainer {
+    flex-direction: column;
+    padding: var(--space-10);
+  }
+
+  .valuesContainer {
+    flex-direction: column;
+    row-gap: var(--space-6);
+    margin-top: var(--space-10);
+  }
+
+  .particle1 {
+    top: unset;
+    bottom: -100px;
+  }
+
+  .particle3 {
+    left: 50px;
+  }
 }

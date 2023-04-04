@@ -4,7 +4,6 @@ import { useTranslation } from "next-i18next";
 import styles from "./SpecialtiesSection.module.css";
 import MobileIcon from "@/assets/icons/MobileIcon.svg";
 import WebIcon from "@/assets/icons/WebIcon.svg";
-import DesignIcon from "@/assets/icons/DesignIcon.svg";
 import KnowHowIcon from "@/assets/icons/KnowHowIcon.svg";
 
 export const SpecialtiesSection = () => {
