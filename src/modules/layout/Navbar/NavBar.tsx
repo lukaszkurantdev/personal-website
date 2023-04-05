@@ -1,13 +1,14 @@
-import { Button } from "@/components/Button/Button";
-import { Typography } from "@/components/Typography/Typography";
 import { useTranslation } from "next-i18next";
 import Link from "next/link";
-
-import styles from "./Navbar.module.css";
-import { Links } from "@/constants/Links";
 import { useState } from "react";
 import classNames from "classnames";
-import Menu from "@/assets/icons/Menu.svg";
+
+import styles from "./Navbar.module.css";
+
+import { Links } from "@/constants/Links";
+import Menu from "@/assets/icons/menu.svg";
+import { Button } from "@/components/Button/Button";
+import { Typography } from "@/components/Typography/Typography";
 
 export const Navbar = () => {
   const { t } = useTranslation("common", { keyPrefix: "header" });

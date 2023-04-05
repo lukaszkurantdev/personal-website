@@ -1,8 +1,10 @@
-import { Typography } from "@/components/Typography/Typography";
 import { useTranslation } from "next-i18next";
+
 import styles from "./EducationSection.module.css";
-import { CertificateInfoBox } from "@/components/CertificateInfoBox/CertificateInfoBox";
 import { CERTIFICATES } from "./EducationSection.constants";
+
+import { Typography } from "@/components/Typography/Typography";
+import { CertificateInfoBox } from "@/components/CertificateInfoBox/CertificateInfoBox";
 
 export const EducationSection = () => {
   const { t } = useTranslation("home", { keyPrefix: "journey" });

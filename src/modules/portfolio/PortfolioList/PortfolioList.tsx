@@ -1,9 +1,11 @@
-import { Typography } from "@/components/Typography/Typography";
 import { useTranslation } from "next-i18next";
+
 import styles from "./PortfolioList.module.css";
+import { PORTFOLIO_ITEMS } from "./PortfolioList.constants";
+
 import { Button } from "@/components/Button/Button";
 import { PortfolioItemBox } from "@/components/PortfolioItemBox/PortfolioItemBox";
-import { PORTFOLIO_ITEMS } from "./PortfolioList.constants";
+import { Typography } from "@/components/Typography/Typography";
 
 export const PortfolioList = () => {
   const { t } = useTranslation("portfolio");
@@ -23,13 +25,13 @@ export const PortfolioList = () => {
       <Typography variant="h1">{t("title")}</Typography>
       <Typography opacity>{t("description")}</Typography>
 
-      <div className={styles.grid}>
-        {items}
-      </div>
+      <div className={styles.grid}>{items}</div>
 
       <div className={styles.workContainer}>
         <Typography variant="h2">{t("work.title")}</Typography>
-        <Typography opacity align="center">{t("work.description")}</Typography>
+        <Typography opacity align="center">
+          {t("work.description")}
+        </Typography>
         <Button className={styles.workButton} title={t("work.button")} />
       </div>
     </div>

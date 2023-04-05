@@ -1,7 +1,9 @@
-import { Typography } from "@/components/Typography/Typography";
 import { useTranslation } from "next-i18next";
+
 import styles from "./ExperienceSection.module.css";
+
 import { ExperiencePositionBox } from "@/components/ExperiencePositionBox/ExperiencePositionBox";
+import { Typography } from "@/components/Typography/Typography";
 
 export const ExperienceSection = () => {
   const { t } = useTranslation("home", { keyPrefix: "experience" });

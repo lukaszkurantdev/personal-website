@@ -2,9 +2,11 @@ import "@/styles/globals.css";
 import type { AppProps } from "next/app";
 import { appWithTranslation } from "next-i18next";
 import Head from "next/head";
-import { Lato } from "@next/font/google";
 import classNames from "classnames";
-import styles from "@/styles/Home.module.css";
+
+import styles from "./styles.module.css";
+
+import { Lato } from "@next/font/google";
 import { Navbar } from "@/modules/layout/Navbar/NavBar";
 import { Footer } from "@/modules/layout/Footer/Footer";
 

@@ -1,11 +1,13 @@
+import { Fade } from "react-awesome-reveal";
+import { useTranslation } from "next-i18next";
+
+import styles from "./SpecialtiesSection.module.css";
+
+import MobileIcon from "@/assets/illustrations/mobile.svg";
+import WebIcon from "@/assets/illustrations/WebIcon.svg";
+import KnowHowIcon from "@/assets/illustrations/KnowHowIcon.svg";
 import { SpecialtyInfoBox } from "@/components/SpecialtyInfoBox/SpecialtyInfoBox";
 import { Typography } from "@/components/Typography/Typography";
-import { useTranslation } from "next-i18next";
-import styles from "./SpecialtiesSection.module.css";
-import MobileIcon from "@/assets/icons/MobileIcon.svg";
-import WebIcon from "@/assets/icons/WebIcon.svg";
-import KnowHowIcon from "@/assets/icons/KnowHowIcon.svg";
-import { Fade, Zoom } from "react-awesome-reveal";
 
 export const SpecialtiesSection = () => {
   const { t } = useTranslation("home", { keyPrefix: "specialties" });

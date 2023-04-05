@@ -1,8 +1,10 @@
-import { Typography } from "@/components/Typography/Typography";
 import classNames from "classnames";
 import { useTranslation } from "next-i18next";
-import styles from "./ValuesSection.module.css";
 import { Fade } from "react-awesome-reveal";
+
+import styles from "./ValuesSection.module.css";
+
+import { Typography } from "@/components/Typography/Typography";
 
 export const ValuesSection = () => {
   const { t } = useTranslation("home", { keyPrefix: "values" });

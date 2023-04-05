@@ -1,17 +1,18 @@
-import { Typography } from "@/components/Typography/Typography";
 import { useTranslation } from "next-i18next";
-import styles from "./AboutSection.module.css";
 import Link from "next/link";
+
 import {
   CONTACT_EMAIL,
   GITHUB_LINK,
   LINKEDIN_LINK,
   MEDIUM_LINK,
 } from "./AboutSection.constants";
+import styles from "./AboutSection.module.css";
 
-import LinkedIn from "@/assets/icons/LinkedIn.svg";
-import Github from "@/assets/icons/Github.svg";
-import Medium from "@/assets/icons/Medium.svg";
+import LinkedIn from "@/assets/icons/linked-in.svg";
+import Github from "@/assets/icons/github.svg";
+import Medium from "@/assets/icons/medium.svg";
+import { Typography } from "@/components/Typography/Typography";
 
 export const AboutSection = () => {
   const { t } = useTranslation("contact", { keyPrefix: "info" });
@@ -26,7 +27,7 @@ export const AboutSection = () => {
       <Typography opacity>{t("company5")}</Typography>
       <br />
       <Typography>
-        {t("email")}{" "}
+        {`${t("email")} `}
         <Link className={styles.email} href={`mailto:${CONTACT_EMAIL}`}>
           {CONTACT_EMAIL}
         </Link>

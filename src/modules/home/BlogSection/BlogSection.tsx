@@ -1,9 +1,11 @@
-import { Typography } from "@/components/Typography/Typography";
 import { useTranslation } from "next-i18next";
+
 import styles from "./BlogSection.module.css";
+
 import { BlogPost } from "@/components/BlogPost/BlogPost";
 import { Button } from "@/components/Button/Button";
 import { POSTS } from "@/modules/blog/BlogSection/BlogSection.constants";
+import { Typography } from "@/components/Typography/Typography";
 
 export const BlogSection = () => {
   const { t } = useTranslation("home", { keyPrefix: "blog" });

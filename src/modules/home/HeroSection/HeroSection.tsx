@@ -1,16 +1,20 @@
-import { Button } from "@/components/Button/Button";
-import { Typography } from "@/components/Typography/Typography";
 import { useTranslation } from "next-i18next";
 import { useEffect, useState } from "react";
+import { Fade } from "react-awesome-reveal";
 import TextTransition from "react-text-transition";
+import Image from "next/image";
+
 import {
+  AVATAR_SIZE,
+  TITLE_TRANSITION_INTERVAL,
   TITLE_WORDS_KEYS,
   TRANSITION_SPRING_CONFIG,
 } from "./HeroSection.constants";
 import styles from "./HeroSection.module.css";
-import Image from "next/image";
+
 import InfoIcon from "@/assets/icons/InfoIcon.svg";
-import { Fade, Zoom } from "react-awesome-reveal";
+import { Button } from "@/components/Button/Button";
+import { Typography } from "@/components/Typography/Typography";
 
 const HeroTitle = () => {
   const { t } = useTranslation("home", { keyPrefix: "hero" });
@@ -18,7 +22,10 @@ const HeroTitle = () => {
   const [index, setIndex] = useState(0);
 
   useEffect(() => {
-    const intervalId = setInterval(() => setIndex((index) => index + 1), 3000);
+    const intervalId = setInterval(
+      () => setIndex((index) => index + 1),
+      TITLE_TRANSITION_INTERVAL
+    );
     return () => clearTimeout(intervalId);
   }, []);
 
@@ -69,8 +76,7 @@ export const HeroSection = () => {
             alt="avatar"
             src="/images/avatar.png"
             className={styles.image}
-            width={550}
-            height={506}
+            {...AVATAR_SIZE}
           />
         </div>
       </div>

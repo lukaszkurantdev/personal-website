@@ -1,8 +1,10 @@
-import { Typography } from "@/components/Typography/Typography";
 import { useTranslation } from "next-i18next";
+
 import styles from "./BlogSection.module.css";
-import { BlogPost } from "@/components/BlogPost/BlogPost";
 import { POSTS } from "./BlogSection.constants";
+
+import { Typography } from "@/components/Typography/Typography";
+import { BlogPost } from "@/components/BlogPost/BlogPost";
 
 export const BlogSection = () => {
   const { t } = useTranslation("blog");
