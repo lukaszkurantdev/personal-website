@@ -25,7 +25,7 @@ export default function Home() {
   const { t } = useTranslation("common");
 
   return (
-    <>
+    <div className={styles.home}>
 
         <HeroSection />
         {/* <AboutSection /> */}
@@ -43,14 +43,14 @@ export default function Home() {
         <ContactSection />
 
       
-    </>
+    </div>
   );
 }
 
 export async function getStaticProps({ locale }: any) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, ["common","cookies", "home"])),
+      ...(await serverSideTranslations(locale, ["common","cookies", "home", "blog"])),
     },
   };
 }

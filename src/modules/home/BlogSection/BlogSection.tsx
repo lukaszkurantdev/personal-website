@@ -1,30 +1,13 @@
-export const POSTS = [
-  {
-    date: "March 21, 2023",
-    title: "Association rules in JavaScript",
-    description: "The use of an apriori algorithm to perform basket analysis.",
-    link: "https://dogtronic.io/en/association-rules-in-javascript/",
-    image: "/images/posts/basket.webp",
-    polishVersionLink: "https://dogtronic.io/algorytmy-regresji-w-javascript/",
-  },
-  {
-    date: "March 21, 2023",
-    title: "Association rules in JavaScript",
-    description: "The use of an apriori algorithm to perform basket analysis.",
-    link: "https://dogtronic.io/en/association-rules-in-javascript/",
-    image: "/images/posts/basket.webp",
-    polishVersionLink: "https://dogtronic.io/algorytmy-regresji-w-javascript/",
-  },
-];
-
 import { Typography } from "@/components/Typography/Typography";
 import { useTranslation } from "next-i18next";
 import styles from "./BlogSection.module.css";
 import { BlogPost } from "@/components/BlogPost/BlogPost";
 import { Button } from "@/components/Button/Button";
+import { POSTS } from "@/modules/blog/BlogSection/BlogSection.constants";
 
 export const BlogSection = () => {
   const { t } = useTranslation("home", { keyPrefix: "blog" });
+  const { t: blogT } = useTranslation("blog");
 
   return (
     <div className={styles.container}>
@@ -33,8 +16,15 @@ export const BlogSection = () => {
       </div>
 
       <div className={styles.row}>
-        {POSTS.map((post) => (
-          <BlogPost key={post.title} {...post} />
+        {POSTS.slice(0, 2).map((post) => (
+          <BlogPost
+            key={`blog-post-${post.index}`}
+            date={blogT(`articles.article${post.index}.date`)}
+            title={blogT(`articles.article${post.index}.title`)}
+            description={blogT(`articles.article${post.index}.description`)}
+            image={`/images/posts/article${post.index}.webp`}
+            {...post}
+          />
         ))}
 
         <div className={styles.moreContainer}>

@@ -1,6 +1,6 @@
 .container {
   max-width: var(--container-width);
-  padding: var(--space-5) var(--space-8) var(--space-18);
+  padding: var(--space-5) var(--space-8) var(--space-15);
   margin: 0 auto;
 }
 

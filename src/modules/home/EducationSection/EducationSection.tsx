@@ -11,7 +11,7 @@ export const EducationSection = () => {
     <div className={styles.container}>
       <div className={styles.textContainer}>
         <Typography variant="h2">{t("certificates.title")}</Typography>
-        <Typography>{t("certificates.description")}</Typography>
+        <Typography align="center">{t("certificates.description")}</Typography>
       </div>
 
       <div className={styles.row}>

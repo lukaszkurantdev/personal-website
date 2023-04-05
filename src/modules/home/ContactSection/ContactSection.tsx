@@ -13,7 +13,7 @@ export const ContactSection = () => {
         <div className={styles.particle2} />
         <div className={styles.particle3} />
 
-        <Typography variant="h1">{t("title")}</Typography>
+        <Typography variant="h1" align="center">{t("title")}</Typography>
         <Typography className={styles.description} align="center">
           {t("description")}
         </Typography>

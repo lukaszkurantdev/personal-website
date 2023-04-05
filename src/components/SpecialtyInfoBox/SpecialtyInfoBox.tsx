@@ -39,6 +39,7 @@ export const SpecialtyInfoBox: FC<SpecialtyInfoBoxProps> = ({
           {technologiesHeader}
         </Typography>
 
+
         <div className={styles.technologiesContainer}>
           {technologiesList.map((technology) => (
             <span key={technology} className={styles.technologyItem}>

@@ -5,4 +5,5 @@ export enum Links {
   Contact = "/contact",
   ConstCash = "/portfolio/constcash",
   Cookies = "/cookies",
+  ConstCashWebsite = "https://constcash.com/"
 }

@@ -5,17 +5,28 @@ import styles from "./SpecialtiesSection.module.css";
 import MobileIcon from "@/assets/icons/MobileIcon.svg";
 import WebIcon from "@/assets/icons/WebIcon.svg";
 import KnowHowIcon from "@/assets/icons/KnowHowIcon.svg";
+import { Fade, Zoom } from "react-awesome-reveal";
 
 export const SpecialtiesSection = () => {
   const { t } = useTranslation("home", { keyPrefix: "specialties" });
 
   return (
     <div className={styles.container}>
-      <div className={styles.particle1} />
-      <div className={styles.particle2} />
-      <div className={styles.particle3} />
-      <div className={styles.particle4} />
-      <div className={styles.particle5} />
+      <Fade delay={2000}>
+        <div className={styles.particle1} />
+      </Fade>
+      <Fade delay={700}>
+        <div className={styles.particle2} />
+      </Fade>
+      <Fade delay={1200}>
+        <div className={styles.particle3} />
+      </Fade>
+      <Fade delay={800}>
+        <div className={styles.particle4} />
+      </Fade>
+      <Fade delay={1400}>
+        <div className={styles.particle5} />
+      </Fade>
 
       <div className={styles.textContainer}>
         <Typography variant="h1">{t("title")}</Typography>

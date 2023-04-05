@@ -1,13 +1,14 @@
 .container {
   background-color: var(--color-gray-900);
   position: relative;
+  overflow: hidden;
 }
 
 .insideContainer {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: var(--space-18) 0;
+  padding: var(--space-18) var(--space-8);
   max-width: var(--container-width);
   margin: auto;
 }
@@ -47,4 +48,23 @@
 .link {
   color: var(--color-danger);
   text-decoration: underline;
+}
+
+@media (max-width: 1000px) {
+  .insideContainer {
+    padding: var(--space-10) var(--space-8);
+  }
+
+  .shape1 {
+    top: unset;
+    bottom: -10px;
+  }
+
+  .shape2 {
+    display: none;
+  }
+
+  .image {
+    display: none;
+  }
 }

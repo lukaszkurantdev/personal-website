@@ -10,6 +10,7 @@ import {
 import styles from "./HeroSection.module.css";
 import Image from "next/image";
 import InfoIcon from "@/assets/icons/InfoIcon.svg";
+import { Fade, Zoom } from "react-awesome-reveal";
 
 const HeroTitle = () => {
   const { t } = useTranslation("home", { keyPrefix: "hero" });
@@ -74,10 +75,18 @@ export const HeroSection = () => {
         </div>
       </div>
 
-      <div className={styles.particle1} />
-      <div className={styles.particle2} />
-      <div className={styles.particle3} />
-      <div className={styles.particle4} />
+      <Fade delay={1500}>
+        <div className={styles.particle1} />
+      </Fade>
+      <Fade delay={700}>
+        <div className={styles.particle2} />
+      </Fade>
+      <Fade delay={1200}>
+        <div className={styles.particle3} />
+      </Fade>
+      <Fade delay={500}>
+        <div className={styles.particle4} />
+      </Fade>
     </div>
   );
 };

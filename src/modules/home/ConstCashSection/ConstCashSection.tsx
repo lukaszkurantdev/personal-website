@@ -5,6 +5,7 @@ import styles from "./ConstCashSection.module.css";
 import Image from "next/image";
 import ConstcashShape from "@/assets/backgrounds/constcash.svg";
 import Link from "next/link";
+import { Links } from "@/constants/Links";
 
 export const ConstCashSection = () => {
   const { t } = useTranslation("home", { keyPrefix: "constcash" });
@@ -24,15 +25,17 @@ export const ConstCashSection = () => {
           </Typography>
           <Typography>
             {t("description2")}{" "}
-            <Link href="" className={styles.link}>
+            <Link href={Links.ConstCash} className={styles.link}>
               {t("caseStudy")}
             </Link>
           </Typography>
-          <Button
-            className={styles.button}
-            variant="danger"
-            title={t("button")}
-          />
+          <Link href={Links.ConstCashWebsite}>
+            <Button
+              className={styles.button}
+              variant="danger"
+              title={t("button")}
+            />
+          </Link>
         </div>
       </div>
 

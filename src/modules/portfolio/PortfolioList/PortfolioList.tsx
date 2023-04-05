@@ -29,7 +29,7 @@ export const PortfolioList = () => {
 
       <div className={styles.workContainer}>
         <Typography variant="h2">{t("work.title")}</Typography>
-        <Typography opacity>{t("work.description")}</Typography>
+        <Typography opacity align="center">{t("work.description")}</Typography>
         <Button className={styles.workButton} title={t("work.button")} />
       </div>
     </div>
