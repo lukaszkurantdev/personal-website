@@ -83,7 +83,7 @@
 }
 
 .mainHeader {
-  font-size: var(--typography-h3);
+  font-size: var(--typography-h3) !important;
   font-family: var(--typography-font-tiempos);
 }
 

@@ -6,7 +6,10 @@ import { useTranslation } from "next-i18next";
 import { Typography } from "../Typography/Typography";
 import styles from "./PortfolioItemDetails.module.css";
 import { Button } from "../Button/Button";
-import { PORTFOLIO_ITEM_MULTIPLIER } from "./PortfolioItemDetails.constants";
+import {
+  PORTFOLIO_ITEM_MULTIPLIER,
+  TECHNOLOGIES_DELIMITER,
+} from "./PortfolioItemDetails.constants";
 
 import { PORTFOLIO_ITEMS } from "@/modules/portfolio/PortfolioList/PortfolioList.constants";
 import Windows from "@/assets/icons/windows.svg";
@@ -32,6 +35,9 @@ export const PortfolioItemDetails = ({
   casesCount,
 }: PortfolioItemDetailsProps) => {
   const { t } = useTranslation("portfolio");
+  const technologiesList = t(`list.item${itemIndex}.usedTechnologies`).split(
+    TECHNOLOGIES_DELIMITER
+  );
 
   return (
     <div className={styles.container}>
@@ -89,9 +95,13 @@ export const PortfolioItemDetails = ({
 
         <div className={styles.column}>
           <Typography variant="h2">{t(`item.usedTechnologies`)}</Typography>
-          <Typography opacity>
-            {t(`list.item${itemIndex}.usedTechnologies`)}
-          </Typography>
+          <div className={styles.technologiesContainer}>
+            {technologiesList.map((technology) => (
+              <span key={technology} className={styles.technologyItem}>
+                {technology}
+              </span>
+            ))}
+          </div>
 
           <div className={styles.socialContainer}>
             {windowsStoreLink ? (

@@ -4,8 +4,8 @@ import { useTranslation } from "next-i18next";
 import styles from "./SpecialtiesSection.module.css";
 
 import MobileIcon from "@/assets/illustrations/mobile.svg";
-import WebIcon from "@/assets/illustrations/WebIcon.svg";
-import KnowHowIcon from "@/assets/illustrations/KnowHowIcon.svg";
+import WebIcon from "@/assets/illustrations/web.svg";
+import KnowHowIcon from "@/assets/illustrations/know-how.svg";
 import { SpecialtyInfoBox } from "@/components/SpecialtyInfoBox/SpecialtyInfoBox";
 import { Typography } from "@/components/Typography/Typography";
 

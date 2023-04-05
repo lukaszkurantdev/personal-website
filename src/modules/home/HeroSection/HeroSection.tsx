@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { Fade } from "react-awesome-reveal";
 import TextTransition from "react-text-transition";
 import Image from "next/image";
+import Link from "next/link";
 
 import {
   AVATAR_SIZE,
@@ -12,9 +13,10 @@ import {
 } from "./HeroSection.constants";
 import styles from "./HeroSection.module.css";
 
-import InfoIcon from "@/assets/icons/InfoIcon.svg";
+import InfoIcon from "@/assets/icons/info.svg";
 import { Button } from "@/components/Button/Button";
 import { Typography } from "@/components/Typography/Typography";
+import { Links } from "@/constants/Links";
 
 const HeroTitle = () => {
   const { t } = useTranslation("home", { keyPrefix: "hero" });
@@ -51,7 +53,13 @@ export const HeroSection = () => {
         <div className={styles.availableIconContainer}>
           <InfoIcon />
         </div>
-        <Typography>{t("availableToWork")}</Typography>
+        <Typography>
+          {t("availableToWork1")}
+          <Link className={styles.link} href={Links.Contact}>
+            {t("availableToWork2")}
+          </Link>
+          {t("availableToWork3")}
+        </Typography>
       </div>
 
       <div className={styles.insideContainer}>

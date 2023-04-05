@@ -10,5 +10,15 @@
     "constcash": "ConstCash",
     "cookies": "Cookies",
     "contact": "Contact"
+  },
+  "meta": {
+    "description": "Hello, I’m Lukasz Kurant - Freelance Full Stack developer with aspirations to grow. And that's my personal webpage.",
+    "ogUrl": "https://lukaszkurant.com",
+    "ogLocale": "en_US",
+    "ogType": "website",
+    "ogTitle": "Lukasz Kurant — Freelance Full Stack developer with aspirations to grow.",
+    "ogDescription": "I am a programmer with passion, experience and education. In my work I create simple and advanced mobile applications and websites. I help in project analysis, UI/UX creation, programming, testing, up to maintenance. I am happy to share my knowledge and learn from others.",
+    "ogImage": "https://lukaszkurant.com/og-image.png",
+    "ogSiteName": "Lukasz Kurant — Freelance Full Stack developer with aspirations to grow"
   }
 }

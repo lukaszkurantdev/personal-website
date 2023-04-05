@@ -1,1 +1,2 @@
-export const PORTFOLIO_ITEM_MULTIPLIER = 1.5;
+export const PORTFOLIO_ITEM_MULTIPLIER = 1.3;
+export const TECHNOLOGIES_DELIMITER = ",";

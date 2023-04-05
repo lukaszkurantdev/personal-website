@@ -15,7 +15,9 @@
     "description2": "freelance full-stack programmer",
     "description3": " with passion, experience and education. In my work I create simple and advanced mobile applications and websites. I help in project analysis, UI/UX creation, programming, testing, up to maintenance. I am happy to share my knowledge and learn from others.",
     "button": "Hire me",
-    "availableToWork": "Available for work. Contact me for more information."
+    "availableToWork1": "Available for work. ",
+    "availableToWork2": "Contact me",
+    "availableToWork3": " for more information."
   },
   "about": {
     "title": "About me",

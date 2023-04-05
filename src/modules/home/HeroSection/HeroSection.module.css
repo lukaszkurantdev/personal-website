@@ -156,3 +156,12 @@
   align-items: center;
   justify-content: center;
 }
+
+.link {
+  text-decoration: underline;
+  transition: opacity 0.5s ease;
+}
+
+.link:hover {
+  opacity: 0.6;
+}
