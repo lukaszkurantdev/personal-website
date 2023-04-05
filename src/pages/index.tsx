@@ -1,56 +1,48 @@
 import Head from "next/head";
-import Image from "next/image";
-import { Lato } from "@next/font/google";
-import styles from "@/styles/Home.module.css";
-import { Button } from "@/components/Button/Button";
-import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
-import { Navbar } from "@/modules/layout/Navbar/NavBar";
-import classNames from "classnames";
-import localFont from "@next/font/local";
+
+import styles from "./styles.module.css";
+
 import { HeroSection } from "@/modules/home/HeroSection/HeroSection";
-import { AboutSection } from "@/modules/home/AboutSection/AboutSection";
-import { ValuesSection } from "@/modules/home/ValuesSection/ValuesSection";
 import { SpecialtiesSection } from "@/modules/home/SpecialtiesSection/SpecialtiesSection";
 import { ExperienceSection } from "@/modules/home/ExperienceSection/ExperienceSection";
 import { EducationSection } from "@/modules/home/EducationSection/EducationSection";
 import { ConstCashSection } from "@/modules/home/ConstCashSection/ConstCashSection";
 import { ContactSection } from "@/modules/home/ContactSection/ContactSection";
 import { BlogSection } from "@/modules/home/BlogSection/BlogSection";
-import { Footer } from "@/modules/layout/Footer/Footer";
-
-const latoFont = Lato({ subsets: ["latin"], weight: ["400", "700"] });
+import { getServerSideTranslations } from "@/utils/serverSideTranslations";
+import type { ServerSideProps } from "@/types/ServerSideProps";
+import { ValuesSection } from "@/modules/home/ValuesSection/ValuesSection";
 
 export default function Home() {
-  const { t } = useTranslation("common");
+  const { t } = useTranslation("home");
 
   return (
     <div className={styles.home}>
-
-        <HeroSection />
-        {/* <AboutSection /> */}
-        <SpecialtiesSection />
-        <ValuesSection />
-       
-       {/* <div style={{display: "flex", columnGap: 100, maxWidth: 1200, margin:'0 auto', marginTop: 50}}> */}
-       <ExperienceSection />
-        <EducationSection />
-       {/* </div> */}
-       
-        <ConstCashSection />
-
-        <BlogSection />
-        <ContactSection />
-
-      
+      <Head>
+        <title>{t("headTitle")}</title>
+      </Head>
+      <HeroSection />
+      <SpecialtiesSection />
+      <ValuesSection />
+      <ExperienceSection />
+      <EducationSection />
+      <ConstCashSection />
+      <BlogSection />
+      <ContactSection />
     </div>
   );
 }
 
-export async function getStaticProps({ locale }: any) {
+export async function getStaticProps({ locale }: ServerSideProps) {
+  const translations = await getServerSideTranslations(locale, [
+    "home",
+    "blog",
+  ]);
+
   return {
     props: {
-      ...(await serverSideTranslations(locale, ["common","cookies", "home", "blog"])),
+      ...translations,
     },
   };
 }

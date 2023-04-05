@@ -30,6 +30,7 @@
   },
   "devDependencies": {
     "@svgr/webpack": "^6.5.1",
-    "@types/react-html-parser": "^2.0.2"
+    "@types/react-html-parser": "^2.0.2",
+    "eslint-config-prettier": "^8.8.0"
   }
 }
