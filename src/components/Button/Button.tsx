@@ -1,16 +1,16 @@
+import type { CSSProperties } from "react";
 import classNames from "classnames";
 
 import styles from "./Button.module.css";
-import type { CSSProperties } from "react";
 
 type ButtonProps = {
-  onClick?: () => void;
-  variant?: "primary" | "secondary" | "danger" | "ternary";
+  title: string;
   disabled?: boolean;
   className?: string;
-  title: string;
+  variant?: "primary" | "secondary" | "danger" | "ternary";
   type?: "button" | "submit" | "reset";
   style?: CSSProperties;
+  onClick?: () => void;
 };
 
 export const Button = ({

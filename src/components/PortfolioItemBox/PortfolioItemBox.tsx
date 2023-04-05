@@ -1,10 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Typography } from "../Typography/Typography";
-
-import styles from "./PortfolioItemBox.module.css";
 import { useTranslation } from "next-i18next";
+
+import { Typography } from "../Typography/Typography";
 import { Button } from "../Button/Button";
+import styles from "./PortfolioItemBox.module.css";
+
+import { Links } from "@/constants/Links";
 
 type PortfolioItemBoxProps = {
   date: string;
@@ -13,7 +15,7 @@ type PortfolioItemBoxProps = {
   slug: string;
   color: string;
   image: string;
-  imageSize: {height: number, width: number};
+  imageSize: { height: number; width: number };
 };
 
 export const PortfolioItemBox = ({
@@ -60,7 +62,7 @@ export const PortfolioItemBox = ({
           {description}
         </Typography>
 
-        <Link href={`/portfolio/${slug}`}>
+        <Link href={`${Links.Portfolio}/${slug}`}>
           <Button
             variant="secondary"
             title={t("readMore")}

@@ -1,16 +1,18 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Typography } from "../Typography/Typography";
-
-import styles from "./PortfolioItemDetails.module.css";
-import { useTranslation } from "next-i18next";
-import { PORTFOLIO_ITEMS } from "@/modules/portfolio/PortfolioList/PortfolioList.constants";
-import Windows from "@/assets/icons/Windows.svg";
-import Github from "@/assets/icons/Github.svg";
-import GooglePlay from "@/assets/icons/GooglePlay.svg";
-import Apple from "@/assets/icons/Apple.svg";
 import ReactHtmlParser from "react-html-parser";
+import { useTranslation } from "next-i18next";
+
+import { Typography } from "../Typography/Typography";
+import styles from "./PortfolioItemDetails.module.css";
 import { Button } from "../Button/Button";
+import { PORTFOLIO_ITEM_MULTIPLIER } from "./PortfolioItemDetails.constants";
+
+import { PORTFOLIO_ITEMS } from "@/modules/portfolio/PortfolioList/PortfolioList.constants";
+import Windows from "@/assets/icons/windows.svg";
+import Github from "@/assets/icons/github.svg";
+import GooglePlay from "@/assets/icons/google-play.svg";
+import Apple from "@/assets/icons/apple.svg";
 
 type PortfolioItemDetailsProps = typeof PORTFOLIO_ITEMS[number];
 
@@ -44,8 +46,8 @@ export const PortfolioItemDetails = ({
           src={`/images/portfolio/item${itemIndex}/main.webp`}
           alt={t(`list.item${itemIndex}.title`)}
           className={styles.image}
-          height={imageSize.height * 1.5}
-          width={imageSize.width * 1.5}
+          height={imageSize.height * PORTFOLIO_ITEM_MULTIPLIER}
+          width={imageSize.width * PORTFOLIO_ITEM_MULTIPLIER}
         />
 
         <div
@@ -84,6 +86,7 @@ export const PortfolioItemDetails = ({
             </Link>
           ) : null}
         </div>
+
         <div className={styles.column}>
           <Typography variant="h2">{t(`item.usedTechnologies`)}</Typography>
           <Typography opacity>
@@ -118,7 +121,7 @@ export const PortfolioItemDetails = ({
         </div>
       </div>
 
-      {casesCount > 0 && (
+      {casesCount > 0 ? (
         <div>
           <Typography variant="h2">
             {t(`item.interestingCases.title`)}
@@ -141,9 +144,9 @@ export const PortfolioItemDetails = ({
               ))}
           </div>
         </div>
-      )}
+      ) : null}
 
-      {screenshotsCount > 0 && (
+      {screenshotsCount > 0 ? (
         <div>
           <Typography variant="h2">{t(`item.gallery`)}</Typography>
 
@@ -161,7 +164,7 @@ export const PortfolioItemDetails = ({
               ))}
           </div>
         </div>
-      )}
+      ) : null}
     </div>
   );
 };

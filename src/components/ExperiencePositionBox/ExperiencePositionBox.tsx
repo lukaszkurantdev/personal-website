@@ -1,6 +1,6 @@
-import { Typography } from "@/components/Typography/Typography";
-import type { FC } from "react";
 import styles from "./ExperiencePositionBox.module.css";
+
+import { Typography } from "@/components/Typography/Typography";
 
 type ExperiencePositionBoxProps = {
   date: string;
@@ -9,12 +9,12 @@ type ExperiencePositionBoxProps = {
   description: string;
 };
 
-export const ExperiencePositionBox: FC<ExperiencePositionBoxProps> = ({
+export const ExperiencePositionBox = ({
   date,
   position,
   company,
   description,
-}) => {
+}: ExperiencePositionBoxProps) => {
   return (
     <div className={styles.container}>
       <Typography variant="small-paragraph" className={styles.date}>

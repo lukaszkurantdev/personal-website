@@ -1,8 +1,10 @@
-import { Typography } from "@/components/Typography/Typography";
 import classNames from "classnames";
-import type { FC, ReactNode } from "react";
+import type { ReactNode } from "react";
+
 import styles from "./SpecialtyInfoBox.module.css";
-import Image from "next/image";
+import { TECHNOLOGIES_DELIMITER } from "./SpecialtyInfoBox.constants";
+
+import { Typography } from "@/components/Typography/Typography";
 
 type SpecialtyInfoBoxProps = {
   icon: ReactNode;
@@ -13,15 +15,15 @@ type SpecialtyInfoBoxProps = {
   reversed?: boolean;
 };
 
-export const SpecialtyInfoBox: FC<SpecialtyInfoBoxProps> = ({
+export const SpecialtyInfoBox = ({
   icon,
   header,
   reversed,
   description,
   technologies,
   technologiesHeader,
-}) => {
-  const technologiesList = technologies.split(",");
+}: SpecialtyInfoBoxProps) => {
+  const technologiesList = technologies.split(TECHNOLOGIES_DELIMITER);
 
   return (
     <div
@@ -38,7 +40,6 @@ export const SpecialtyInfoBox: FC<SpecialtyInfoBoxProps> = ({
         >
           {technologiesHeader}
         </Typography>
-
 
         <div className={styles.technologiesContainer}>
           {technologiesList.map((technology) => (

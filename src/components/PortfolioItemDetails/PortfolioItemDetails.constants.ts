@@ -1,0 +1,1 @@
+export const PORTFOLIO_ITEM_MULTIPLIER = 1.5;

@@ -1,9 +1,11 @@
-import { Typography } from "@/components/Typography/Typography";
-import type { FC } from "react";
-import styles from "./CertificateInfoBox.module.css";
-import Image from "next/image";
 import { useTranslation } from "next-i18next";
+import Image from "next/image";
 import Link from "next/link";
+
+import styles from "./CertificateInfoBox.module.css";
+
+import { Typography } from "@/components/Typography/Typography";
+import { CERTIFICATE_IMAGE_SIZE } from "./CertificateInfoBox.constants";
 
 export type CertificateInfoBoxProps = {
   date: string;
@@ -15,7 +17,7 @@ export type CertificateInfoBoxProps = {
   description?: string;
 };
 
-export const CertificateInfoBox: FC<CertificateInfoBoxProps> = ({
+export const CertificateInfoBox = ({
   date,
   title,
   description,
@@ -23,22 +25,29 @@ export const CertificateInfoBox: FC<CertificateInfoBoxProps> = ({
   logoSrc,
   logoAlt,
   link,
-}) => {
+}: CertificateInfoBoxProps) => {
   const { t } = useTranslation("home", { keyPrefix: "journey" });
 
   return (
     <div className={styles.container}>
       <div className={styles.headerContainer}>
-        <Image src={logoSrc} alt={logoAlt} height={35} width={35} />
+        <Image
+          src={logoSrc}
+          alt={logoAlt}
+          height={CERTIFICATE_IMAGE_SIZE}
+          width={CERTIFICATE_IMAGE_SIZE}
+        />
         <div>
           <Typography weight="bold">{title}</Typography>
-          <Typography variant="small-paragraph" opacity>{date}</Typography>
+          <Typography variant="small-paragraph" opacity>
+            {date}
+          </Typography>
         </div>
       </div>
       <Typography>
-        {publisher} | {" "}
+        {publisher}
         <Link className={styles.link} href={link}>
-          {t("certificates.viewCertificate")}
+          {` | ${t("certificates.viewCertificate")}`}
         </Link>
       </Typography>
 

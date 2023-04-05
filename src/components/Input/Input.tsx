@@ -1,5 +1,6 @@
-import styles from "./Input.module.css";
 import type { HTMLInputTypeAttribute } from "react";
+
+import styles from "./Input.module.css";
 
 type InputProps = {
   name: string;
@@ -15,7 +16,6 @@ export const Input = ({ name, id, label, required, type }: InputProps) => {
       <label htmlFor={id} className={styles.label}>
         {label}
       </label>
-
       <input
         id={id}
         name={name}

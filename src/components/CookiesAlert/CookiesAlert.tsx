@@ -1,7 +1,8 @@
 import { useCallback, useEffect, useState } from "react";
-import { Typography } from "../Typography/Typography";
 import Link from "next/link";
 import { useTranslation } from "next-i18next";
+
+import { Typography } from "../Typography/Typography";
 import { Button } from "../Button/Button";
 import styles from "./CookiesAlert.module.css";
 import { COOKIES_KEY } from "./CookiesAlert.constants";
@@ -27,7 +28,6 @@ export const CookiesAlert = () => {
   return (
     <>
       <div className={styles.placeholder} />
-
       <div className={styles.container}>
         <Typography>
           {t("description1")}
@@ -36,7 +36,6 @@ export const CookiesAlert = () => {
           </Link>
           {t("description3")}
         </Typography>
-
         <Button title={t("button")} onClick={onClickCookies} />
       </div>
     </>

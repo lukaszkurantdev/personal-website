@@ -13,7 +13,6 @@ export const TextArea = ({ name, id, label, required }: TextAreaProps) => {
       <label htmlFor={id} className={styles.label}>
         {label}
       </label>
-
       <textarea
         id={id}
         name={name}

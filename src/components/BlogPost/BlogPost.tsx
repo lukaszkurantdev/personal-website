@@ -1,17 +1,17 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Typography } from "../Typography/Typography";
-
-import styles from "./BlogPost.module.css";
 import { useTranslation } from "next-i18next";
+
+import { Typography } from "../Typography/Typography";
+import styles from "./BlogPost.module.css";
 
 type BlogPostProps = {
   date: string;
   title: string;
   description: string;
   link: string;
-  polishVersionLink?: string;
   image: string;
+  polishVersionLink?: string;
 };
 
 export const BlogPost = ({
@@ -19,8 +19,8 @@ export const BlogPost = ({
   title,
   description,
   link,
-  polishVersionLink,
   image,
+  polishVersionLink,
 }: BlogPostProps) => {
   const { t } = useTranslation("blog");
 
@@ -31,20 +31,17 @@ export const BlogPost = ({
           <div className={styles.imageContainer}>
             <Image src={image} alt={title} className={styles.image} fill />
           </div>
-
           <Typography variant="small-paragraph" className={styles.date}>
             {date}
           </Typography>
-
           <Typography className={styles.title} variant="h3">
             {title}
           </Typography>
-
           <Typography opacity>{description}</Typography>
         </div>
       </Link>
 
-      {polishVersionLink && (
+      {polishVersionLink ? (
         <Link
           className={styles.polishLink}
           href={polishVersionLink}
@@ -53,7 +50,7 @@ export const BlogPost = ({
         >
           {t("polishVersion")}
         </Link>
-      )}
+      ) : null}
     </div>
   );
 };
