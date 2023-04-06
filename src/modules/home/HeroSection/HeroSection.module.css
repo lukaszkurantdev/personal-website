@@ -8,7 +8,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: var(--space-15) var(--space-8);
+  padding: var(--space-14) var(--space-8);
   max-width: var(--container-width);
   margin: auto;
   position: relative;
@@ -41,7 +41,7 @@
 .image {
   position: absolute;
   bottom: 0;
-  right: 0;
+  right: calc(15%);
 }
 
 @media (max-width: 1480px) {
@@ -56,9 +56,9 @@
   }
 
   .image {
-    width: 410px;
-    height: 400px;
-    right: -100px;
+    width: calc(390px * 0.7);
+    height: calc(558px * 0.7);
+    right: 20px;
   }
 
   .textContainer {
@@ -82,8 +82,8 @@
   .image {
     position: unset;
     margin-top: var(--space-10);
-    width: 210px;
-    height: 200px;
+    width: calc(390px * 0.4);
+    height: calc(558px * 0.4);
   }
 
   .particle3,

@@ -1,8 +1,11 @@
 import { useTranslation } from "next-i18next";
+import Link from "next/link";
+
 import styles from "./ContactSection.module.css";
 
 import { Button } from "@/components/Button/Button";
 import { Typography } from "@/components/Typography/Typography";
+import { Links } from "@/constants/Links";
 
 export const ContactSection = () => {
   const { t } = useTranslation("home", { keyPrefix: "contact" });
@@ -20,11 +23,13 @@ export const ContactSection = () => {
         <Typography className={styles.description} align="center">
           {t("description")}
         </Typography>
-        <Button
-          className={styles.button}
-          variant="ternary"
-          title={t("button")}
-        />
+        <Link href={Links.Contact} aria-label="contact">
+          <Button
+            className={styles.button}
+            variant="ternary"
+            title={t("button")}
+          />
+        </Link>
       </div>
     </div>
   );

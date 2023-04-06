@@ -7,6 +7,16 @@ import { CookiesAlert } from "@/components/CookiesAlert/CookiesAlert";
 import { Links } from "@/constants/Links";
 import { Button } from "@/components/Button/Button";
 import { Typography } from "@/components/Typography/Typography";
+import {
+  APPLE_LINK,
+  GITHUB_LINK,
+  LINKEDIN_LINK,
+  MEDIUM_LINK,
+} from "@/modules/contact/AboutSection/AboutSection.constants";
+import LinkedIn from "@/assets/icons/linked-in.svg";
+import Github from "@/assets/icons/github.svg";
+import Medium from "@/assets/icons/medium.svg";
+import Apple from "@/assets/icons/apple.svg";
 
 export const Footer = () => {
   const { t } = useTranslation("common", { keyPrefix: "footer" });
@@ -32,6 +42,21 @@ export const Footer = () => {
             </Link>
             <Link href={Links.Contact}>
               <Button title={t("contact")} variant="secondary" />
+            </Link>
+          </div>
+
+          <div className={styles.socialContainer}>
+            <Link href={MEDIUM_LINK} aria-label="Medium">
+              <Medium />
+            </Link>
+            <Link href={LINKEDIN_LINK} aria-label="LinkedIn">
+              <LinkedIn />
+            </Link>
+            <Link href={GITHUB_LINK} aria-label="Github">
+              <Github />
+            </Link>
+            <Link href={APPLE_LINK} aria-label="Apple">
+              <Apple />
             </Link>
           </div>
         </nav>

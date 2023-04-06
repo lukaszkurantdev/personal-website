@@ -77,12 +77,15 @@ export const HeroSection = () => {
             <span className={styles.primaryText}>{t("description2")}</span>
             {t("description3")}
           </Typography>
-          <Button className={styles.button} title={t("button")} />
+
+          <Link href={Links.Contact} aria-label="contact">
+            <Button className={styles.button} title={t("button")} />
+          </Link>
         </div>
         <div className={styles.column}>
           <Image
             alt="avatar"
-            src="/images/avatar.png"
+            src="/images/lk2.png"
             className={styles.image}
             priority
             {...AVATAR_SIZE}

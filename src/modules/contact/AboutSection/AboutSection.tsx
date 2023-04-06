@@ -2,6 +2,7 @@ import { useTranslation } from "next-i18next";
 import Link from "next/link";
 
 import {
+  APPLE_LINK,
   CONTACT_EMAIL,
   GITHUB_LINK,
   LINKEDIN_LINK,
@@ -12,6 +13,7 @@ import styles from "./AboutSection.module.css";
 import LinkedIn from "@/assets/icons/linked-in.svg";
 import Github from "@/assets/icons/github.svg";
 import Medium from "@/assets/icons/medium.svg";
+import Apple from "@/assets/icons/apple.svg";
 import { Typography } from "@/components/Typography/Typography";
 
 export const AboutSection = () => {
@@ -43,6 +45,9 @@ export const AboutSection = () => {
         </Link>
         <Link href={GITHUB_LINK} aria-label="Github">
           <Github />
+        </Link>
+        <Link href={APPLE_LINK} aria-label="Apple">
+          <Apple />
         </Link>
       </div>
     </div>

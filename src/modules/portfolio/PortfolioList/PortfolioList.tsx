@@ -1,4 +1,5 @@
 import { useTranslation } from "next-i18next";
+import Link from "next/link";
 
 import styles from "./PortfolioList.module.css";
 import { PORTFOLIO_ITEMS } from "./PortfolioList.constants";
@@ -6,6 +7,7 @@ import { PORTFOLIO_ITEMS } from "./PortfolioList.constants";
 import { Button } from "@/components/Button/Button";
 import { PortfolioItemBox } from "@/components/PortfolioItemBox/PortfolioItemBox";
 import { Typography } from "@/components/Typography/Typography";
+import { Links } from "@/constants/Links";
 
 export const PortfolioList = () => {
   const { t } = useTranslation("portfolio");
@@ -32,7 +34,9 @@ export const PortfolioList = () => {
         <Typography opacity align="center">
           {t("work.description")}
         </Typography>
-        <Button className={styles.workButton} title={t("work.button")} />
+        <Link href={Links.Contact} aria-label="contact">
+          <Button className={styles.workButton} title={t("work.button")} />
+        </Link>
       </div>
     </div>
   );
