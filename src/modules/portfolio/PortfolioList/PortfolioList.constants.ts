@@ -111,6 +111,6 @@ export const PORTFOLIO_ITEMS = [
     screenshotsCount: 0,
     screenshotSize: { height: 580, width: 320 },
     casesCount: 0,
-    githubLink: "TODO",
+    githubLink: "https://github.com/lukaszkurantdev/personal-website",
   },
 ].reverse();

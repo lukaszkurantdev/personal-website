@@ -13,7 +13,7 @@ import {
 } from "./HeroSection.constants";
 import styles from "./HeroSection.module.css";
 
-import InfoIcon from "@/assets/icons/info.svg";
+import InfoIcon from "../../../assets/icons/info.svg";
 import { Button } from "@/components/Button/Button";
 import { Typography } from "@/components/Typography/Typography";
 import { Links } from "@/constants/Links";

@@ -9,11 +9,11 @@ import {
   MEDIUM_LINK,
 } from "./AboutSection.constants";
 import styles from "./AboutSection.module.css";
+import LinkedIn from "../../../assets/icons/linked-in.svg";
+import Github from "../../../assets/icons/github.svg";
+import Medium from "../../../assets/icons/medium.svg";
+import Apple from "../../../assets/icons/apple.svg";
 
-import LinkedIn from "@/assets/icons/linked-in.svg";
-import Github from "@/assets/icons/github.svg";
-import Medium from "@/assets/icons/medium.svg";
-import Apple from "@/assets/icons/apple.svg";
 import { Typography } from "@/components/Typography/Typography";
 
 export const AboutSection = () => {

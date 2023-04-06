@@ -10,12 +10,12 @@ import {
   PORTFOLIO_ITEM_MULTIPLIER,
   TECHNOLOGIES_DELIMITER,
 } from "./PortfolioItemDetails.constants";
+import Windows from "../../assets/icons/windows.svg";
+import Github from "../../assets/icons/github.svg";
+import GooglePlay from "../../assets/icons/google-play.svg";
+import Apple from "../../assets/icons/apple.svg";
 
 import { PORTFOLIO_ITEMS } from "@/modules/portfolio/PortfolioList/PortfolioList.constants";
-import Windows from "@/assets/icons/windows.svg";
-import Github from "@/assets/icons/github.svg";
-import GooglePlay from "@/assets/icons/google-play.svg";
-import Apple from "@/assets/icons/apple.svg";
 
 type PortfolioItemDetailsProps = typeof PORTFOLIO_ITEMS[number];
 
