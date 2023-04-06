@@ -11,9 +11,9 @@ import {
   TECHNOLOGIES_DELIMITER,
 } from "./PortfolioItemDetails.constants";
 import GooglePlay from "../../assets/icons/google-play.svg";
-import Apple from "../../assets/icons/apple.svg";
-import Windows from "../../assets/icons/windows.svg";
-import Github from "../../assets/icons/github.svg";
+import Apple from "../../assets/icons/google-play.svg";
+import Windows from "../../assets/icons/google-play.svg";
+import Github from "../../assets/icons/google-play.svg";
 
 import { PORTFOLIO_ITEMS } from "@/modules/portfolio/PortfolioList/PortfolioList.constants";
 
