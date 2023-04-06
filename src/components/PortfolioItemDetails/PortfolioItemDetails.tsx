@@ -10,10 +10,10 @@ import {
   PORTFOLIO_ITEM_MULTIPLIER,
   TECHNOLOGIES_DELIMITER,
 } from "./PortfolioItemDetails.constants";
-import GooglePlay from "../../assets/icons/google-play.svg";
-import Apple from "../../assets/icons/google-play.svg";
-import Windows from "../../assets/icons/google-play.svg";
-import Github from "../../assets/icons/google-play.svg";
+import GooglePlay from "../../assets/icons/google-play-icon.svg";
+import Apple from "../../assets/icons/apple-icon.svg";
+import Windows from "../../assets/icons/windows-icon.svg";
+import Github from "../../assets/icons/github-icon.svg";
 
 import { PORTFOLIO_ITEMS } from "@/modules/portfolio/PortfolioList/PortfolioList.constants";
 

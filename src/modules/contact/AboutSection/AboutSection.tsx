@@ -9,10 +9,10 @@ import {
   MEDIUM_LINK,
 } from "./AboutSection.constants";
 import styles from "./AboutSection.module.css";
-import LinkedIn from "../../../assets/icons/linked-in.svg";
-import Github from "../../../assets/icons/google-play.svg";
-import Medium from "../../../assets/icons/google-play.svg";
-import Apple from "../../../assets/icons/google-play.svg";
+import LinkedIn from "../../../assets/icons/linked-in-icon.svg";
+import Github from "../../../assets/icons/github-icon.svg";
+import Medium from "../../../assets/icons/medium-icon.svg";
+import Apple from "../../../assets/icons/apple-icon.svg";
 
 import { Typography } from "@/components/Typography/Typography";
 

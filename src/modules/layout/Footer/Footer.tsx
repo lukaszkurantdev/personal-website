@@ -13,10 +13,10 @@ import {
   LINKEDIN_LINK,
   MEDIUM_LINK,
 } from "@/modules/contact/AboutSection/AboutSection.constants";
-import LinkedIn from "../../../assets/icons/linked-in.svg";
-import Github from "../../../assets/icons/google-play.svg";
-import Medium from "../../../assets/icons/google-play.svg";
-import Apple from "../../../assets/icons/google-play.svg";
+import LinkedIn from "../../../assets/icons/linked-in-icon.svg";
+import Github from "../../../assets/icons/github-icon.svg";
+import Medium from "../../../assets/icons/medium-icon.svg";
+import Apple from "../../../assets/icons/apple-icon.svg";
 
 export const Footer = () => {
   const { t } = useTranslation("common", { keyPrefix: "footer" });
