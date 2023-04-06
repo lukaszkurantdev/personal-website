@@ -42,6 +42,7 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
       </Head>
 
       <main className={classNames(styles.main, latoFont.className)}>
+        <div className={styles.placeholder} />
         <Navbar />
         <Component {...pageProps} />
         <Footer />

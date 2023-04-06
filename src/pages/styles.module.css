@@ -17,3 +17,13 @@
 .main {
   height: 100vh;
 }
+
+.placeholder {
+  height: 115px;
+}
+
+@media (max-width: 800px) {
+  .placeholder {
+    height: 75px;
+  }
+}
