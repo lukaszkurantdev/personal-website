@@ -6,7 +6,7 @@ import classNames from "classnames";
 import styles from "./Navbar.module.css";
 
 import { Links } from "@/constants/Links";
-import Menu from "../../../assets/icons/menu.svg";
+import Menu from "../../../assets/icons/google-play.svg";
 import { Button } from "@/components/Button/Button";
 import { Typography } from "@/components/Typography/Typography";
 
