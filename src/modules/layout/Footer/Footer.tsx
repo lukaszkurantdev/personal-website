@@ -14,9 +14,9 @@ import {
   MEDIUM_LINK,
 } from "@/modules/contact/AboutSection/AboutSection.constants";
 import LinkedIn from "../../../assets/icons/linked-in.svg";
-import Github from "../../../assets/icons/github.svg";
-import Medium from "../../../assets/icons/medium.svg";
-import Apple from "../../../assets/icons/apple.svg";
+import Github from "../../../assets/icons/google-play.svg";
+import Medium from "../../../assets/icons/google-play.svg";
+import Apple from "../../../assets/icons/google-play.svg";
 
 export const Footer = () => {
   const { t } = useTranslation("common", { keyPrefix: "footer" });

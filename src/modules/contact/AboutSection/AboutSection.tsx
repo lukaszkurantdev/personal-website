@@ -10,9 +10,9 @@ import {
 } from "./AboutSection.constants";
 import styles from "./AboutSection.module.css";
 import LinkedIn from "../../../assets/icons/linked-in.svg";
-import Github from "../../../assets/icons/github.svg";
-import Medium from "../../../assets/icons/medium.svg";
-import Apple from "../../../assets/icons/apple.svg";
+import Github from "../../../assets/icons/google-play.svg";
+import Medium from "../../../assets/icons/google-play.svg";
+import Apple from "../../../assets/icons/google-play.svg";
 
 import { Typography } from "@/components/Typography/Typography";
 
