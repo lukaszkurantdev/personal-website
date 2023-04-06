@@ -3,12 +3,14 @@ import type { AppProps } from "next/app";
 import { appWithTranslation, useTranslation } from "next-i18next";
 import Head from "next/head";
 import classNames from "classnames";
+import { Partytown } from "@builder.io/partytown/react";
 
 import styles from "./styles.module.css";
 
 import { Lato } from "@next/font/google";
 import { Navbar } from "@/modules/layout/Navbar/NavBar";
 import { Footer } from "@/modules/layout/Footer/Footer";
+import Script from "next/script";
 
 const latoFont = Lato({ subsets: ["latin"], weight: ["400", "700"] });
 
@@ -35,6 +37,8 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
         <meta name="twitter:site" content="@site" />
         <meta name="twitter:creator" content="@handle" />
         <link rel="canonical" href={t<string>("ogUrl")} />
+
+        <Partytown debug={true} forward={["dataLayer.push"]} />
       </Head>
 
       <main className={classNames(styles.main, latoFont.className)}>
@@ -42,6 +46,25 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
         <Component {...pageProps} />
         <Footer />
       </main>
+
+      <Script
+        async
+        src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
+      />
+
+      <Script
+        id="dataLayer"
+        dangerouslySetInnerHTML={{
+          __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}', {
+                page_path: window.location.pathname,
+              });
+            `,
+        }}
+      />
     </>
   );
 };

@@ -62,7 +62,7 @@ export const PortfolioItemBox = ({
           {description}
         </Typography>
 
-        <Link href={`${Links.Portfolio}/${slug}`}>
+        <Link href={`${Links.Portfolio}/${slug}`} aria-label={slug}>
           <Button
             variant="secondary"
             title={t("readMore")}

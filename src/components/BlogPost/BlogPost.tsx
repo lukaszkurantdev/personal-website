@@ -34,9 +34,7 @@ export const BlogPost = ({
           <Typography variant="small-paragraph" className={styles.date}>
             {date}
           </Typography>
-          <Typography className={styles.title} variant="h3">
-            {title}
-          </Typography>
+          <Typography className={styles.title}>{title}</Typography>
           <Typography opacity>{description}</Typography>
         </div>
       </Link>

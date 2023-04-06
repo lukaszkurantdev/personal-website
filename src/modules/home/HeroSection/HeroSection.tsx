@@ -84,6 +84,7 @@ export const HeroSection = () => {
             alt="avatar"
             src="/images/avatar.png"
             className={styles.image}
+            priority
             {...AVATAR_SIZE}
           />
         </div>

@@ -35,13 +35,13 @@ export const AboutSection = () => {
       <br />
 
       <div className={styles.socialContainer}>
-        <Link href={MEDIUM_LINK}>
+        <Link href={MEDIUM_LINK} aria-label="Medium">
           <Medium />
         </Link>
-        <Link href={LINKEDIN_LINK}>
+        <Link href={LINKEDIN_LINK} aria-label="LinkedIn">
           <LinkedIn />
         </Link>
-        <Link href={GITHUB_LINK}>
+        <Link href={GITHUB_LINK} aria-label="Github">
           <Github />
         </Link>
       </div>

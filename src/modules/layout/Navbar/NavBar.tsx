@@ -29,7 +29,11 @@ export const Navbar = () => {
             </Typography>
           </Link>
 
-          <button className={styles.menuButton} onClick={toggleVisibility}>
+          <button
+            className={styles.menuButton}
+            aria-label="menu"
+            onClick={toggleVisibility}
+          >
             <Menu />
           </button>
         </div>

@@ -20,6 +20,8 @@
 
 .polishLink {
   margin-top: var(--space-6);
+}
+.polishLink:hover {
   text-decoration: underline;
 }
 
@@ -32,4 +34,9 @@
   overflow: hidden;
   border-radius: var(--border-radius-small);
   position: relative;
+}
+
+.title {
+  font-size: var(--typography-h3);
+  font-weight: 500;
 }
