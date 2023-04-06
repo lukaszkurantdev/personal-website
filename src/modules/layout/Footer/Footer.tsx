@@ -27,7 +27,7 @@ export const Footer = () => {
         <nav className={styles.container}>
           <div className={styles.rightsContainer}>
             <span className={styles.particle} />
-            <Typography variant="small-paragraph" opacity>
+            <Typography variant="small-paragraph" opacity align="center">
               {t("rights")}
               {new Date().getFullYear()}
             </Typography>

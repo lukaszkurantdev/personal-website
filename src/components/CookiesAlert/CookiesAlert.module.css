@@ -20,3 +20,13 @@
 .link {
   text-decoration: underline;
 }
+
+@media (max-width: 450px) {
+  .container {
+    column-gap: var(--space-6);
+  }
+
+  .button {
+    padding: var(--space-4) var(--space-7);
+  }
+}

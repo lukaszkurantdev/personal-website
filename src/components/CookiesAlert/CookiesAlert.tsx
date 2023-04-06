@@ -36,7 +36,11 @@ export const CookiesAlert = () => {
           </Link>
           {t("description3")}
         </Typography>
-        <Button title={t("button")} onClick={onClickCookies} />
+        <Button
+          title={t("button")}
+          onClick={onClickCookies}
+          className={styles.button}
+        />
       </div>
     </>
   );

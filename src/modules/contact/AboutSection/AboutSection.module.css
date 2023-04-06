@@ -19,3 +19,15 @@
 .socialContainer a:hover {
   color: var(--color-primary);
 }
+
+@media (max-width: 450px) {
+  .container {
+    margin-top: var(--space-10);
+  }
+}
+
+@media (max-width: 750px) {
+  .socialContainer {
+    display: none;
+  }
+}

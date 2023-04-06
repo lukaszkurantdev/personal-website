@@ -35,3 +35,9 @@
 .description {
   padding: 0 var(--space-8);
 }
+
+@media (max-width: 400px) {
+  .image {
+    transform: scale(0.8);
+  }
+}
