@@ -92,6 +92,11 @@
       "date": "March 21, 2023",
       "title": "Association rules in JavaScript",
       "description": "The use of an Apriori algorithm to perform basket analysis."
+    },
+    "article17": {
+      "date": "April 18, 2023",
+      "title": "Creating a native Smart Replay module in React Native using MLKit",
+      "description": "Generating response suggestions based on a list of messages."
     }
   }
 }

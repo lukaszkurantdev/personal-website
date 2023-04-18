@@ -77,4 +77,8 @@ export const POSTS = [
     link: "https://dogtronic.io/en/association-rules-in-javascript/",
     polishVersionLink: "https://dogtronic.io/algorytmy-regresji-w-javascript/",
   },
+  {
+    index: 17,
+    link: "https://medium.com/@lukasz.kurant/creating-a-native-smart-replay-module-in-react-native-using-mlkit-c6a7a0db5ebc",
+  },
 ].reverse();
