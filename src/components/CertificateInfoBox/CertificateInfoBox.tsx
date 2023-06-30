@@ -46,8 +46,9 @@ export const CertificateInfoBox = ({
       </div>
       <Typography>
         {publisher}
+        {` | `}
         <Link className={styles.link} href={link}>
-          {` | ${t("certificates.viewCertificate")}`}
+          {t("certificates.viewCertificate")}
         </Link>
       </Typography>
 

@@ -81,4 +81,8 @@ export const POSTS = [
     index: 17,
     link: "https://medium.com/@lukasz.kurant/creating-a-native-smart-replay-module-in-react-native-using-mlkit-c6a7a0db5ebc",
   },
+  {
+    index: 18,
+    link: "https://medium.com/@lukasz.kurant/react-native-quick-sqlite-with-typeorm-integration-and-performance-comparison-bcfca2e9e9ff",
+  },
 ].reverse();

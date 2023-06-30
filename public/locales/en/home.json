@@ -15,9 +15,8 @@
     "description2": "freelance full-stack programmer",
     "description3": " with passion, experience and education. In my work I create simple and advanced mobile applications and websites. I help in project analysis, UI/UX creation, programming, testing, up to maintenance. I am happy to share my knowledge and learn from others.",
     "button": "Hire me",
-    "availableToWork1": "Available for work. ",
-    "availableToWork2": "Contact me",
-    "availableToWork3": " for more information."
+    "availableToWork1": "Need a consultation? ",
+    "availableToWork2": "Contact me"
   },
   "about": {
     "title": "About me",
@@ -113,8 +112,8 @@
       "description": "Thesis: Segmentation of legal texts using machine learning algorithms."
     },
     "experiencePosition8": {
-      "date": "2015 – 2017",
-      "position": "WP freelancer",
+      "date": "2015 – 2018",
+      "position": "Windows Phone / Universal Windows Platform freelancer",
       "company": "Own commercial projects",
       "description": "Design, publish and maintain own mobile and desktop applications for Windows Phone and Windows 10."
     }

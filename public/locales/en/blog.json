@@ -97,6 +97,11 @@
       "date": "April 18, 2023",
       "title": "Creating a native Smart Replay module in React Native using MLKit",
       "description": "Generating response suggestions based on a list of messages."
+    },
+    "article18": {
+      "date": "June 30, 2023",
+      "title": "React Native Quick Sqlite with TypeORM integration and performance comparison",
+      "description": "Use of the JSI solution and comparison to the old architecture using bridges."
     }
   }
 }

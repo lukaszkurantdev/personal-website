@@ -58,7 +58,6 @@ export const HeroSection = () => {
           <Link className={styles.link} href={Links.Contact}>
             {t("availableToWork2")}
           </Link>
-          {t("availableToWork3")}
         </Typography>
       </div>
 
