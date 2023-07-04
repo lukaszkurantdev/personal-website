@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import ReactHtmlParser from "react-html-parser";
+import ReactHtmlParser from "html-react-parser";
 import { useTranslation } from "next-i18next";
 
 import { Typography } from "../Typography/Typography";
@@ -17,7 +17,7 @@ import Github from "../../assets/icons/github-icon.svg";
 
 import { PORTFOLIO_ITEMS } from "@/modules/portfolio/PortfolioList/PortfolioList.constants";
 
-type PortfolioItemDetailsProps = typeof PORTFOLIO_ITEMS[number];
+type PortfolioItemDetailsProps = (typeof PORTFOLIO_ITEMS)[number];
 
 export const PortfolioItemDetails = ({
   index: itemIndex,

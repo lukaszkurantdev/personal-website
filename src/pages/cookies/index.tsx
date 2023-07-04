@@ -1,7 +1,7 @@
 import Head from "next/head";
 import { useTranslation } from "next-i18next";
 import classNames from "classnames";
-import ReactHtmlParser from "react-html-parser";
+import ReactHtmlParser from "html-react-parser";
 
 import styles from "./styles.module.css";
 
