@@ -6,6 +6,7 @@ import styles from "./CertificateInfoBox.module.css";
 
 import { Typography } from "@/components/Typography/Typography";
 import { CERTIFICATE_IMAGE_SIZE } from "./CertificateInfoBox.constants";
+import classNames from "classnames";
 
 export type CertificateInfoBoxProps = {
   date: string;
@@ -15,6 +16,7 @@ export type CertificateInfoBoxProps = {
   link: string;
   publisher?: string;
   description?: string;
+  isSnapPoint?: boolean;
 };
 
 export const CertificateInfoBox = ({
@@ -25,11 +27,17 @@ export const CertificateInfoBox = ({
   logoSrc,
   logoAlt,
   link,
+  isSnapPoint,
 }: CertificateInfoBoxProps) => {
   const { t } = useTranslation("home", { keyPrefix: "journey" });
 
   return (
-    <div className={styles.container}>
+    <div
+      className={classNames(
+        styles.container,
+        isSnapPoint && styles.snapPointItem
+      )}
+    >
       <div className={styles.headerContainer}>
         <Image
           src={logoSrc}
@@ -47,7 +55,12 @@ export const CertificateInfoBox = ({
       <Typography>
         {publisher}
         {` | `}
-        <Link className={styles.link} href={link}>
+        <Link
+          className={styles.link}
+          href={link}
+          target="_blank"
+          rel="noreferrer"
+        >
           {t("certificates.viewCertificate")}
         </Link>
       </Typography>

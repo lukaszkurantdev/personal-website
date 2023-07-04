@@ -5,6 +5,7 @@ import { CERTIFICATES } from "./EducationSection.constants";
 
 import { Typography } from "@/components/Typography/Typography";
 import { CertificateInfoBox } from "@/components/CertificateInfoBox/CertificateInfoBox";
+import { SnapCarousel } from "@/components/SnapCarousel/SnapCarousel";
 
 export const EducationSection = () => {
   const { t } = useTranslation("home", { keyPrefix: "journey" });
@@ -16,18 +17,20 @@ export const EducationSection = () => {
         <Typography align="center">{t("certificates.description")}</Typography>
       </div>
 
-      <div className={styles.row}>
-        {CERTIFICATES.map((certificate) => (
+      <SnapCarousel
+        items={CERTIFICATES}
+        renderItem={({ item, isSnapPoint }) => (
           <CertificateInfoBox
-            {...certificate}
-            key={certificate.title}
-            date={t(`certificates.${certificate.date}`)}
-            title={t(`certificates.${certificate.title}`)}
-            publisher={t<string>(`certificates.${certificate.publisher}`)}
-            description={t<string>(`certificates.${certificate.description}`)}
+            {...item}
+            isSnapPoint={isSnapPoint}
+            key={item.title}
+            date={t(`certificates.${item.date}`)}
+            title={t(`certificates.${item.title}`)}
+            publisher={t<string>(`certificates.${item.publisher}`)}
+            description={t<string>(`certificates.${item.description}`)}
           />
-        ))}
-      </div>
+        )}
+      />
     </div>
   );
 };

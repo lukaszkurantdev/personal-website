@@ -127,19 +127,25 @@
         "title": "Mathematics for Machine Learning",
         "date": "2022-2023",
         "publisher": "Coursera | by Imperial College London",
-        "description": "The course included the following parts: Linear Algebra, Multivariate Calculus and Principal Component Analysis (PCA)"
+        "description": "The course included the following parts: Linear Algebra, Multivariate Calculus and Principal Component Analysis (PCA)."
       },
       "certificate2": {
         "title": "Deep Learning Specialization",
         "date": "2022-2023",
         "publisher": "Coursera | by DeepLearning.AI",
-        "description": "The course included the following parts: Improving Deep Neural Networks: Hyperparameter Tuning, Regularization and Optimization; Sequence Models; Neural Networks and Deep Learning; Structuring Machine Learning Projects; Convolutional Neural Networks"
+        "description": "The course included the following parts: Improving Deep Neural Networks: Hyperparameter Tuning, Regularization and Optimization; Sequence Models; Neural Networks and Deep Learning; Structuring Machine Learning Projects; Convolutional Neural Networks."
       },
       "certificate3": {
         "title": "Machine Learning Specialization",
         "date": "2022",
+        "publisher": "Coursera | by Stanford University, DeepLearning.AI",
+        "description": "The course included the following parts: Supervised MachineLearning: Regression and Classification, Advanced Learning Algorithms, Unsupervised Learning, Recommenders, Reinforcement Learning."
+      },
+      "certificate4": {
+        "title": "NLP Specialization",
+        "date": "2023",
         "publisher": "Coursera | by DeepLearning.AI",
-        "description": "The course included the following parts: Supervised MachineLearning: Regression and Classification, Advanced Learning Algorithms, Unsupervised Learning, Recommenders, Reinforcement Learning"
+        "description": "The course included the following parts: Natural Language Processing with Classification and Vector Spaces, Probabilistic Models, Sequence Models and Attention Models."
       }
     }
   },

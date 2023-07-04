@@ -1,0 +1,126 @@
+.mainContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.root {
+  position: relative;
+  align-self: center;
+}
+
+@media (min-width: 1381px) {
+  .root {
+    width: 1200px;
+  }
+}
+
+@media (max-width: 1380px) {
+  .root {
+    width: 800px;
+  }
+}
+
+@media (max-width: 980px) {
+  .root {
+    width: 390px;
+  }
+}
+
+@media (max-width: 400px) {
+  .root {
+    width: 340px;
+  }
+}
+
+.scroll {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  scroll-snap-type: x mandatory;
+  margin-left: 5px;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nextPrevButton {
+  all: unset;
+  color: var(--color-gray-800);
+  height: 40px;
+  width: 40px;
+  opacity: 0.6;
+  cursor: pointer;
+}
+.nextPrevButton:hover {
+  color: var(--color-primary);
+  opacity: 1;
+}
+
+.prevButton {
+  position: absolute;
+  left: -70px;
+  top: 90px;
+}
+
+.nextButton {
+  position: absolute;
+  right: -70px;
+  top: 90px;
+}
+
+@media (max-width: 580px) {
+  .nextPrevButton {
+    height: 25px;
+    width: 25px;
+  }
+
+  .prevButton {
+    left: 0px;
+    top: unset;
+    bottom: 0px;
+  }
+
+  .nextButton {
+    right: 0px;
+    top: unset;
+    bottom: 0px;
+  }
+}
+
+.nextPrevButtonDisabled {
+  opacity: 0.1;
+  cursor: not-allowed;
+}
+.nextPrevButtonDisabled:hover {
+  color: var(--color-gray-800);
+  opacity: 0.1;
+}
+
+.pagination {
+  display: flex;
+}
+
+.paginationButton {
+  all: unset;
+  height: 10px;
+  width: 10px;
+  background-color: var(--color-gray-800);
+  margin: 6px;
+  border-radius: 100%;
+  opacity: 0.3;
+  cursor: pointer;
+}
+
+.paginationButtonActive {
+  background-color: var(--color-primary);
+  opacity: 1;
+}
+
+.pageIndicator {
+  display: flex;
+  justify-content: center;
+}
