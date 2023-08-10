@@ -85,4 +85,8 @@ export const POSTS = [
     index: 18,
     link: "https://medium.com/@lukasz.kurant/react-native-quick-sqlite-with-typeorm-integration-and-performance-comparison-bcfca2e9e9ff",
   },
+  {
+    index: 19,
+    link: "https://medium.com/@lukasz.kurant/using-biometrics-in-react-native-65c7fa9bc5fe",
+  },
 ].reverse();

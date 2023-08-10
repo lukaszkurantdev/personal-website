@@ -102,6 +102,11 @@
       "date": "June 30, 2023",
       "title": "React Native Quick Sqlite with TypeORM integration and performance comparison",
       "description": "Use of the JSI solution and comparison to the old architecture using bridges."
+    },
+    "article19": {
+      "date": "August 19, 2023",
+      "title": "Using biometrics in React Native",
+      "description": "Use of the react-native-biometrics library for local and remote user authentication."
     }
   }
 }
