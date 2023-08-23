@@ -89,4 +89,8 @@ export const POSTS = [
     index: 19,
     link: "https://medium.com/@lukasz.kurant/using-biometrics-in-react-native-65c7fa9bc5fe",
   },
+  {
+    index: 20,
+    link: "https://medium.com/@lukasz.kurant/collapsible-component-in-react-native-at-60-fps-2139b9d28a6",
+  },
 ].reverse();

@@ -107,6 +107,11 @@
       "date": "August 19, 2023",
       "title": "Using biometrics in React Native",
       "description": "Use of the react-native-biometrics library for local and remote user authentication."
+    },
+    "article20": {
+      "date": "August 23, 2023",
+      "title": "Collapsible component in React Native at 60 FPS",
+      "description": "Using react-native-fast-collapsible and Reanimated V3."
     }
   }
 }
