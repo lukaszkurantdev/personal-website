@@ -93,4 +93,13 @@ export const POSTS = [
     index: 20,
     link: "https://medium.com/@lukasz.kurant/collapsible-component-in-react-native-at-60-fps-2139b9d28a6",
   },
+  {
+    index: 21,
+    link: "https://dogtronic.io/en/natural-language-processing-in-javascript-using-the-natural-library/",
+    polishVersionLink: "https://dogtronic.io/przetwarzanie-jezyka-naturalnego/",
+  },
+  {
+    index: 22,
+    link: "https://medium.com/@lukasz.kurant/linking-ios-system-settings-in-a-react-native-app-b65b13684931",
+  },
 ].reverse();

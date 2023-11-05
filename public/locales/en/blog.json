@@ -112,6 +112,16 @@
       "date": "August 23, 2023",
       "title": "Collapsible component in React Native at 60 FPS",
       "description": "Using react-native-fast-collapsible and Reanimated V3."
+    },
+    "article21": {
+      "date": "October 4, 2023",
+      "title": "Natural language processing in Javascript using the Natural library",
+      "description": "Selected issues related to natural language processing in JavaScript using the open source Natural library."
+    },
+    "article22": {
+      "date": "November 5, 2023",
+      "title": "Linking iOS system settings in a React Native app",
+      "description": "List of links to iOS system settings in React Native apps."
     }
   }
 }
