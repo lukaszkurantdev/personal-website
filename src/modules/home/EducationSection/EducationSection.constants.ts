@@ -1,4 +1,5 @@
 import { CertificateInfoBoxProps } from "@/components/CertificateInfoBox/CertificateInfoBox";
+import { SpeechBoxProps } from "@/components/SpeechBox/SpeechBox";
 
 export const CERTIFICATES: CertificateInfoBoxProps[] = [
   {
@@ -36,5 +37,21 @@ export const CERTIFICATES: CertificateInfoBoxProps[] = [
     title: "certificate3.title",
     publisher: "certificate3.publisher",
     description: "certificate3.description",
+  },
+];
+
+export const SPEECHES: SpeechBoxProps[] = [
+  {
+    date: "speech2.date",
+    title: "speech2.title",
+    publisher: "speech2.publisher",
+    description: "speech2.description",
+  },
+  {
+    date: "speech1.date",
+    title: "speech1.title",
+    publisher: "speech1.publisher",
+    logoAlt: "Meet.js",
+    logoSrc: "/images/logos/meetjs.webp",
   },
 ];

@@ -12,6 +12,10 @@
   flex: 1;
 }
 
+.companyContainerExpired {
+  opacity: 0.8;
+}
+
 .date {
   color: var(--color-primary);
   width: 140px;

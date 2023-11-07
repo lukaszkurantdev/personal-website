@@ -18,6 +18,13 @@
   text-decoration: underline;
 }
 
+.insideContainer:hover img {
+  -moz-filter: grayscale(50%);
+  -o-filter: grayscale(50%);
+  -ms-filter: grayscale(50%);
+  filter: grayscale(50%);
+}
+
 .polishLink {
   margin-top: var(--space-6);
 }

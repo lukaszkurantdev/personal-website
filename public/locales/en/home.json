@@ -49,19 +49,19 @@
       "title": "Mobile development",
       "description": "I specialize in creating apps that are not only visually appealing but also intuitive and easy to use. With an eye for detail and a passion for delivering quality work, I strive to create apps that are optimized for performance, security, and user satisfaction.",
       "technologiesHeader": "Technologies",
-      "technologies": "JavaScript, TypeScript, React Native, MobX, Redux, Redux Saga, React Native Testing Library, Detox, Java, Objective-C"
+      "technologies": "JavaScript, TypeScript, React Native, MobX, Redux, Tanstack Query, Apollo, REST, GraphQL, RN Testing Library, Detox, Java, Objective-C"
     },
     "specialty2": {
       "title": "Web development",
       "description": "As a programmer, I also specialize in developing web applications. I have experience on both the front-end and back-end side, which allows me to create complex solutions for my clients. Contact me today to discuss your requirements and have me develop your web application.",
       "technologiesHeader": "Technologies",
-      "technologies": "JavaScript, TypeScript, ReactJS, NodeJS, Strapi, NestJS, NextJS, Gatsby, MobX, Redux, Redux Saga, Tailwind, React Testing Library, WDIO"
+      "technologies": "JavaScript, TypeScript, ReactJS, NextJS, NodeJS, Strapi, NestJS, Tailwind, React Testing Library, WDIO"
     },
     "specialty3": {
       "title": "Know-how",
       "description": "I have a broad spectrum of knowledge and skills in the IT field. I can offer many different solutions to help you achieve your business goals. In addition, I enjoy sharing my know-how with others, which allows me to develop my skills and gain new experiences. I will be happy to help you with your IT project and achieve success in the industry.",
       "technologiesHeader": "Solutions",
-      "technologies": "Google Play, App Store, Microsoft Store, ML algorithms, BLE devices, Code audits, Image processing, OpenCV, Motion solutions, Architecture planning, Mentoring, Consulting"
+      "technologies": "Google Play, App Store, Microsoft Store, CI / CD, ML algorithms, BLE devices, Code audits, Image processing, OpenCV, Motion solutions, Architecture planning, Mentoring, Consulting"
     }
   },
   "experience": {
@@ -75,11 +75,17 @@
       "company": "Mobideca Łukasz Kurant, Remote",
       "description": "As a freelance developer, I specialize in developing mobile applications and web-based web applications - both on the front-end and back-end. I have extensive knowledge and skills in the IT field, so I can offer a variety of solutions to help you achieve your business goals. I provide consultation and training."
     },
+    "experiencePosition9": {
+      "date": "2023 – now",
+      "position": "React Native Developer",
+      "company": "MasterBorn, Remote",
+      "description": "As a Senior, I develop applications for a client from the United States and share my knowledge with the team."
+    },
     "experiencePosition2": {
       "date": "2023 – now",
       "position": "Research and teaching assistant",
       "company": "Maria Curie-Sklodowska University, Lublin, Poland",
-      "description": "I teach students in the field of Computer Science and actively work on my scientific development."
+      "description": "I teach students in the field of Computer Science and actively work on my scientific development in the department of Cyber Security and Computer Linguistics."
     },
     "experiencePosition3": {
       "date": "2022",
@@ -146,6 +152,21 @@
         "date": "2023",
         "publisher": "Coursera | by DeepLearning.AI",
         "description": "The course included the following parts: Natural Language Processing with Classification and Vector Spaces, Probabilistic Models, Sequence Models and Attention Models."
+      }
+    },
+    "speeches": {
+      "title": "Speeches",
+      "description": "I try to share my knowledge and publish my results.",
+      "speech1": {
+        "title": "Machine Learning in JavaScript",
+        "date": "2022",
+        "publisher": "Meet.js #11, Lublin"
+      },
+      "speech2": {
+        "title": "Mechanism for detecting cause-and-effect relationships in court judgments",
+        "date": "2023",
+        "publisher": "18th Conference on Computer Science and Intelligence Systems",
+        "description": "Proceedings of the Proceedings of the 18th Conference on Computer Science and Intelligence Systems, M. Ganzha, L. Maciaszek, M. Paprzycki, D. Ślęzak (eds). ACSIS, Vol. 35, pages 1041–1046 (2023), M. Ganzha, L. Maciaszek, M. Paprzycki, D. Ślęzak (eds). ACSIS, Vol. 35, pages 1041–1046 (2023)"
       }
     }
   },

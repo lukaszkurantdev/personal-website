@@ -30,6 +30,13 @@ export const ExperienceSection = () => {
         />
 
         <ExperiencePositionBox
+          date={t("experiencePosition9.date")}
+          position={t("experiencePosition9.position")}
+          company={t("experiencePosition9.company")}
+          description={t("experiencePosition9.description")}
+        />
+
+        <ExperiencePositionBox
           date={t("experiencePosition2.date")}
           position={t("experiencePosition2.position")}
           company={t("experiencePosition2.company")}
@@ -47,36 +54,42 @@ export const ExperienceSection = () => {
           position={t("experiencePosition3.position")}
           company={t("experiencePosition3.company")}
           description={t("experiencePosition3.description")}
+          expired
         />
         <ExperiencePositionBox
           date={t("experiencePosition4.date")}
           position={t("experiencePosition4.position")}
           company={t("experiencePosition4.company")}
           description={t("experiencePosition4.description")}
+          expired
         />
         <ExperiencePositionBox
           date={t("experiencePosition5.date")}
           position={t("experiencePosition5.position")}
           company={t("experiencePosition5.company")}
           description={t("experiencePosition5.description")}
+          expired
         />
         <ExperiencePositionBox
           date={t("experiencePosition6.date")}
           position={t("experiencePosition6.position")}
           company={t("experiencePosition6.company")}
           description={t("experiencePosition6.description")}
+          expired
         />
         <ExperiencePositionBox
           date={t("experiencePosition7.date")}
           position={t("experiencePosition7.position")}
           company={t("experiencePosition7.company")}
           description={t("experiencePosition7.description")}
+          expired
         />
         <ExperiencePositionBox
           date={t("experiencePosition8.date")}
           position={t("experiencePosition8.position")}
           company={t("experiencePosition8.company")}
           description={t("experiencePosition8.description")}
+          expired
         />
       </div>
     </div>

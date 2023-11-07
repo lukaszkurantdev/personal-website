@@ -1,3 +1,4 @@
+import classNames from "classnames";
 import styles from "./ExperiencePositionBox.module.css";
 
 import { Typography } from "@/components/Typography/Typography";
@@ -7,6 +8,7 @@ type ExperiencePositionBoxProps = {
   position: string;
   company: string;
   description: string;
+  expired?: boolean;
 };
 
 export const ExperiencePositionBox = ({
@@ -14,6 +16,7 @@ export const ExperiencePositionBox = ({
   position,
   company,
   description,
+  expired,
 }: ExperiencePositionBoxProps) => {
   return (
     <div className={styles.container}>
@@ -21,7 +24,12 @@ export const ExperiencePositionBox = ({
         {date}
       </Typography>
 
-      <div className={styles.companyContainer}>
+      <div
+        className={classNames(
+          styles.companyContainer,
+          expired && styles.companyContainerExpired
+        )}
+      >
         <Typography className={styles.position}>{position}</Typography>
         <Typography>{company}</Typography>
       </div>

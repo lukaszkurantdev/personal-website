@@ -1,7 +1,13 @@
-.container {
+.mainContainer {
   max-width: var(--container-width);
-  padding: var(--space-5) var(--space-8) var(--space-15);
   margin: 0 auto;
+  padding: var(--space-10) var(--space-8) var(--space-16);
+  display: flex;
+  column-gap: var(--space-8);
+}
+
+.column {
+  flex: 1;
 }
 
 .textContainer {
@@ -9,7 +15,6 @@
   flex-direction: column;
   row-gap: var(--space-5);
   margin-bottom: var(--space-10);
-  align-items: center;
 }
 
 .row {
@@ -17,9 +22,9 @@
   column-gap: var(--space-8);
 }
 
-@media (max-width: 720px) {
-  .row {
+@media (max-width: 1000px) {
+  .mainContainer {
     flex-direction: column;
-    row-gap: var(--space-8);
+    row-gap: var(--space-12);
   }
 }

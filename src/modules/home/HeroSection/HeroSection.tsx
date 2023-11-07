@@ -1,6 +1,6 @@
 import { useTranslation } from "next-i18next";
 import { useEffect, useState } from "react";
-import { Fade } from "react-awesome-reveal";
+import { Fade, Slide } from "react-awesome-reveal";
 import TextTransition from "react-text-transition";
 import Image from "next/image";
 import Link from "next/link";
@@ -81,14 +81,21 @@ export const HeroSection = () => {
             <Button className={styles.button} title={t("button")} />
           </Link>
         </div>
+
         <div className={styles.column}>
-          <Image
-            alt="avatar"
-            src="/images/lk2.png"
+          <Fade
+            direction="up"
+            duration={600}
             className={styles.image}
-            priority
-            {...AVATAR_SIZE}
-          />
+            triggerOnce
+          >
+            <Image
+              alt="avatar"
+              src="/images/lk2.png"
+              priority
+              {...AVATAR_SIZE}
+            />{" "}
+          </Fade>
         </div>
       </div>
 

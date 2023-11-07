@@ -1,0 +1,1 @@
+export const CERTIFICATE_IMAGE_SIZE = 35;

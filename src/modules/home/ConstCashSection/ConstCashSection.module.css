@@ -1,5 +1,10 @@
 .container {
-  background-color: var(--color-gray-900);
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    321deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(79, 66, 55, 1) 100%
+  );
   position: relative;
   overflow: hidden;
 }
@@ -29,8 +34,8 @@
 
 .image {
   position: absolute;
-  left: calc(100vw / 2 + 80px);
-  top: 0;
+  left: calc(100vw / 2 - 100px);
+  top: -150px;
 }
 
 .shape1 {
