@@ -41,12 +41,9 @@ export const ConstCashSection = () => {
         </div>
       </div>
 
-      {/* <ConstCashShape className={styles.shape1} />
-      <ConstCashShape className={styles.shape2} /> */}
-
       <Image
         alt="constcash-logo"
-        src="/images/Group 14-3.png"
+        src="/images/constcash-screen-2.webp"
         className={styles.image}
         {...ILLUSTRATION_SIZE}
       />
