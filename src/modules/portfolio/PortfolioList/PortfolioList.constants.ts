@@ -71,7 +71,7 @@ export const PORTFOLIO_ITEMS = [
   {
     index: 6,
     slug: "constcash",
-    date: "2021-2023",
+    date: "2021-2024",
     color: "#e39922",
     imageSize: { height: 200, width: 100 },
     screenshotsCount: 3,
