@@ -7,7 +7,7 @@ import { Partytown } from "@builder.io/partytown/react";
 
 import styles from "./styles.module.css";
 
-import { Lato } from "@next/font/google";
+import { Lato } from "next/font/google";
 import { Navbar } from "@/modules/layout/Navbar/NavBar";
 import { Footer } from "@/modules/layout/Footer/Footer";
 import Script from "next/script";
