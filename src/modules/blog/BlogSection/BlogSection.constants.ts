@@ -102,4 +102,8 @@ export const POSTS = [
     index: 22,
     link: "https://medium.com/@lukasz.kurant/linking-ios-system-settings-in-a-react-native-app-b65b13684931",
   },
+  {
+    index: 23,
+    link: "https://medium.com/@lukasz.kurant/creating-a-high-performance-react-native-vision-camera-c-frame-processor-using-jsi-b00fa8df3221",
+  },
 ].reverse();

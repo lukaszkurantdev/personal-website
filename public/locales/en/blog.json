@@ -122,6 +122,11 @@
       "date": "November 5, 2023",
       "title": "Linking iOS system settings in a React Native app",
       "description": "List of links to iOS system settings in React Native apps."
+    },
+    "article23": {
+      "date": "February 29, 2024",
+      "title": "Creating a high-performance React Native Vision Camera C++ frame processor using JSI",
+      "description": "Setting up and using functions in C++ to handle the frame processor in the React Native app for Android and iOS platforms."
     }
   }
 }
