@@ -127,6 +127,11 @@
       "date": "February 29, 2024",
       "title": "Creating a high-performance React Native Vision Camera C++ frame processor using JSI",
       "description": "Setting up and using functions in C++ to handle the frame processor in the React Native app for Android and iOS platforms."
+    },
+    "article24": {
+      "date": "April 28, 2024",
+      "title": "Real use of React Native op-sqlite with TypeORM and performance questions",
+      "description": "Measuring the performance of the library."
     }
   }
 }

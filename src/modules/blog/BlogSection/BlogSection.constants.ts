@@ -106,4 +106,8 @@ export const POSTS = [
     index: 23,
     link: "https://medium.com/@lukasz.kurant/creating-a-high-performance-react-native-vision-camera-c-frame-processor-using-jsi-b00fa8df3221",
   },
+  {
+    index: 24,
+    link: "https://medium.com/@lukasz.kurant/real-use-of-react-native-op-sqlite-with-typeorm-and-performance-questions-c19491b945d4",
+  },
 ].reverse();
