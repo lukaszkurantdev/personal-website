@@ -28,7 +28,7 @@ const Form = () => {
       action={FORM_ACTION}
       {...NETLIFY_FORM_PARAMS}
     >
-      <input type="hidden" name={FORM_SUBJECT} value={t<string>("subject")} />
+      <input type="hidden" name={FORM_SUBJECT} value={t("subject")} />
       <input type="hidden" name={FORM_NAME} value={FORM_NAME_VALUE} />
       <p hidden>
         <label>

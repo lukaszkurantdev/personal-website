@@ -25,8 +25,8 @@ export const EducationSection = () => {
             key={item.title}
             date={t(`certificates.${item.date}`)}
             title={t(`certificates.${item.title}`)}
-            publisher={t<string>(`certificates.${item.publisher}`)}
-            description={t<string>(`certificates.${item.description}`)}
+            publisher={t(`certificates.${item.publisher}`)}
+            description={t(`certificates.${item.description}`)}
           />
         ))}
       </div>
@@ -43,11 +43,9 @@ export const EducationSection = () => {
             key={item.title}
             date={t(`speeches.${item.date}`)}
             title={t(`speeches.${item.title}`)}
-            publisher={t<string>(`speeches.${item.publisher}`)}
+            publisher={t(`speeches.${item.publisher}`)}
             description={
-              item.description
-                ? t<string>(`speeches.${item.description}`)
-                : undefined
+              item.description ? t(`speeches.${item.description}`) : undefined
             }
           />
         ))}

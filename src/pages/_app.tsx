@@ -20,23 +20,23 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
   return (
     <>
       <Head>
-        <meta name="description" content={t<string>("description")}></meta>
+        <meta name="description" content={t("description")}></meta>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
-        <meta property="og:url" content={t<string>("ogUrl")} />
-        <meta property="og:locale" content={t<string>("ogLocale")} />
-        <meta property="og:type" content={t<string>("ogType")}></meta>
-        <meta property="og:title" content={t<string>("ogTitle")} />
-        <meta property="og:description" content={t<string>("ogDescription")} />
-        <meta property="og:image" content={t<string>("ogImage")} />
+        <meta property="og:url" content={t("ogUrl")} />
+        <meta property="og:locale" content={t("ogLocale")} />
+        <meta property="og:type" content={t("ogType")}></meta>
+        <meta property="og:title" content={t("ogTitle")} />
+        <meta property="og:description" content={t("ogDescription")} />
+        <meta property="og:image" content={t("ogImage")} />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta property="og:image:type" content="image/png" />
-        <meta property="og:site_name" content={t<string>("description")} />
+        <meta property="og:site_name" content={t("description")} />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@site" />
         <meta name="twitter:creator" content="@handle" />
-        <link rel="canonical" href={t<string>("ogUrl")} />
+        <link rel="canonical" href={t("ogUrl")} />
 
         <Partytown debug={true} forward={["dataLayer.push"]} />
       </Head>

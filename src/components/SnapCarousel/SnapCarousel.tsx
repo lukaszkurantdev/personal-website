@@ -38,6 +38,7 @@ export const SnapCarousel = <T extends any>({
             styles.prevButton,
             activePageIndex <= 0 && styles.nextPrevButtonDisabled
           )}
+          //@ts-ignore
           onClick={prev}
         >
           <ArrowLeft />
@@ -59,6 +60,7 @@ export const SnapCarousel = <T extends any>({
             activePageIndex === pages.length - 1 &&
               styles.nextPrevButtonDisabled
           )}
+          //@ts-ignore
           onClick={next}
         >
           <ArrowRight />
