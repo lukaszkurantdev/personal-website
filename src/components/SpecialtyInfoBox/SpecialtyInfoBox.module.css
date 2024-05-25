@@ -40,9 +40,12 @@
 }
 
 .technologyItem {
-  background-color: rgba(220, 220, 220, 0.3);
+  background-color: rgba(220, 220, 220, 0.1);
   padding: var(--space-2) var(--space-5);
   border-radius: 20px;
+  border-color: rgba(220, 220, 220, 0.5);
+  border-width: 1px;
+  border-style: solid;
 }
 
 @media (max-width: 720px) {

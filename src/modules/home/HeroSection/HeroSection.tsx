@@ -1,6 +1,6 @@
 import { useTranslation } from "next-i18next";
 import { useEffect, useState } from "react";
-import { Fade, Slide } from "react-awesome-reveal";
+import { Fade } from "react-awesome-reveal";
 import TextTransition from "react-text-transition";
 import Image from "next/image";
 import Link from "next/link";
@@ -75,6 +75,8 @@ export const HeroSection = () => {
             {t("description1")}
             <span className={styles.primaryText}>{t("description2")}</span>
             {t("description3")}
+            <span className={styles.primaryText}>{t("description4")}</span>
+            {t("description5")}
           </Typography>
 
           <Link href={Links.Contact} aria-label="contact">

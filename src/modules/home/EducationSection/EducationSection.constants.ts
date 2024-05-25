@@ -52,6 +52,7 @@ export const SPEECHES: SpeechBoxProps[] = [
     title: "speech1.title",
     publisher: "speech1.publisher",
     logoAlt: "Meet.js",
+    description: "speech1.description",
     logoSrc: "/images/logos/meetjs.webp",
   },
 ];

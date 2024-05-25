@@ -18,7 +18,6 @@
 .listContainer {
   display: flex;
   flex-direction: column;
-  row-gap: var(--space-5);
 }
 
 .header {

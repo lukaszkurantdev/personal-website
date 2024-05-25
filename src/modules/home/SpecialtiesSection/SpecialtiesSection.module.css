@@ -45,7 +45,7 @@
 .particle3 {
   height: 30px;
   width: 30px;
-  background-color: var(--color-danger);
+  background-color: var(--color-primary-light);
   border-radius: 100%;
   position: absolute;
   top: 220px;

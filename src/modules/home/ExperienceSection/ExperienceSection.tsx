@@ -23,17 +23,13 @@ export const ExperienceSection = () => {
 
       <div className={styles.listContainer}>
         <ExperiencePositionBox
-          date={t("experiencePosition1.date")}
-          position={t("experiencePosition1.position")}
-          company={t("experiencePosition1.company")}
-          description={t("experiencePosition1.description")}
-        />
-
-        <ExperiencePositionBox
           date={t("experiencePosition9.date")}
           position={t("experiencePosition9.position")}
           company={t("experiencePosition9.company")}
+          technologies={t("experiencePosition9.technologies")}
           description={t("experiencePosition9.description")}
+          logoSrc="/images/logos/masterborn.webp"
+          isTopLineTransparent
         />
 
         <ExperiencePositionBox
@@ -41,6 +37,18 @@ export const ExperienceSection = () => {
           position={t("experiencePosition2.position")}
           company={t("experiencePosition2.company")}
           description={t("experiencePosition2.description")}
+          technologies={t("experiencePosition2.technologies")}
+          logoSrc="/images/logos/umcs.webp"
+        />
+
+        <ExperiencePositionBox
+          date={t("experiencePosition1.date")}
+          position={t("experiencePosition1.position")}
+          company={t("experiencePosition1.company")}
+          description={t("experiencePosition1.description")}
+          technologies={t("experiencePosition1.technologies")}
+          logoSrc="/images/logos/mobideca.webp"
+          isBottomLineTransparent
         />
       </div>
 
@@ -50,11 +58,14 @@ export const ExperienceSection = () => {
 
       <div className={styles.listContainer}>
         <ExperiencePositionBox
+          isTopLineTransparent
           date={t("experiencePosition3.date")}
           position={t("experiencePosition3.position")}
           company={t("experiencePosition3.company")}
           description={t("experiencePosition3.description")}
           expired
+          logoSrc="/images/logos/dogtronic.webp"
+          technologies={t("experiencePosition3.technologies")}
         />
         <ExperiencePositionBox
           date={t("experiencePosition4.date")}
@@ -62,6 +73,7 @@ export const ExperienceSection = () => {
           company={t("experiencePosition4.company")}
           description={t("experiencePosition4.description")}
           expired
+          logoSrc="/images/logos/umcs.webp"
         />
         <ExperiencePositionBox
           date={t("experiencePosition5.date")}
@@ -69,6 +81,8 @@ export const ExperienceSection = () => {
           company={t("experiencePosition5.company")}
           description={t("experiencePosition5.description")}
           expired
+          logoSrc="/images/logos/polcode.webp"
+          technologies={t("experiencePosition5.technologies")}
         />
         <ExperiencePositionBox
           date={t("experiencePosition6.date")}
@@ -76,6 +90,8 @@ export const ExperienceSection = () => {
           company={t("experiencePosition6.company")}
           description={t("experiencePosition6.description")}
           expired
+          logoSrc="/images/logos/akanza.webp"
+          technologies={t("experiencePosition6.technologies")}
         />
         <ExperiencePositionBox
           date={t("experiencePosition7.date")}
@@ -83,6 +99,7 @@ export const ExperienceSection = () => {
           company={t("experiencePosition7.company")}
           description={t("experiencePosition7.description")}
           expired
+          logoSrc="/images/logos/umcs.webp"
         />
         <ExperiencePositionBox
           date={t("experiencePosition8.date")}
@@ -90,6 +107,9 @@ export const ExperienceSection = () => {
           company={t("experiencePosition8.company")}
           description={t("experiencePosition8.description")}
           expired
+          logoSrc="/images/logos/freelancer.webp"
+          technologies={t("experiencePosition8.technologies")}
+          isBottomLineTransparent
         />
       </div>
     </div>

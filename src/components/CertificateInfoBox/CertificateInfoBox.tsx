@@ -64,10 +64,6 @@ export const CertificateInfoBox = ({
           {t("certificates.viewCertificate")}
         </Link>
       </Typography>
-
-      <Typography variant="small-paragraph" opacity>
-        {description}
-      </Typography>
     </div>
   );
 };

@@ -121,11 +121,12 @@
 .particle3 {
   height: 30px;
   width: 30px;
-  background-color: var(--color-primary-light);
+  background-color: var(--color-danger);
   border-radius: 100%;
   position: absolute;
   top: 220px;
   right: calc(10%);
+  opacity: 0.7;
 }
 
 .particle4 {
