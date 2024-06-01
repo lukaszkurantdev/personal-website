@@ -137,6 +137,11 @@
       "date": "May 20, 2024",
       "title": "JavaScript Iterators Explained",
       "description": "A comprehensive explanation of iterators in JavaScript: how they work and how to use them."
+    },
+    "article26": {
+      "date": "June 1, 2024",
+      "title": "JavaScript Generators Explained",
+      "description": "A comprehensive explanation of generators in JavaScript: how they work and how to use them."
     }
   }
 }
