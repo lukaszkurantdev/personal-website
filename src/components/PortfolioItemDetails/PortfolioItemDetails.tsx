@@ -96,8 +96,11 @@ export const PortfolioItemDetails = ({
         <div className={styles.column}>
           <Typography variant="h2">{t(`item.usedTechnologies`)}</Typography>
           <div className={styles.technologiesContainer}>
-            {technologiesList.map((technology) => (
-              <span key={technology} className={styles.technologyItem}>
+            {technologiesList.map((technology, index) => (
+              <span
+                key={`${technology}-${index}`}
+                className={styles.technologyItem}
+              >
                 {technology}
               </span>
             ))}

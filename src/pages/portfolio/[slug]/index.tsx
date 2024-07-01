@@ -9,7 +9,7 @@ import { getServerSideTranslations } from "@/utils/serverSideTranslations";
 import type { ServerSideProps } from "@/types/ServerSideProps";
 
 type Props = {
-  item: typeof PORTFOLIO_ITEMS[number];
+  item: (typeof PORTFOLIO_ITEMS)[number];
 };
 
 export default function PortfolioItem({ item }: Props) {
@@ -43,5 +43,19 @@ export async function getStaticProps({ locale, params }: ServerSideProps) {
 }
 
 export const getStaticPaths = () => {
-  return { fallback: "blocking", paths: [] };
+  return {
+    fallback: "blocking",
+    paths: [
+      { params: { slug: "matma" } },
+      { params: { slug: "logicos" } },
+      { params: { slug: "whats-inside" } },
+      { params: { slug: "qopml" } },
+      { params: { slug: "simple-weather-app" } },
+      { params: { slug: "dzielo-biblijne" } },
+      { params: { slug: "constcash" } },
+      { params: { slug: "constcash-web" } },
+      { params: { slug: "plant-you-grow" } },
+      { params: { slug: "portfolio-page" } },
+    ],
+  };
 };
