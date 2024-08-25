@@ -118,4 +118,12 @@ export const POSTS = [
     index: 26,
     link: "https://medium.com/@lukasz.kurant/javascript-generators-explained-daec2d6c7103",
   },
+  {
+    index: 27,
+    link: "https://medium.com/@lukasz.kurant/high-performance-hand-landmark-detection-in-react-native-using-vision-camera-and-skia-frame-9ddec89362bc",
+  },
+  {
+    index: 28,
+    link: "https://medium.com/@lukasz.kurant/fastopencv-how-to-easily-use-opencv-in-react-native-also-with-visioncamera-in-2024-1c96d918b6e8",
+  },
 ].reverse();

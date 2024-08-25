@@ -142,6 +142,16 @@
       "date": "June 1, 2024",
       "title": "JavaScript Generators Explained",
       "description": "A comprehensive explanation of generators in JavaScript: how they work and how to use them."
+    },
+    "article27": {
+      "date": "August 1, 2024",
+      "title": "High-performance hand landmark detection in React Native using Vision Camera and Skia frame processor",
+      "description": "Developing a real-time application using the MediaPipe model."
+    },
+    "article28": {
+      "date": "August 25, 2024",
+      "title": "FastOpenCV — How to easily use OpenCV in React Native (also with VisionCamera!) in 2024",
+      "description": "Demonstration of a library for React Native using JSI and C++ API."
     }
   }
 }
