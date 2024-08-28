@@ -1,0 +1,33 @@
+.main {
+  min-height: 100vh;
+  background-color: var(--color-white);
+}
+
+.contentContainer {
+  max-width: var(--container-width);
+  margin: auto;
+  padding: 0 var(--space-8);
+}
+
+.columnsContainer {
+  display: flex;
+  padding: var(--space-10) 0;
+}
+
+@media (max-width: 600px) {
+  .columnsContainer {
+    flex-direction: column;
+    row-gap: var(--space-10);
+  }
+}
+
+.column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  row-gap: var(--space-7);
+}
+
+.title {
+  margin-bottom: var(--space-4);
+}

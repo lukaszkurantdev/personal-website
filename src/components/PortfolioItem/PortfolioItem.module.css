@@ -1,0 +1,43 @@
+.container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-gray-300);
+  padding: var(--space-8) var(--space-7) var(--space-7);
+  border-radius: var(--border-radius-regular);
+  align-items: center;
+  justify-content: center;
+  height: 240px;
+  position: relative;
+  overflow: hidden;
+}
+
+.topContainer {
+  background-color: var(--color-gray-300);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: var(--border-radius-regular);
+  opacity: 0;
+  transition: opacity 250ms ease-out 250ms;
+  cursor: pointer;
+  padding: var(--space-7);
+  display: flex;
+  flex-direction: column;
+  row-gap: var(--space-5);
+}
+
+.topContainer:hover {
+  opacity: 1;
+}
+
+.container:hover .image {
+  scale: 0.8;
+}
+
+.image {
+  scale: 1;
+  transition: scale 250ms ease-out 250ms;
+}

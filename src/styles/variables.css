@@ -4,7 +4,8 @@
   --color-black: #000000;
   --color-gray-50: "#FBFBFB";
   --color-gray-100: #fafafa;
-  --color-gray-300: #eaeced;
+  --color-gray-300: #efefef;
+  --color-gray-500: #dbdbdb;
   --color-gray-800: #3c4249;
   --color-gray-900: #2f2f2f;
   --color-primary: #355ce8;
@@ -12,8 +13,7 @@
   --color-danger: #de831a;
 
   /* typography */
-  --typography-h0: 72px;
-  --typography-h1: 30px;
+  --typography-h1: 36px;
   --typography-h2: 25px;
   --typography-h3: 20px;
 
@@ -44,7 +44,7 @@
   --space-17: 140px;
   --space-18: 160px;
 
-  --container-width: 1200px;
+  --container-width: 960px;
   --container-medium-width: 600px;
   --container-small-width: 300px;
 

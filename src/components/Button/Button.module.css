@@ -1,6 +1,7 @@
 .button {
   all: unset;
   cursor: pointer;
+  height: 20px;
 }
 
 .primary {

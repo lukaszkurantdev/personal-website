@@ -1,0 +1,43 @@
+.container {
+  background-color: var(--color-gray-100);
+  overflow: hidden;
+  position: relative;
+  border-bottom: 1px solid var(--color-gray-300);
+}
+
+.insideContainer {
+  display: flex;
+  flex-direction: column;
+  padding: var(--space-10) var(--space-8);
+  max-width: var(--container-width);
+  margin: auto;
+  position: relative;
+  align-items: center;
+}
+
+.avatarContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title {
+  margin-top: var(--space-7);
+}
+
+.description {
+  margin-top: var(--space-8);
+}
+
+.socialContainer {
+  display: flex;
+  column-gap: var(--space-5);
+  margin: var(--space-8) 0;
+}
+
+.socialContainer a {
+  transition: color 150ms ease-out 150ms, color 150ms ease-out 150ms;
+}
+
+.socialContainer a:hover {
+  color: var(--color-primary);
+}

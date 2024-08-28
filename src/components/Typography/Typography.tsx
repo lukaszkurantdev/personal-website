@@ -12,6 +12,8 @@ type TypographyProps = {
   children?: ReactNode;
   fontSize?: number;
   opacity?: boolean;
+  link?: boolean;
+  color?: string;
 };
 
 export const Typography = ({
@@ -22,6 +24,8 @@ export const Typography = ({
   children,
   fontSize,
   opacity,
+  link,
+  color,
 }: TypographyProps) => {
   const Variant = TYPOGRAPHY_VARIANTS[variant];
 
@@ -32,9 +36,10 @@ export const Typography = ({
         styles[weight],
         styles[align],
         opacity && styles.opacity,
+        link && styles.link,
         className
       )}
-      style={{ fontSize }}
+      style={{ fontSize, color }}
     >
       {children}
     </Variant>
