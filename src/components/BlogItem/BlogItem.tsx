@@ -13,10 +13,6 @@ type BlogItemProps = {
 export const BlogItem = ({ title, description, date, link }: BlogItemProps) => {
   return (
     <div className={styles.container}>
-      <Typography variant="x-small-paragraph" opacity>
-        {date}
-      </Typography>
-
       <Link href={link} target="blank" className={styles.link} rel="noreferrer">
         <Typography link>
           {title}
@@ -27,7 +23,7 @@ export const BlogItem = ({ title, description, date, link }: BlogItemProps) => {
       </Link>
 
       <Typography variant="small-paragraph" opacity>
-        {description}
+        {date} | {description}
       </Typography>
     </div>
   );

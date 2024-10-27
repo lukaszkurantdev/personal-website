@@ -20,13 +20,21 @@ export default function Home() {
         </Typography>
 
         {BLOG_DATA.map((item) => (
-          <BlogItem
-            key={`post-${item.index}`}
-            title={item.title}
-            description={item.description}
-            date={item.date}
-            link={item.link}
-          />
+          <div key={item.year} className={styles.yearContainer}>
+            <Typography variant="paragraph" weight="bold">
+              {item.year}
+            </Typography>
+
+            {item.articles.map((article) => (
+              <BlogItem
+                key={`post-${article.index}`}
+                title={article.title}
+                description={article.description}
+                date={article.date}
+                link={article.link}
+              />
+            ))}
+          </div>
         ))}
       </div>
     </main>

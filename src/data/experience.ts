@@ -46,7 +46,7 @@ export const EXPERIENCE_DATA = [
     position: "Master studies in the field of Computer Science",
     company: "Maria Curie-Sklodowska University, Lublin (Poland)",
     description:
-      'I finished my studies by defending my master\'s thesis on the topic "The mechanism of argumentation mining in legal cases texts using recurrent neural networks." written in the department of intelligent systems.',
+      'I finished my studies by defending my master\'s thesis on the topic "The mechanism of argumentation mining in legal cases texts using recurrent neural networks." written in the Department of Intelligent Systems.',
     technologies: "",
   },
   {
@@ -76,7 +76,7 @@ export const EXPERIENCE_DATA = [
     position: "Bachelor studies in the field of Computer Science",
     company: "Maria Curie-Sklodowska University, Lublin (Poland)",
     description:
-      'I finished my studies by defending my bachelor\'s thesis on the topic "Segmentation of legal texts using machine learning algorithms" written in the department of intelligent systems.',
+      'I finished my studies by defending my bachelor\'s thesis on the topic "Segmentation of legal texts using machine learning algorithms" written in the Department of Intelligent Systems.',
     technologies: "",
   },
   {

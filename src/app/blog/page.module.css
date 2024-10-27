@@ -13,6 +13,13 @@
 }
 
 .title {
-  margin-bottom: var(--space-10);
+  margin-bottom: var(--space-8);
   margin-top: calc(-1 * var(--space-4));
+}
+
+.yearContainer {
+  row-gap: var(--space-6);
+  flex-direction: column;
+  display: flex;
+  margin-top: var(--space-5);
 }

@@ -39,10 +39,11 @@ export const STACK_DATA = [
 
 export const SKILLS_DATA = [
   "Knowledge of design patterns and data structures",
-  "Integration of native components with React Native",
-  "Communication with external devices (BLE devices)",
-  "Publishing applications in the Google Play, App Store and MS Store",
+  "Integration of native components and libraries into React Native applications, including in the new architecture using JSI",
+  "Developing methods for effective communication with external devices and mobile applications (like BLE devices)",
+  "Publication and maintenance of applications in the Google Play, App Store and Microsoft Store",
   "Machine learning algorithms, text processing and data analysis",
-  "Image processing",
-  "Performing code audits, conducting workshops, mentoring, teaching",
+  "Image processing, including real-time solutions",
+  "Conducting research in the field of legal text processing using artificial intelligence methods and JavaScript engines.",
+  "Performing code audits and technical interviews, conducting workshops, mentoring, teaching",
 ];

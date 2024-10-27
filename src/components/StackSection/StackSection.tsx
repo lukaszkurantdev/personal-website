@@ -25,15 +25,17 @@ export const StackSection = () => {
             </div>
           ))}
         </div>
-        <div className={styles.column}>
+
+        <ul className={styles.column}>
+          <Typography variant="small-paragraph" weight="bold">
+            Other skills
+          </Typography>
           {SKILLS_DATA.map((item, index) => (
-            <div key={`skl-${index}`}>
-              <Typography variant="small-paragraph">
-                {"•"} {item}
-              </Typography>
-            </div>
+            <li key={`skl-${index}`}>
+              <Typography variant="small-paragraph">{item}</Typography>
+            </li>
           ))}
-        </div>
+        </ul>
       </div>
     </div>
   );
