@@ -216,6 +216,14 @@ export const BLOG_DATA = [
     year: "2024",
     articles: [
       {
+        index: 30,
+        link: "https://medium.com/@lukasz.kurant/real-time-document-detection-using-the-camera-in-react-native-b0cc0af3bbd9",
+        date: "November 16, 2024",
+        title: "Real-time document detection using the camera in React Native",
+        description:
+          "Development of document detection code using the React Native Fast OpenCV library.",
+      },
+      {
         index: 29,
         link: "https://medium.com/@lukasz.kurant/creating-your-own-cocoapod-for-the-opencv-library-1595fe42366b",
         date: "October 27, 2024",
