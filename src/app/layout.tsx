@@ -32,6 +32,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link
+          rel="stylesheet"
+          href="https://unpkg.com/prismjs@0.0.1/themes/prism.css"
+        ></link>
+      </head>
       <body className={classNames(latoFont.className)}>
         {children}
 

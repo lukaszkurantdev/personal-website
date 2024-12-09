@@ -9,6 +9,7 @@ export const BLOG_DATA = [
         title: "Przyśpieszenie aplikacji w React Native 🇵🇱",
         description:
           "A presentation of the Hermes engine, along with an indication of its effectiveness.",
+        type: "external",
       },
       {
         index: 3,
@@ -17,6 +18,7 @@ export const BLOG_DATA = [
         title: "Narzędzia diagnostyczne i analityczne App Center 🇵🇱",
         description:
           "Demonstration of the analytics module capabilities in a React Native application using AppCenter.",
+        type: "external",
       },
       {
         index: 2,
@@ -25,6 +27,7 @@ export const BLOG_DATA = [
         title: "Integracja aplikacji App Center z Bitbucket 🇵🇱",
         description:
           "Integrating the Bitbucket repository with the AppCenter service.",
+        type: "external",
       },
       {
         index: 1,
@@ -33,6 +36,7 @@ export const BLOG_DATA = [
         title: "Push notyfikacje App Center 🇵🇱",
         description:
           "Sending push notifications in a React Native application using the AppCenter push notifications service.",
+        type: "external",
       },
       {
         index: 0,
@@ -41,6 +45,7 @@ export const BLOG_DATA = [
         title: "Połączenie aplikacji React Native z usługą App Center 🇵🇱",
         description:
           "Presentation of the functionality of the App Center tool and how to integrate it with React Native application.",
+        type: "external",
       },
     ],
   },
@@ -54,6 +59,7 @@ export const BLOG_DATA = [
         title: "WatermelonDB in React Native (2/2)",
         description:
           "Presentation of actions on data using WatermelonDB database. Creating, editing and deleting records in the database.",
+        type: "external",
       },
       {
         index: 6,
@@ -62,6 +68,7 @@ export const BLOG_DATA = [
         title: "WatermelonDB in React Native (1/2)",
         description:
           "The process of configuring the WatermelonDB library and creating table and model definitions.",
+        type: "external",
       },
       {
         index: 5,
@@ -70,6 +77,7 @@ export const BLOG_DATA = [
         title: "Narzędzie diagnostyczne React Native Doctor 🇵🇱",
         description:
           "Demonstration of react native doctor tool for finding and fixing issues related to the development environment.",
+        type: "external",
       },
     ],
   },
@@ -83,6 +91,7 @@ export const BLOG_DATA = [
         title: "Native components of Android in React Native",
         description:
           "Creating a native Android component in Java and integrating it with a React Native application using a bridge.",
+        type: "external",
       },
     ],
   },
@@ -96,6 +105,7 @@ export const BLOG_DATA = [
         title: "Dynamically change iOS app icons in React Native",
         description:
           "Dynamically changing an app icon using a library in React Native.",
+        type: "external",
       },
       {
         index: 12,
@@ -104,6 +114,7 @@ export const BLOG_DATA = [
         title: "Regression algorithms in Javascript",
         description:
           "Description and example of the use of linear and polynomial regression in Javascript.",
+        type: "external",
       },
       {
         index: 11,
@@ -113,6 +124,7 @@ export const BLOG_DATA = [
           "Creating native frame processors for Vision Camera in React Native using OpenCV",
         description:
           "Real-time detection of colored objects using native code in Java and Objective-C.",
+        type: "external",
       },
       {
         index: 10,
@@ -121,6 +133,7 @@ export const BLOG_DATA = [
         title: "Real-time pose detection in React Native using MLKit",
         description:
           "Real-time human pose detection using Frame processor with Vision camera.",
+        type: "external",
       },
       {
         index: 9,
@@ -129,6 +142,7 @@ export const BLOG_DATA = [
         title: "Semantic analysis in React Native using Tensorflow",
         description:
           "Developing a mobile app to enable tone detection in movie reviews. Integrating Tensorflow into a React Native application and using a trained model based on a convolutional neural network.",
+        type: "external",
       },
     ],
   },
@@ -142,6 +156,7 @@ export const BLOG_DATA = [
         title: "Linking iOS system settings in a React Native app",
         description:
           "List of links to iOS system settings in React Native apps.",
+        type: "external",
       },
       {
         index: 21,
@@ -151,6 +166,7 @@ export const BLOG_DATA = [
           "Natural language processing in Javascript using the Natural library",
         description:
           "Selected issues related to natural language processing in JavaScript using the open source Natural library.",
+        type: "external",
       },
       {
         index: 20,
@@ -158,6 +174,7 @@ export const BLOG_DATA = [
         date: "August 23, 2023",
         title: "Collapsible component in React Native at 60 FPS",
         description: "Using react-native-fast-collapsible and Reanimated V3.",
+        type: "external",
       },
       {
         index: 19,
@@ -166,6 +183,7 @@ export const BLOG_DATA = [
         title: "Using biometrics in React Native",
         description:
           "Use of the react-native-biometrics library for local and remote user authentication.",
+        type: "external",
       },
       {
         index: 18,
@@ -175,6 +193,7 @@ export const BLOG_DATA = [
           "React Native Quick Sqlite with TypeORM integration and performance comparison",
         description:
           "Use of the JSI solution and comparison to the old architecture using bridges.",
+        type: "external",
       },
       {
         index: 17,
@@ -184,6 +203,7 @@ export const BLOG_DATA = [
           "Creating a native Smart Replay module in React Native using MLKit",
         description:
           "Generating response suggestions based on a list of messages.",
+        type: "external",
       },
       {
         index: 16,
@@ -192,6 +212,7 @@ export const BLOG_DATA = [
         title: "Association rules in JavaScript",
         description:
           "The use of an Apriori algorithm to perform basket analysis.",
+        type: "external",
       },
       {
         index: 15,
@@ -200,6 +221,7 @@ export const BLOG_DATA = [
         title: "Using iCloud containers in a React Native application",
         description:
           "Installation and use of an external library to manage iCloud containers in a React Native application.",
+        type: "external",
       },
       {
         index: 14,
@@ -209,6 +231,7 @@ export const BLOG_DATA = [
           "Conclusions of an indie developer after publishing his own application",
         description:
           "This post describes my experience with developing my own mobile app.",
+        type: "external",
       },
     ],
   },
@@ -216,12 +239,21 @@ export const BLOG_DATA = [
     year: "2024",
     articles: [
       {
+        index: 31,
+        link: "blog/posts/cpp-compilation-for-ios",
+        date: "December 09, 2024",
+        title: "C99 compilation for iOS (device and simulator)",
+        description: "A way to use cpp code as a compiled package on iOS.",
+        type: "internal",
+      },
+      {
         index: 30,
         link: "https://medium.com/@lukasz.kurant/real-time-document-detection-using-the-camera-in-react-native-b0cc0af3bbd9",
         date: "November 16, 2024",
         title: "Real-time document detection using the camera in React Native",
         description:
           "Development of document detection code using the React Native Fast OpenCV library.",
+        type: "external",
       },
       {
         index: 29,
@@ -230,6 +262,7 @@ export const BLOG_DATA = [
         title: "Creating your own CocoaPod for the OpenCV library",
         description:
           "Compilation of the OpenCV library and publication of the custom xcframework in the form of a CocoaPod module.",
+        type: "external",
       },
       {
         index: 28,
@@ -239,6 +272,7 @@ export const BLOG_DATA = [
           "FastOpenCV — How to easily use OpenCV in React Native (also with VisionCamera!) in 2024",
         description:
           "Demonstration of a library for React Native using JSI and C++ API.",
+        type: "external",
       },
       {
         index: 27,
@@ -248,6 +282,7 @@ export const BLOG_DATA = [
           "High-performance hand landmark detection in React Native using Vision Camera and Skia frame processor",
         description:
           "Developing a real-time application using the MediaPipe model.",
+        type: "external",
       },
       {
         index: 26,
@@ -256,6 +291,7 @@ export const BLOG_DATA = [
         title: "JavaScript Generators Explained",
         description:
           "A comprehensive explanation of generators in JavaScript: how they work and how to use them.",
+        type: "external",
       },
       {
         index: 25,
@@ -264,6 +300,7 @@ export const BLOG_DATA = [
         title: "JavaScript Iterators Explained",
         description:
           "A comprehensive explanation of iterators in JavaScript: how they work and how to use them.",
+        type: "external",
       },
       {
         index: 24,
@@ -272,6 +309,7 @@ export const BLOG_DATA = [
         title:
           "Real use of React Native op-sqlite with TypeORM and performance questions",
         description: "Measuring the performance of the library.",
+        type: "external",
       },
       {
         index: 23,
@@ -281,6 +319,7 @@ export const BLOG_DATA = [
           "Creating a high-performance React Native Vision Camera C++ frame processor using JSI",
         description:
           "Setting up and using functions in C++ to handle the frame processor in the React Native app for Android and iOS platforms.",
+        type: "external",
       },
     ],
   },

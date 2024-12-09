@@ -1,0 +1,18 @@
+.main {
+  background-color: var(--color-white);
+}
+
+.contentContainer {
+  max-width: var(--container-width);
+  margin: auto;
+  padding: var(--space-10) var(--space-8);
+  row-gap: var(--space-8);
+  flex-direction: column;
+  display: flex;
+}
+
+.articleContentContainer {
+  flex-direction: column;
+  display: flex;
+  row-gap: var(--space-5);
+}

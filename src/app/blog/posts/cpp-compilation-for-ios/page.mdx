@@ -1,0 +1,51 @@
+import { Typography } from "@/components/Typography/Typography";
+
+# C99 compilation for iOS (device and simulator)
+
+<Typography opacity>
+  A way to use C code as a compiled package on iOS.
+</Typography>
+
+<br />
+
+---
+
+<br />
+
+In a recent project I was faced with the problem of building a library that contained C code (99) that was incompatible with C++ (so I could not easily compile it together with the React Native library code). Hence, after research I added the following flow:
+
+Compiling on iOS the C library -> attaching the compile file to the C++ library for React Native.
+
+<br />
+
+## Compilation
+
+```bash
+clang -c -target arm64-apple-ios \
+  -isysroot $(xcrun --sdk iphoneos --show-sdk-path) \
+  file1.c file2.c file3.c
+```
+
+The next step was to merge the compiled files.
+
+```bash
+ar rcs lib_arm64.a file1.o file2.o file3.o
+```
+
+If the library is also to run on the simulator on Intel processors, we must also compile for this architecture:
+
+```bash
+clang -c -target x86_64-apple-ios-simulator \
+  -isysroot $(xcrun --sdk iphonesimulator --show-sdk-path) \
+  file1.c file2.c file3.c
+
+ar rcs lib_simulator.a file1.o file2.o file3.o
+```
+
+We then combine the result files for both architectures.
+
+```bash
+lipo -create -output lib_universal.a lib_arm64.a lib_simulator.a
+```
+
+We can include the library prepared in this way, together with the `.h` files, in our C++ library (e.g. for React Native).

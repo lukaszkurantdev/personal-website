@@ -8,17 +8,31 @@ type BlogItemProps = {
   description: string;
   date: string;
   link: string;
+  type: string;
 };
 
-export const BlogItem = ({ title, description, date, link }: BlogItemProps) => {
+export const BlogItem = ({
+  title,
+  description,
+  date,
+  link,
+  type,
+}: BlogItemProps) => {
   return (
     <div className={styles.container}>
-      <Link href={link} target="blank" className={styles.link} rel="noreferrer">
+      <Link
+        href={link}
+        target={type === "external" ? "blank" : undefined}
+        className={styles.link}
+        rel="noreferrer"
+      >
         <Typography link>
           {title}
-          <span className={styles.leftPadding}>
-            <ExternalLink />
-          </span>
+          {type === "external" ? (
+            <span className={styles.leftPadding}>
+              <ExternalLink />
+            </span>
+          ) : null}
         </Typography>
       </Link>
 

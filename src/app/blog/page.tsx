@@ -32,6 +32,7 @@ export default function Home() {
                 description={article.description}
                 date={article.date}
                 link={article.link}
+                type={article.type}
               />
             ))}
           </div>
