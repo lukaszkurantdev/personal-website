@@ -21,6 +21,7 @@ export const BlogSection = () => {
           description={item.description}
           date={item.date}
           link={item.link}
+          type={item.type}
         />
       ))}
 
