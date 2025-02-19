@@ -6,10 +6,14 @@
   margin-top: var(--space-12);
   display: flex;
   flex-direction: column;
-  /* align-items: flex-start; */
   row-gap: var(--space-7);
+  flex: 1;
 }
 
 .form .submitButton {
   align-self: flex-start;
+}
+
+.confirmation {
+  align-items: flex-start;
 }

@@ -21,7 +21,7 @@
   column-gap: var(--space-10);
 }
 
-.columns {
+.column {
   flex: 1;
 }
 

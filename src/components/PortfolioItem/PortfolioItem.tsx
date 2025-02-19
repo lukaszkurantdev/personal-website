@@ -26,23 +26,27 @@ export const PortfolioItem = ({
   return (
     <Link href={`${Links.Portfolio}/${slug}`}>
       <div className={styles.container}>
-        <Image
-          src={image}
-          alt={title}
-          className={styles.image}
-          height={imageSize.height}
-          width={imageSize.width}
-        />
-        <div className={styles.topContainer}>
-          <Typography color={color} variant="small-paragraph">
-            {date}
-          </Typography>
-          <Typography weight="bold">{title}</Typography>
-          <Typography opacity variant="small-paragraph">
-            {description}
-          </Typography>
+        <div className={styles.insideContanier}>
+          <div>
+            <Typography color={color} variant="x-small-paragraph">
+              {date}
+            </Typography>
+            <Typography weight="bold" className={styles.title}>{title}</Typography>
+            <Typography opacity variant="small-paragraph">
+              {description}
+            </Typography>
+          </div>
 
-          <Typography color={color} variant="small-paragraph" link>
+          <Image
+            src={image}
+            alt={title}
+            className={styles.image}
+            height={40}
+            width={40}
+          />
+        </div>
+        <div className={styles.hoverContainer}>
+          <Typography color={color} variant="paragraph" link>
             Show more
           </Typography>
         </div>

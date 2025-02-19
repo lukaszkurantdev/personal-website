@@ -43,7 +43,7 @@ export default function RootLayout({
 
         <footer>
           <Typography opacity variant="small-paragraph">
-            Fully made by Lukasz Kurant, All rights reserved 2024
+            Fully made by Lukasz Kurant, All rights reserved 2025
           </Typography>
         </footer>
       </body>

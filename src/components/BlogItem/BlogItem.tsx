@@ -28,11 +28,11 @@ export const BlogItem = ({
       >
         <Typography link>
           {title}
-          {type === "external" ? (
+          {/* {type === "external" ? (
             <span className={styles.leftPadding}>
               <ExternalLink />
             </span>
-          ) : null}
+          ) : null} */}
         </Typography>
       </Link>
 

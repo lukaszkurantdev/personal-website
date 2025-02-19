@@ -26,13 +26,13 @@ export default function Home() {
             <CurrentWorkSection />
           </div>
           <div className={styles.column}>
-            <LibrariesSection />
+            <BlogSection />
           </div>
         </div>
 
         <StackSection />
 
-        <BlogSection />
+
 
         <PortfolioSection />
       </div>

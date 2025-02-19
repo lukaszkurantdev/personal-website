@@ -38,7 +38,7 @@ export const ExperienceItem = ({
         {company}
       </Typography>
 
-      <Typography variant="paragraph" className={styles.description}>
+      <Typography variant="paragraph" className={styles.description} opacity>
         {description}
       </Typography>
 

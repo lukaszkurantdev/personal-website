@@ -17,6 +17,7 @@ import { Button } from "@/components/Button/Button";
 import { Links } from "@/constants/Links";
 import { Input } from "../Input/Input";
 import { TextArea } from "../TextArea/TextArea";
+import classNames from "classnames";
 
 const Form = () => {
   return (
@@ -51,7 +52,7 @@ const ConfirmationMessage = () => {
   };
 
   return (
-    <div className={styles.form}>
+    <div className={classNames(styles.form, styles.confirmation)}>
       <Typography>
         {
           "Thank you for submitting this form. Someone should get back to you within 24-48 hours."

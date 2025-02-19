@@ -17,7 +17,7 @@ export const PortfolioSection = () => {
         {PORTFOLIO_DATA.map((item) => (
           <PortfolioItem
             key={`blog-post-${item.index}`}
-            image={`/images/portfolio/item${item.index}/main.webp`}
+            image={`/images/portfolio/item${item.index}/icon.png`}
             {...item}
           />
         ))}

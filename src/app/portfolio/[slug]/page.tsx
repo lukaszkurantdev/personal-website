@@ -53,7 +53,7 @@ export default function PortfolioItem({
             width={ITEM.imageSize.width * PORTFOLIO_ITEM_MULTIPLIER}
           />
 
-          <Typography variant="h1" className={styles.title}>
+          <Typography variant="h1" className={styles.title} align="center">
             {ITEM.title}
           </Typography>
 

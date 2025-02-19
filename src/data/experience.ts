@@ -23,7 +23,7 @@ export const EXPERIENCE_DATA = [
     key: "exp-3",
     isCurrent: true,
     date: "August 2022 – Present",
-    position: "Fullstack freelancer",
+    position: "Fullstack Software Engineer",
     company: "Mobideca Łukasz Kurant, Remote",
     description:
       "As a freelance developer, I specialize in developing mobile applications and web-based web applications – both on the front-end and back-end. I have extensive knowledge and skills in the IT field, so I can offer a variety of solutions to help you achieve your business goals. I provide consultation and training.",
