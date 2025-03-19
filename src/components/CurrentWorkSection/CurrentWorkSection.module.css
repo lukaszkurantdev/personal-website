@@ -13,3 +13,8 @@
   flex-direction: column;
   row-gap: var(--space-4);
 }
+
+.company {
+  margin-top: var(--space-2);
+  font-style: italic;
+}

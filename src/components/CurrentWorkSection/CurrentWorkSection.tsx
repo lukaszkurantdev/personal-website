@@ -15,8 +15,8 @@ export const CurrentWorkSection = () => {
 
       {DATA.map((item) => (
         <div key={item.key}>
-          <Typography weight="bold">{item.position}</Typography>
-          <Typography variant="small-paragraph" opacity>
+          <Typography>{item.position}</Typography>
+          <Typography className={styles.company} variant="small-paragraph" opacity>
             {item.company}
           </Typography>
         </div>

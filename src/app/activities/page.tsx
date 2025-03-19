@@ -5,8 +5,9 @@ import Image from "next/image";
 import { IMAGE_HEIGHT, IMAGE_WIDTH } from "./page.constants";
 import { CERTIFICATES_DATA } from "@/data/certificates";
 import { PUBLICATIONS_DATA } from "@/data/publications";
-import { BackButton } from "@/components/BackButton/BackButton";
+import { Fade } from "react-awesome-reveal";
 import { Metadata } from "next";
+import { Header } from "@/components/Header/Header";
 
 export const metadata: Metadata = {
   title: "Activities – Lukasz Kurant",
@@ -15,45 +16,46 @@ export const metadata: Metadata = {
 export default function Activities() {
   return (
     <main className={styles.main}>
-      <div className={styles.contentContainer}>
-        <BackButton />
+      <Header title="Activities" />
+      <Fade>
+        <div className={styles.contentContainer}>
+          <Typography variant="h2" className={styles.title}>
+            Publications
+          </Typography>
 
-        <Typography variant="h1" className={styles.title}>
-          Publications
-        </Typography>
-
-        {PUBLICATIONS_DATA.map((item) => (
-          <div key={item.key}>
-            <Typography weight="bold">{item.title}</Typography>
-            <Typography variant="small-paragraph" opacity>
-              {item.details}
-            </Typography>
-          </div>
-        ))}
-
-        <Typography variant="h1" className={styles.secondTitle}>
-          Certificates
-        </Typography>
-
-        <div className={styles.certificatesContainer}>
-          {CERTIFICATES_DATA.map((item) => (
-            <Link
-              key={item.alt}
-              href={item.link}
-              target="blank"
-              rel="noreferrer"
-            >
-              <Image
-                src={item.link}
-                alt={item.alt}
-                className={styles.image}
-                height={IMAGE_HEIGHT}
-                width={IMAGE_WIDTH}
-              />
-            </Link>
+          {PUBLICATIONS_DATA.map((item) => (
+            <div key={item.key} className={styles.publication}>
+              <Typography>{item.title}</Typography>
+              <Typography variant="small-paragraph" opacity italic>
+                {item.details}
+              </Typography>
+            </div>
           ))}
+
+          <Typography variant="h2" className={styles.secondTitle}>
+            Certificates
+          </Typography>
+
+          <div className={styles.certificatesContainer}>
+            {CERTIFICATES_DATA.map((item) => (
+              <Link
+                key={item.alt}
+                href={item.link}
+                target="blank"
+                rel="noreferrer"
+              >
+                <Image
+                  src={item.link}
+                  alt={item.alt}
+                  className={styles.image}
+                  height={IMAGE_HEIGHT}
+                  width={IMAGE_WIDTH}
+                />
+              </Link>
+            ))}
+          </div>
         </div>
-      </div>
+      </Fade>
     </main>
   );
 }

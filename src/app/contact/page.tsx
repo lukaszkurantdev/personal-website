@@ -1,11 +1,10 @@
 import styles from "./page.module.css";
-import { Typography } from "@/components/Typography/Typography";
-
-import { BackButton } from "@/components/BackButton/BackButton";
+import { Fade } from "react-awesome-reveal";
 import { ContactFormSection } from "@/components/ContactFormSection/ContactFormSection";
 import { AboutSection } from "@/components/AboutSection/AboutSection";
 import { Metadata } from "next";
 import { Suspense } from "react";
+import { Header } from "@/components/Header/Header";
 
 export const metadata: Metadata = {
   title: "Contact – Lukasz Kurant",
@@ -14,24 +13,21 @@ export const metadata: Metadata = {
 export default function Contact() {
   return (
     <main className={styles.main}>
-      <div className={styles.contentContainer}>
-        <BackButton />
-
-        <Typography variant="h1" className={styles.title}>
-          Contact
-        </Typography>
-
-        <div className={styles.columns}>
-          <div className={styles.column}>
-            <Suspense>
-              <ContactFormSection />
-            </Suspense>
-          </div>
-          <div className={styles.column}>
-            <AboutSection />
+      <Header title="Contact" />
+      <Fade>
+        <div className={styles.contentContainer}>
+          <div className={styles.columns}>
+            <div className={styles.column}>
+              <Suspense>
+                <ContactFormSection />
+              </Suspense>
+            </div>
+            <div className={styles.column}>
+              <AboutSection />
+            </div>
           </div>
         </div>
-      </div>
+      </Fade>
     </main>
   );
 }

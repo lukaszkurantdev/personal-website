@@ -1,5 +1,6 @@
 .position {
   margin-top: var(--space-3);
+  margin-bottom: var(--space-2);
 }
 
 .description {
@@ -14,5 +15,5 @@
   display: flex;
   flex-wrap: wrap;
   column-gap: var(--space-5);
-  margin-top: var(--space-4);
+  margin-top: var(--space-5);
 }

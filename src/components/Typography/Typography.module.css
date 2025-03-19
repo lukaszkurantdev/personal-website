@@ -12,6 +12,8 @@
 
 .h3 {
   font-size: var(--typography-h3);
+  font-weight: 500;
+  font-family: var(--typography-font-tiempos);
 }
 
 .paragraph {
@@ -59,4 +61,8 @@
 
 .link:hover {
   color: inherit;
+}
+
+.italic {
+  font-style: italic;
 }

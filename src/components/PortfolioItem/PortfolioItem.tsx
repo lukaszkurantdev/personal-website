@@ -1,4 +1,3 @@
-import Image from "next/image";
 import styles from "./PortfolioItem.module.css";
 import { Typography } from "../Typography/Typography";
 import Link from "next/link";
@@ -19,38 +18,16 @@ export const PortfolioItem = ({
   title,
   description,
   slug,
-  color,
-  image,
-  imageSize,
 }: PortfolioItemProps) => {
   return (
-    <Link href={`${Links.Portfolio}/${slug}`}>
-      <div className={styles.container}>
-        <div className={styles.insideContanier}>
-          <div>
-            <Typography color={color} variant="x-small-paragraph">
-              {date}
-            </Typography>
-            <Typography weight="bold" className={styles.title}>{title}</Typography>
-            <Typography opacity variant="small-paragraph">
-              {description}
-            </Typography>
-          </div>
+    <div className={styles.container}>
+      <Link href={`${Links.Portfolio}/${slug}`} className={styles.link}>
+        <Typography link>{title}</Typography>
+      </Link>
 
-          <Image
-            src={image}
-            alt={title}
-            className={styles.image}
-            height={40}
-            width={40}
-          />
-        </div>
-        <div className={styles.hoverContainer}>
-          <Typography color={color} variant="paragraph" link>
-            Show more
-          </Typography>
-        </div>
-      </div>
-    </Link>
+      <Typography variant="small-paragraph" opacity>
+        <span className={styles.date}>{date}</span> | {description}
+      </Typography>
+    </div>
   );
 };

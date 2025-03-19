@@ -24,21 +24,14 @@ export const ExperienceItem = ({
 
   return (
     <div className={styles.container}>
-      <Typography
-        className={styles.primaryColor}
-        variant="small-paragraph"
-        weight={isCurrent ? "bold" : "normal"}
-      >
-        {date}
-      </Typography>
-      <Typography weight="bold" className={styles.position}>
+      <Typography className={styles.position}>
         {position}
       </Typography>
-      <Typography variant="small-paragraph" opacity>
-        {company}
+      <Typography opacity italic variant="small-paragraph">
+        {date} | {company}
       </Typography>
 
-      <Typography variant="paragraph" className={styles.description} opacity>
+      <Typography className={styles.description} opacity>
         {description}
       </Typography>
 

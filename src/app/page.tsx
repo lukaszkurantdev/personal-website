@@ -1,14 +1,10 @@
-import Image from "next/image";
 import styles from "./page.module.css";
 import { HeroSection } from "@/components/HeroSection/HeroSection";
-import { Typography } from "@/components/Typography/Typography";
-import Link from "next/link";
 import { CurrentWorkSection } from "@/components/CurrentWorkSection/CurrentWorkSection";
-import { LibrariesSection } from "@/components/LibrariesSection/LibrariesSection";
 import { StackSection } from "@/components/StackSection/StackSection";
 import { BlogSection } from "@/components/BlogSection/BlogSection";
 import { PortfolioSection } from "@/components/PortfolioSection/PortfolioSection";
-
+import { Fade } from "react-awesome-reveal";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -20,22 +16,22 @@ export default function Home() {
     <main className={styles.main}>
       <HeroSection />
 
-      <div className={styles.contentContainer}>
-        <div className={styles.columnsContainer}>
-          <div className={styles.column}>
-            <CurrentWorkSection />
+      <Fade>
+        <div className={styles.contentContainer}>
+          <div className={styles.columnsContainer}>
+            <div className={styles.column}>
+              <CurrentWorkSection />
+            </div>
+            <div className={styles.column}>
+              <BlogSection />
+            </div>
           </div>
-          <div className={styles.column}>
-            <BlogSection />
-          </div>
+
+          <StackSection />
+
+          <PortfolioSection />
         </div>
-
-        <StackSection />
-
-
-
-        <PortfolioSection />
-      </div>
+      </Fade>
     </main>
   );
 }

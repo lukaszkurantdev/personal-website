@@ -37,7 +37,7 @@ export const BlogItem = ({
       </Link>
 
       <Typography variant="small-paragraph" opacity>
-        {date} | {description}
+        <span className={styles.date}>{date}</span> | {description}
       </Typography>
     </div>
   );

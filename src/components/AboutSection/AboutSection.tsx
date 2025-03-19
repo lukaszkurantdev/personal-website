@@ -26,7 +26,7 @@ export const AboutSection = () => {
       <Typography opacity>REGON: 522681728</Typography>
       <br />
       <Typography>
-        {`Email `}
+        {`Email: `}
         <Link className={styles.email} href={`mailto:${CONTACT_EMAIL}`}>
           {CONTACT_EMAIL}
         </Link>

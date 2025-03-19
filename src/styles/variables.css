@@ -8,14 +8,14 @@
   --color-gray-500: #dbdbdb;
   --color-gray-800: #3c4249;
   --color-gray-900: #2f2f2f;
-  --color-primary: #355ce8;
+  --color-primary: #337082;
   --color-primary-light: #92b7f3;
   --color-danger: #de831a;
 
   /* typography */
   --typography-h1: 36px;
   --typography-h2: 25px;
-  --typography-h3: 20px;
+  --typography-h3: 18px;
 
   --typography-paragraph: 16px;
   --typography-small-paragraph: 14px;

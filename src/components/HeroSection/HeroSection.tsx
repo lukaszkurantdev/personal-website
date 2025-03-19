@@ -27,6 +27,7 @@ export const HeroSection = () => {
             width={AVATAR_SIZE}
             height={AVATAR_SIZE}
             fetchPriority="high"
+            priority
           />
         </div>
 
@@ -73,7 +74,7 @@ export const HeroSection = () => {
         </div>
 
         <Link href={Links.Contact} aria-label="contact">
-          <Button title="Contact" />
+          <Button title="Get in touch with me" />
         </Link>
       </div>
     </div>

@@ -1,16 +1,14 @@
 import { Typography } from "@/components/Typography/Typography";
+import { Header } from "@/components/Header/Header";
+import styles from "../page.module.css";
 
-# C99 compilation for iOS (device and simulator)
+<Header
+  title="C99 compilation for iOS (device and simulator)"
+  previousTitle="Blog"
+  previousLink="/blog"
+/>
 
-<Typography opacity>
-  A way to use C code as a compiled package on iOS.
-</Typography>
-
-<br />
-
----
-
-<br />
+<div className={styles.contentContainer}>
 
 In a recent project I was faced with the problem of building a library that contained C code (99) that was incompatible with C++ (so I could not easily compile it together with the React Native library code). Hence, after research I added the following flow:
 
@@ -49,3 +47,5 @@ lipo -create -output lib_universal.a lib_arm64.a lib_simulator.a
 ```
 
 We can include the library prepared in this way, together with the `.h` files, in our C++ library (e.g. for React Native).
+
+</div>

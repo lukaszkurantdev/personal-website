@@ -14,6 +14,7 @@ type TypographyProps = {
   opacity?: boolean;
   link?: boolean;
   color?: string;
+  italic?: boolean;
 };
 
 export const Typography = ({
@@ -26,6 +27,7 @@ export const Typography = ({
   opacity,
   link,
   color,
+  italic
 }: TypographyProps) => {
   const Variant = TYPOGRAPHY_VARIANTS[variant];
 
@@ -37,6 +39,7 @@ export const Typography = ({
         styles[align],
         opacity && styles.opacity,
         link && styles.link,
+        italic && styles.italic,
         className
       )}
       style={{ fontSize, color }}

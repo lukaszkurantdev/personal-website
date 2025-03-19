@@ -14,8 +14,8 @@ export const StackSection = () => {
           {STACK_DATA.map((item) => (
             <div key={item.key}>
               <div className={styles.tagsContainer}>
-                <Typography variant="small-paragraph" weight="bold">
-                  {item.title}:
+                <Typography variant="small-paragraph" >
+                  {item.title}
                 </Typography>
 
                 {item.description.split(", ").map((tag) => (
@@ -27,9 +27,7 @@ export const StackSection = () => {
         </div>
 
         <ul className={styles.column}>
-          <Typography variant="small-paragraph" weight="bold">
-            Other skills
-          </Typography>
+
           {SKILLS_DATA.map((item, index) => (
             <li key={`skl-${index}`}>
               <Typography variant="small-paragraph">{item}</Typography>

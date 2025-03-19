@@ -13,3 +13,7 @@
 .leftPadding {
   padding-left: var(--space-4);
 }
+
+.date {
+  font-style: italic;
+}

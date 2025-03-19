@@ -5,14 +5,14 @@
 }
 
 .primary {
-  background-color: var(--color-black);
+  background-color: var(--color-primary);
   color: var(--color-white);
-  padding: var(--space-6) var(--space-10);
+  padding: var(--space-5) var(--space-8);
   border-radius: 30px;
   transition: background-color 100ms ease-out 100ms;
 }
 .primary:hover {
-  background-color: var(--color-primary);
+  background-color: var(--color-black);
 }
 
 .secondary {

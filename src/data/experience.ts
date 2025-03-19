@@ -6,7 +6,7 @@ export const EXPERIENCE_DATA = [
     company: "MasterBorn, Remote",
     description:
       "In my senior role, I work on a mobile application for a client in the United States working in the Life Sciences and Pharmaceutical industries, perform technical recruiting, and share my knowledge with the team.",
-    technologies: "React Native, GraphQL",
+    technologies: "React Native, Apollo, Vision Camera, Offline mode",
     isCurrent: true,
   },
   {
@@ -16,7 +16,8 @@ export const EXPERIENCE_DATA = [
     company: "University of Maria Curie-Sklodowska, Lublin (Poland)",
     description:
       "I teach students in the Computer Science department in the areas of programming fundamentals, object-oriented programming and programming paradigms. I am actively working on my research development in the department of Cyber Security and Computational Linguistics.",
-    technologies: "C / C++, Java, Javascript, Haskell, Prolog, Automata Theory",
+    technologies:
+      "C / C++, Java, Javascript, Haskell, Prolog, Automata Theory, Compilers",
     isCurrent: true,
   },
   {
@@ -27,7 +28,8 @@ export const EXPERIENCE_DATA = [
     company: "Mobideca Łukasz Kurant, Remote",
     description:
       "As a freelance developer, I specialize in developing mobile applications and web-based web applications – both on the front-end and back-end. I have extensive knowledge and skills in the IT field, so I can offer a variety of solutions to help you achieve your business goals. I provide consultation and training.",
-    technologies: "React Native, ReactJS, NestJS, NextJS",
+    technologies:
+      "React Native, ReactJS, NestJS, NextJS, Image processing, ML/AI, Motion, Consultations, Interviewing",
   },
   {
     key: "exp-4",
@@ -67,7 +69,7 @@ export const EXPERIENCE_DATA = [
     company: "Akanza, Lublin (Poland)",
     description:
       "Mobile application development in React Native and Ionic, integration with native components, external device integration, research projects.",
-    technologies: "React Native, Ionic",
+    technologies: "React Native, Ionic, Motion detection, BLE integration",
   },
   {
     key: "exp-8",

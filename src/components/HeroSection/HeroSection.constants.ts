@@ -5,4 +5,4 @@ export const MEDIUM_LINK = "https://medium.com/@lukasz.kurant";
 export const APPLE_LINK =
   "https://apps.apple.com/vn/developer/lukasz-kurant/id1586637611";
 
-export const AVATAR_SIZE = 130;
+export const AVATAR_SIZE = 160;

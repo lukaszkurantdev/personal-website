@@ -11,8 +11,7 @@ export const PORTFOLIO_DATA = [
     screenshotSize: { height: 460, width: 250 },
     casesCount: 0,
     title: "Matma++",
-    description:
-      "Calculators, tables, and math formulas",
+    description: "Calculators, tables, and math formulas",
     about:
       "My first big app that I created after classes at school. Matma++ was intended to create tools for students to do quick calculations, but also included math tables and formulas.<br /><br />Despite starting my programming adventure early, it was after the release of this app that I started programming more with focus on end users.",
     usedTechnologies: "C#,UWP,WP Platform,XAML",
@@ -29,8 +28,7 @@ export const PORTFOLIO_DATA = [
     screenshotSize: { height: 460, width: 250 },
     casesCount: 0,
     title: "Logicos 1, 2, 3, Forever",
-    description:
-      "A series of puzzle games appreciated by users",
+    description: "A series of puzzle games appreciated by users",
     about:
       "Logicos is a series of puzzle games released for the Windows universal platform and Windows Phone. The idea for the games was born in my head during my studies in technical school.<br /><br />Applications appreciated by tens of thousands of users.<br /><br />Working on the application taught me a lot, not only about programming, but also about communication with users or promotion.<br /><br /><b>Logicos is a really creative production.</b><br /><i>AntyApps</i><br /><br /><b>Logicos is a fun game and has plenty of puzzles to give your brain a workout.</b><br /><i>Windows Central</i>",
     usedTechnologies: "C#,UWP,WP Platform,XAML",
@@ -45,8 +43,7 @@ export const PORTFOLIO_DATA = [
     screenshotSize: { height: 580, width: 320 },
     casesCount: 0,
     title: "What's inside",
-    description:
-      "A box opening puzzle game",
+    description: "A box opening puzzle game",
     about:
       "A simple logical mobile game, where you open a box and solve different level puzzles. Made for Windows 10.",
     usedTechnologies: "C#,UWP,XAML",
@@ -77,8 +74,7 @@ export const PORTFOLIO_DATA = [
     screenshotSize: { height: 523, width: 250 },
     casesCount: 0,
     title: "Simple Weather App",
-    description:
-      "Weather checker application",
+    description: "Weather checker application",
     about:
       "An app that displays the weather made in React Native. The application uses open source weather API.",
     usedTechnologies: "Typescript,React Native",
@@ -97,8 +93,7 @@ export const PORTFOLIO_DATA = [
     appStoreLink:
       "https://apps.apple.com/pl/app/dzie%C5%82o-biblijne/id1595265008?l=pl",
     title: "Dzieło Biblijne",
-    description:
-      "Bible texts, readings, theological aids",
+    description: "Bible texts, readings, theological aids",
     about:
       "The application in Polish contains Bible texts, comments, curiosities, Bible dictionary and Bible map using Open street maps.<br /><br />My job was to create both a powerful mobile application and a CMS to manage the data displayed in the application.",
     usedTechnologies:
@@ -127,8 +122,8 @@ export const PORTFOLIO_DATA = [
     date: "2022",
     color: "#e39922",
     imageSize: { height: 165.94, width: 270 },
-    screenshotsCount: 0,
-    screenshotSize: { height: 580, width: 320 },
+    screenshotsCount: 1,
+    screenshotSize: { height: 380, width: 560 },
     casesCount: 0,
     websiteLink: "https://constcash.com/",
     title: "ConstCash Web",
@@ -143,17 +138,16 @@ export const PORTFOLIO_DATA = [
     date: "2022",
     color: "#6b2173",
     imageSize: { height: 50, width: 50 },
-    githubLink: "https://github.com/lukaszkurantdev/react-native-svg-circle-country-flags",
+    githubLink:
+      "https://github.com/lukaszkurantdev/react-native-svg-circle-country-flags",
     title: "react-native-svg-circle-country-flags",
-    description:
-      "Collection of SVG flags for React Native",
+    description: "Collection of SVG flags for React Native",
     about:
       "React Native package based on react-native-svg and circle-flags with a collection of 400+ circular SVG flags.",
-    usedTechnologies:
-      "JavaScript",
-      casesCount: 0,
-      screenshotsCount: 0,
-      screenshotSize: { height: 580, width: 320 },
+    usedTechnologies: "JavaScript",
+    casesCount: 0,
+    screenshotsCount: 0,
+    screenshotSize: { height: 580, width: 320 },
   },
   {
     index: 11,
@@ -163,15 +157,14 @@ export const PORTFOLIO_DATA = [
     screenshotsCount: 0,
     screenshotSize: { height: 580, width: 320 },
     imageSize: { height: 70, width: 70 },
-    githubLink: "https://github.com/lukaszkurantdev/react-native-fast-collapsible",
-     title: "react-native-fast-collapsible",
-    description:
-      "Reanimated collapsible library",
+    githubLink:
+      "https://github.com/lukaszkurantdev/react-native-fast-collapsible",
+    title: "react-native-fast-collapsible",
+    description: "Reanimated collapsible library",
     about:
-      "Pure Javascript library for React Native with super-fast collapsible component using Reanimated v3 API.",
-    usedTechnologies:
-      "Typescript,React Native",
-      casesCount: 0,
+      "Pure Javascript library for React Native with super-fast collapsible component using Reanimated v3 API. <br /><br /> The library itself was born out of a simple need - other solutions used extensively in React Native did not meet the required optimisation standards. Therefore, I created my own solution that uses the native API, achieving maximum performance.",
+    usedTechnologies: "Typescript,React Native",
+    casesCount: 0,
   },
   {
     index: 8,
@@ -184,8 +177,7 @@ export const PORTFOLIO_DATA = [
     casesCount: 0,
     websiteLink: "https://dogtronic.io/case-studies/plant-you-grow/",
     title: "Plant You Grow",
-    description:
-      "Advanced measurements of plants and climat",
+    description: "Advanced measurements of plants and climat",
     about:
       "My role was to create a method to take plant measurements using a mobile device, develop a mobile application, a web application (including a backend) and documentation.<br /><br />You can learn more in the case study.",
     usedTechnologies:
@@ -197,15 +189,14 @@ export const PORTFOLIO_DATA = [
     date: "2023-2025",
     color: "#2463eb",
     imageSize: { height: 165.94, width: 270 },
-    screenshotsCount: 0,
-    screenshotSize: { height: 580, width: 320 },
+    screenshotsCount: 1,
+    screenshotSize: { height: 380, width: 560 },
     casesCount: 0,
     githubLink: "https://github.com/lukaszkurantdev/personal-website",
     title: "Portfolio page",
-    description:
-      "Public code of my personal website",
+    description: "Public code of my personal website",
     about:
-      "My website is designed to present information about my professional life, along with a portfolio presentation and an index of articles.",
+      "My website is designed to present information about my professional life, along with a portfolio presentation and an index of articles.<br /><br /> I redesigned my website several times, but in the end I focused on simplicity and elegance. <br /><br /> To optimise loading and improve the website's SEO performance I applied server-side rendering using NextJS. ",
     usedTechnologies: "Typescript,NextJS",
   },
   {
@@ -219,28 +210,25 @@ export const PORTFOLIO_DATA = [
     githubLink: "https://github.com/lukaszkurantdev/react-native-fast-opencv",
     websiteLink: "https://lukaszkurantdev.github.io/react-native-fast-opencv",
     title: "react-native-fast-opencv",
-    description:
-      "A powerful port of OpenCV for React Native",
+    description: "A powerful port of OpenCV for React Native",
     about:
-      "OpenCV is a popular library for image processing, but quite tricky when it comes to its integration and use in React Native applications. My main goal is to enable simple operations directly from JavaScript code. <br /><br />Currently, there is a port of the OpenCV library but due to the change in standards when developing React Native applications, I decided to create a new library using an API in C++ that will allow for simpler integration, better performance and readability when used in code.",
-    usedTechnologies:
-      "Typescript,React Native,C++,Java,Objective C++",
-      casesCount: 0,
+      "OpenCV is a popular library for image processing, but quite tricky when it comes to its integration and use in React Native applications. My main goal is to enable simple operations directly from JavaScript code. <br /><br />Currently, there is a port of the OpenCV library but due to the change in standards when developing React Native applications, I decided to create a new library using an API in C++ that will allow for simpler integration, better performance and readability when used in code.<br /><br /> In addition, a website was created with documentation describing the main functionalities of the library.",
+    usedTechnologies: "Typescript,React Native,C++,Java,Objective C++",
+    casesCount: 0,
   },
   {
     index: 6,
     slug: "constcash",
     date: "2021-2025",
     color: "#e39922",
-    imageSize: { height: 174.43, width: 85 },
+    imageSize: { height: 174.43 * 1.4, width: 85 * 1.4 },
     screenshotsCount: 3,
-    screenshotSize: { height: 693, width: 320 },
+    screenshotSize: { height: 630, width: 292 },
     casesCount: 4,
     appStoreLink:
       "https://apps.apple.com/app/apple-store/id1586637609?pt=123524905&ct=lkwebpage&mt=8",
     title: "ConstCash",
-    description:
-      "Personal finance management app",
+    description: "Personal finance management app",
     about:
       "Personal finance management app currently prepared for iOS.<br /><br />Among the main tasks of the application is cash flow management, posting income and expenses, but also reviewing statistics and advanced reports, budgets, financial goals or recurring payments.<br /><br />The idea for the app was born a year and a half ago, and during that time I've been effectively developing the project with new features after my main job hours. In September 2021 the first version of the application was published in the App Store. Since then, the application is constantly developed.",
     usedTechnologies:

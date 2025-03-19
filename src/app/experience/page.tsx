@@ -1,9 +1,9 @@
 import styles from "./page.module.css";
-import { Typography } from "@/components/Typography/Typography";
 import { EXPERIENCE_DATA } from "@/data/experience";
 import { ExperienceItem } from "@/components/ExperienceItem/ExperienceItem";
-import { BackButton } from "@/components/BackButton/BackButton";
 import { Metadata } from "next";
+import { Header } from "@/components/Header/Header";
+import { Fade } from "react-awesome-reveal";
 
 export const metadata: Metadata = {
   title: "Experience – Lukasz Kurant",
@@ -12,17 +12,14 @@ export const metadata: Metadata = {
 export default function Experience() {
   return (
     <main className={styles.main}>
-      <div className={styles.contentContainer}>
-        <BackButton />
-
-        <Typography variant="h1" className={styles.title}>
-          Experience and education
-        </Typography>
-
-        {EXPERIENCE_DATA.map((item) => (
-          <ExperienceItem {...item} key={item.key} />
-        ))}
-      </div>
+      <Header title="Experience and education" />
+      <Fade>
+        <div className={styles.contentContainer}>
+          {EXPERIENCE_DATA.map((item) => (
+            <ExperienceItem {...item} key={item.key} />
+          ))}
+        </div>
+      </Fade>
     </main>
   );
 }
