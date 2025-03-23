@@ -323,4 +323,19 @@ export const BLOG_DATA = [
       },
     ],
   },
+  {
+    year: "2025",
+    articles: [
+      {
+        index: 32,
+        link: "https://medium.com/@lukasz.kurant/detecting-relationships-between-components-in-react-applications-a6b38e05751d",
+        date: "March 23, 2025",
+        title:
+          "Detecting relationships between components in React applications",
+        description:
+          "Presentation of a library for generating a component graph",
+        type: "external",
+      },
+    ],
+  },
 ].reverse();

@@ -5,7 +5,7 @@ import { BlogItem } from "../BlogItem/BlogItem";
 import { BLOG_DATA } from "@/data/blog";
 import { Links } from "@/constants/Links";
 
-const DATA = BLOG_DATA[0].articles.slice(0, 3);
+const DATA = [...BLOG_DATA[0].articles, ...BLOG_DATA[1].articles].slice(0, 3);
 
 export const BlogSection = () => {
   return (

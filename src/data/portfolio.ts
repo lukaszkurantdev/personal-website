@@ -200,6 +200,24 @@ export const PORTFOLIO_DATA = [
     usedTechnologies: "Typescript,NextJS",
   },
   {
+    index: 13,
+    slug: "components-dependency-graph",
+    date: "2024",
+    color: "#15a34a",
+    imageSize: { height: 180, width: 90 },
+    githubLink:
+      "https://github.com/lukaszkurantdev/components-dependency-graph",
+    screenshotsCount: 0,
+    screenshotSize: { height: 460, width: 250 },
+    casesCount: 0,
+    title: "Components Dependency Graph",
+    description:
+      "Relationships between components in React / React Native apps",
+    about:
+      "A script for creating a graph of relationships between components in React.js / React Native applications.<br /><br />The main objective of the project was to create a tool to dynamically create a graph of relationships between components and then assess the impact of individual components on selected parts of the system.",
+    usedTechnologies: "Typescript,GraphViz,Abstract Syntax Tree,VSCode Plugin",
+  },
+  {
     index: 10,
     slug: "fastopencv",
     date: "2024-2025",
