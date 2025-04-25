@@ -218,6 +218,22 @@ export const PORTFOLIO_DATA = [
     usedTechnologies: "Typescript,GraphViz,Abstract Syntax Tree,VSCode Plugin",
   },
   {
+    index: 14,
+    slug: "ingremio",
+    date: "2025",
+    color: "#15a34a",
+    imageSize: { height: 180, width: 90 },
+    websiteLink: "https://kancelariaingremio.pl/",
+    screenshotsCount: 3,
+    screenshotSize: { height: 532, width: 800 },
+    casesCount: 0,
+    title: "Kancelaria In Gremio",
+    description: "Website with admin panel for a law company",
+    about:
+      "The order was to create a website for a law firm. The site was made using the NextJS framework, combining the display of components on the server with that on the client side. <br /><br />The work required the creation of an admin panel in strapi, allowing modification of content on the site. The entire site was made with SEO in mind and was integrated with Google analytics.",
+    usedTechnologies: "Typescript,NextJs,Strapi",
+  },
+  {
     index: 10,
     slug: "fastopencv",
     date: "2024-2025",
