@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 export default function Experience() {
   return (
     <main className={styles.main}>
-      <Header title="Experience and education" />
+      <Header breadCrumbTitle="Experience" title="Experience and education" />
       <Fade>
         <div className={styles.contentContainer}>
           {EXPERIENCE_DATA.map((item) => (

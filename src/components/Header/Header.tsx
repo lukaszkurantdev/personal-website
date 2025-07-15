@@ -7,6 +7,7 @@ type HeaderProps = {
   previousTitle?: string;
   previousLink?: string;
   description?: string;
+  breadCrumbTitle: string;
 };
 
 export const Header = ({
@@ -14,6 +15,7 @@ export const Header = ({
   description,
   previousTitle,
   previousLink,
+  breadCrumbTitle
 }: HeaderProps) => {
   return (
     <div className={styles.container}>
@@ -21,7 +23,7 @@ export const Header = ({
         <div className={styles.breadCrumbs}>
           <Link href="/">
             <Typography variant="small-paragraph" link>
-              Home page
+              Home
             </Typography>
           </Link>
 
@@ -44,7 +46,7 @@ export const Header = ({
 
           <ChevronSvg />
           <Typography variant="small-paragraph" opacity>
-            {title}
+            {breadCrumbTitle}
           </Typography>
         </div>
 
@@ -69,8 +71,8 @@ const ChevronSvg = () => (
     viewBox="0 0 24 24"
     strokeWidth="1.5"
     stroke="gray"
-    height={16}
-    width={16}
+    height={12}
+    width={12}
   >
     <path
       strokeLinecap="round"

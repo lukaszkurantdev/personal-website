@@ -6,7 +6,7 @@
 .contentContainer {
   max-width: var(--container-width);
   margin: auto;
-  padding: 0 var(--space-8);
+  padding: var(--space-10) var(--space-8);
 }
 
 .columnsContainer {

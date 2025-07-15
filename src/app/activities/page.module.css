@@ -20,7 +20,7 @@
   display: flex;
   column-gap: var(--space-8);
   flex-wrap: wrap;
-  row-gap: var(--space-8);
+  row-gap: var(--space-7);
 }
 
 .secondTitle {

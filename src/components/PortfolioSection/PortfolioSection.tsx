@@ -1,18 +1,11 @@
 import styles from "./PortfolioSection.module.css";
-import { Typography } from "../Typography/Typography";
 import { PortfolioItem } from "../PortfolioItem/PortfolioItem";
 import { PORTFOLIO_DATA } from "@/data/portfolio";
+import { ColumnsContainer } from "../ColumnsContainer/ColumnsContainer";
 
 export const PortfolioSection = () => {
   return (
-    <div className={styles.container}>
-      <Typography variant="h2" className={styles.title}>
-        Portfolio
-      </Typography>
-      <Typography className={styles.title} opacity variant="small-paragraph">
-        Selected projects
-      </Typography>
-
+    <ColumnsContainer title="Portfolio" subTitle="Selected projects">
       <div className={styles.grid}>
         {PORTFOLIO_DATA.map((item) => (
           <PortfolioItem
@@ -22,6 +15,6 @@ export const PortfolioSection = () => {
           />
         ))}
       </div>
-    </div>
+    </ColumnsContainer>
   );
 };

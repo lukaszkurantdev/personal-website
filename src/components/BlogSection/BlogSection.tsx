@@ -4,16 +4,13 @@ import { Typography } from "../Typography/Typography";
 import { BlogItem } from "../BlogItem/BlogItem";
 import { BLOG_DATA } from "@/data/blog";
 import { Links } from "@/constants/Links";
+import { ColumnsContainer } from "../ColumnsContainer/ColumnsContainer";
 
 const DATA = [...BLOG_DATA[0].articles, ...BLOG_DATA[1].articles].slice(0, 3);
 
 export const BlogSection = () => {
   return (
-    <div className={styles.container}>
-      <Typography variant="h2" className={styles.title}>
-        New on my blog
-      </Typography>
-
+    <ColumnsContainer title="New on my blog">
       {DATA.map((item) => (
         <BlogItem
           key={`post-${item.index}`}
@@ -32,6 +29,6 @@ export const BlogSection = () => {
           </Typography>
         </Link>
       </div>
-    </div>
+    </ColumnsContainer>
   );
 };

@@ -2,6 +2,16 @@
   display: flex;
   flex-direction: column;
   row-gap: var(--space-7);
+  flex: 1.5;
+}
+
+.titleContainer {
+  flex: 1;
+}
+
+.mainContainer {
+  display: flex;
+  flex-direction: row;
 }
 
 .title {

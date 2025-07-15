@@ -18,17 +18,9 @@ export default function Home() {
 
       <Fade>
         <div className={styles.contentContainer}>
-          <div className={styles.columnsContainer}>
-            <div className={styles.column}>
-              <CurrentWorkSection />
-            </div>
-            <div className={styles.column}>
-              <BlogSection />
-            </div>
-          </div>
-
+          <CurrentWorkSection />
+          <BlogSection />
           <StackSection />
-
           <PortfolioSection />
         </div>
       </Fade>

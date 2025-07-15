@@ -7,7 +7,7 @@
   max-width: var(--container-width);
   margin: auto;
   padding: var(--space-10) var(--space-8);
-  row-gap: var(--space-8);
+  row-gap: var(--space-5);
   flex-direction: column;
   display: flex;
 }
@@ -26,10 +26,7 @@
 }
 
 .dateContainer {
-  margin-top: var(--space-6);
-  padding: var(--space-2) var(--space-4);
-  color: var(--color-white);
-  border-radius: 20px;
+  margin: var(--space-6) 0;
 }
 
 .aboutContainer {
@@ -42,14 +39,12 @@
   display: flex;
   flex-wrap: wrap;
   gap: var(--space-4);
-  margin-top: var(--space-5);
   align-items: center;
 }
 
 .casesContainer {
-  margin-top: var(--space-5);
-  display: grid;
-  grid-template-columns: repeat(1, minmax(0, 1fr));
+  display: flex;
+  flex-direction: column;
   gap: var(--space-8);
 }
 
@@ -104,16 +99,6 @@
   display: flex;
   flex-direction: column;
   row-gap: var(--space-8);
-}
-
-@media (min-width: 750px) {
-  .columns {
-    flex-direction: row;
-  }
-
-  .casesContainer {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
 }
 
 .linksContainer {

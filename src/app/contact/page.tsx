@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 export default function Contact() {
   return (
     <main className={styles.main}>
-      <Header title="Contact" />
+      <Header title="Contact" breadCrumbTitle="Get in touch" />
       <Fade>
         <div className={styles.contentContainer}>
           <div className={styles.columns}>

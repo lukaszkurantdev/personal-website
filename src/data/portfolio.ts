@@ -94,8 +94,29 @@ export const PORTFOLIO_DATA = [
       "https://apps.apple.com/pl/app/dzie%C5%82o-biblijne/id1595265008?l=pl",
     title: "Dzieło Biblijne",
     description: "Bible texts, readings, theological aids",
-    about:
-      "The application in Polish contains Bible texts, comments, curiosities, Bible dictionary and Bible map using Open street maps.<br /><br />My job was to create both a powerful mobile application and a CMS to manage the data displayed in the application.",
+    about: `<p>In this project, I created a comprehensive solution consisting of a mobile app and a content management system (CMS) for a Polish-language Bible app. The app offered users access to full biblical texts, theological commentaries, Scripture trivia, a biblical dictionary, and an interactive biblical map using OpenStreetMap.</p>
+    <br />
+
+<p>My responsibilities included:</p>
+<br />
+<u>Mobile application:</u>
+
+<p>– Designing and implementing an intuitive user interface tailored to Polish users</p>
+<p>– Integrating with the OpenStreetMap API to display interactive Bible maps with tagged places and events</p>
+<p>– Implementing search functions for biblical texts, commentaries and dictionary</p>
+<p>– Optimizing the app's performance, especially when working with large text data sets</p>
+<p>– Adding bookmarking, annotation and personalization features</p>
+<p>– Ensuring the app's responsiveness and accessibility on various mobile devices.</p>
+    
+<br />
+<u>CMS system:</u>
+      
+<p>– Create a dashboard to easily manage biblical content</p>
+<p>– Implement a content editor for administrators to add and modify comments and trivia</p>
+<p>– Create a biblical dictionary management system with the ability to add definitions and links</p>
+<p>– Integrate tools to manage geographic locations on the biblical map</p>
+<p>– Optimize the process of publishing content from the CMS to the mobile app</p>
+      `,
     usedTechnologies:
       "Typescript,React Native,Redux,Redux Saga,Open street maps,Strapi,ReactJS,MongoDB",
     cases: [

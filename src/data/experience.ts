@@ -1,12 +1,11 @@
 export const EXPERIENCE_DATA = [
   {
     key: "exp-1",
-    date: "July 2023 – Present",
-    position: "React Native Developer",
-    company: "MasterBorn, Remote",
-    description:
-      "In my senior role, I work on a mobile application for a client in the United States working in the Life Sciences and Pharmaceutical industries, perform technical recruiting, and share my knowledge with the team.",
-    technologies: "React Native, Apollo, Vision Camera, Offline mode",
+    date: "June 2025 – Present",
+    position: "Mobile Lead Engineer",
+    company: "Goodspeed, Remote",
+    description: "I am responsible for the Foodango mobile application.",
+    technologies: "React Native, Expo",
     isCurrent: true,
   },
   {
@@ -30,6 +29,16 @@ export const EXPERIENCE_DATA = [
       "As a freelance developer, I specialize in developing mobile applications and web-based web applications – both on the front-end and back-end. I have extensive knowledge and skills in the IT field, so I can offer a variety of solutions to help you achieve your business goals. I provide consultation and training.",
     technologies:
       "React Native, ReactJS, NestJS, NextJS, Image processing, ML/AI, Motion, Consultations, Interviewing",
+  },
+  {
+    key: "exp-1",
+    date: "July 2023 – May 2025",
+    position: "React Native Developer",
+    company: "MasterBorn, Remote",
+    description:
+      "In my senior role, I work on a mobile application for a client in the United States working in the Life Sciences and Pharmaceutical industries, perform technical recruiting, and share my knowledge with the team.",
+    technologies: "React Native, Apollo, Vision Camera, Offline mode",
+    isCurrent: false,
   },
   {
     key: "exp-4",

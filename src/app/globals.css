@@ -83,8 +83,7 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
   width: 100vw;
-  height: 150px;
-  margin-top: var(--space-8);
+  height: 100px;
 }

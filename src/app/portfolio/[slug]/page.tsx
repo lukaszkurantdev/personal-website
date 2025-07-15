@@ -9,6 +9,7 @@ import { Metadata } from "next";
 import { Header } from "@/components/Header/Header";
 import classNames from "classnames";
 import { Fade } from "react-awesome-reveal";
+import { ColumnsContainer } from "@/components/ColumnsContainer/ColumnsContainer";
 
 const TECHNOLOGIES_DELIMITER = ",";
 
@@ -37,84 +38,70 @@ export default function PortfolioItem({
 
   return (
     <main className={styles.main}>
-      <Header title={ITEM.title} previousTitle="Projects" />
+      <Header breadCrumbTitle={ITEM.title} title={ITEM.title} previousTitle="Projects" />
       <Fade>
         <div className={styles.contentContainer}>
-          <div className={styles.columns}>
-            <div className={styles.column}>
-              <div className={styles.aboutContainer}>
-                <Typography variant="h2">About</Typography>
-                <Typography opacity>{ReactHtmlParser(ITEM.about)}</Typography>
-              </div>
+          <ColumnsContainer title="About project">
+            <Typography opacity>{ReactHtmlParser(ITEM.about)}</Typography>
+
+            <div className={styles.dateContainer}>
+              <Typography variant="h3">Date</Typography>
+              <Typography opacity> {ITEM.date}</Typography>
             </div>
-            <div className={classNames(styles.column, styles.column2)}>
-              <Image
-                src={`/images/portfolio/item${ITEM.index}/icon.png`}
-                alt={ITEM.title}
-                className={styles.image}
-                height={30}
-                width={30}
-              />
 
-              <div>
-                <Typography variant="h3">Date</Typography>
-                <Typography opacity> {ITEM.date}</Typography>
-              </div>
 
-              <div className={styles.linksContainer}>
-                <Typography variant="h3">Links</Typography>
+            <div className={styles.linksContainer}>
+              <Typography variant="h3">Links</Typography>
 
-                {ITEM.websiteLink ? (
-                  <Link
-                    href={ITEM.websiteLink}
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <Typography link>Website</Typography>
-                  </Link>
-                ) : null}
+              {ITEM.websiteLink ? (
+                <Link
+                  href={ITEM.websiteLink}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <Typography link>Website</Typography>
+                </Link>
+              ) : null}
 
-                {ITEM.windowsStoreLink ? (
-                  <Link
-                    href={ITEM.windowsStoreLink}
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <Typography link>Microsoft Store</Typography>
-                  </Link>
-                ) : null}
+              {ITEM.windowsStoreLink ? (
+                <Link
+                  href={ITEM.windowsStoreLink}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <Typography link>Microsoft Store</Typography>
+                </Link>
+              ) : null}
 
-                {ITEM.githubLink ? (
-                  <Link href={ITEM.githubLink} target="_blank" rel="noreferrer">
-                    <Typography link>Github</Typography>
-                  </Link>
-                ) : null}
+              {ITEM.githubLink ? (
+                <Link href={ITEM.githubLink} target="_blank" rel="noreferrer">
+                  <Typography link>Github</Typography>
+                </Link>
+              ) : null}
 
-                {ITEM.googlePlayLink ? (
-                  <Link
-                    href={ITEM.googlePlayLink}
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <Typography link>Google Play</Typography>
-                  </Link>
-                ) : null}
+              {ITEM.googlePlayLink ? (
+                <Link
+                  href={ITEM.googlePlayLink}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <Typography link>Google Play</Typography>
+                </Link>
+              ) : null}
 
-                {ITEM.appStoreLink ? (
-                  <Link
-                    href={ITEM.appStoreLink}
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <Typography link>App Store</Typography>
-                  </Link>
-                ) : null}
-              </div>
+              {ITEM.appStoreLink ? (
+                <Link
+                  href={ITEM.appStoreLink}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <Typography link>App Store</Typography>
+                </Link>
+              ) : null}
             </div>
-          </div>
+          </ColumnsContainer>
 
-          <div>
-            <Typography variant="h3">Used technologies</Typography>
+          <ColumnsContainer title="Used technologies">
             <div className={styles.tagsContainer}>
               {ITEM.usedTechnologies
                 .split(TECHNOLOGIES_DELIMITER)
@@ -122,12 +109,11 @@ export default function PortfolioItem({
                   <Tag title={tag} key={tag} />
                 ))}
             </div>
-          </div>
+          </ColumnsContainer>
+
 
           {ITEM.casesCount > 0 ? (
-            <div>
-              <Typography variant="h2">Cases</Typography>
-
+            <ColumnsContainer title="Cases">
               <div className={styles.casesContainer}>
                 {ITEM.cases?.map((item, index) => (
                   <div key={`case-${index}`} className={styles.caseItem}>
@@ -136,7 +122,7 @@ export default function PortfolioItem({
                   </div>
                 ))}
               </div>
-            </div>
+            </ColumnsContainer>
           ) : null}
 
           {ITEM.screenshotsCount > 0 ? (

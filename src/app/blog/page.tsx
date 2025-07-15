@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <main className={styles.main}>
-      <Header title="Blog" />
+      <Header title="My posts" breadCrumbTitle="Blog" />
       <Fade>
         <div className={styles.contentContainer}>
           {BLOG_DATA.map((item) => (
