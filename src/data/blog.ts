@@ -327,6 +327,14 @@ export const BLOG_DATA = [
     year: "2025",
     articles: [
       {
+        index: 33,
+        link: "https://medium.com/@lukasz.kurant/firebase-analytics-debugview-in-expo-eas-release-application-877fd7cc906f",
+        date: "August 20, 2025",
+        title: "Firebase Analytics DebugView in Expo + EAS release application",
+        description: "Using DebugView to analyse analytical data in real time",
+        type: "external",
+      },
+      {
         index: 32,
         link: "https://medium.com/@lukasz.kurant/detecting-relationships-between-components-in-react-applications-a6b38e05751d",
         date: "March 23, 2025",
