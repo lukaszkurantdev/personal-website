@@ -1,5 +1,11 @@
 export const PUBLICATIONS_DATA = [
   {
+    key: "pub-5",
+    title:
+      "Impact of selected JavaScript engines on the performance of mobile hybrid applications",
+    details: "In review",
+  },
+  {
     key: "pub-4",
     title:
       "Static components dependency graph detection with evaluation metrics in React.js projects",

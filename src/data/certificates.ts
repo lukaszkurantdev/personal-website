@@ -1,5 +1,11 @@
 export const CERTIFICATES_DATA = [
   {
+    link: "/images/certificates/jsa.pdf",
+    alt: "JS",
+    title: "JavaScript: The Advanced Concepts",
+    description: "ZTM, September 2025",
+  },
+  {
     link: "/images/certificates/nlp.jpeg",
     alt: "NLP",
     title: "Natural Language Processing Specialization Certificate",

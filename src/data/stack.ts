@@ -44,6 +44,7 @@ export const SKILLS_DATA = [
   "Publication and maintenance of applications in the Google Play, App Store and Microsoft Store",
   "Machine learning algorithms, text processing and data analysis",
   "Image processing, including real-time solutions",
+  "In-app payments integration, Apple Pay, Android Pay",
   "Conducting research in the field of legal text processing using artificial intelligence methods and JavaScript engines",
   "Performing code audits and technical interviews, conducting workshops, mentoring, teaching",
 ];

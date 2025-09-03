@@ -5,7 +5,7 @@ export const EXPERIENCE_DATA = [
     position: "Mobile Lead Engineer",
     company: "Goodspeed, Remote",
     description: "I am responsible for the Foodango mobile application.",
-    technologies: "React Native, Expo",
+    technologies: "React Native, Expo, EAS, Apple Pay, Google Pay",
     isCurrent: true,
   },
   {
